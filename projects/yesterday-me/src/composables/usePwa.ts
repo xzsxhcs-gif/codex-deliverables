@@ -2,6 +2,7 @@
 
 import { onBeforeUnmount, ref } from 'vue'
 import { useRegisterSW } from 'virtual:pwa-register/vue'
+import { isNativeApp } from '../native/platform'
 
 interface InstallPromptEvent extends Event {
   prompt(): Promise<void>
@@ -11,6 +12,15 @@ interface InstallPromptEvent extends Event {
 type NavigatorWithStandalone = Navigator & { standalone?: boolean }
 
 export function usePwa() {
+  // APK assets are bundled and updated as a signed package, never through a SW.
+  if (isNativeApp) {
+    return {
+      offlineReady: ref(true), needRefresh: ref(false), canInstall: ref(false),
+      isStandalone: ref(true), installing: ref(false), registrationError: ref(''),
+      install: async (): Promise<'unavailable'> => 'unavailable',
+      updateApp: async (): Promise<void> => {},
+    }
+  }
   const canInstall = ref(false)
   const registrationError = ref('')
   const installing = ref(false)

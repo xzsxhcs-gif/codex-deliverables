@@ -3,6 +3,7 @@ import { ref, watch, onMounted } from 'vue';
 import type { AppSettings, ImportResult } from '../domain/types';
 import { parseBackup, MAX_BACKUP_BYTES } from '../domain/backup';
 import Icon from './Icon.vue';
+import { isNativeApp } from '../native/platform';
 const props = defineProps<{ settings: AppSettings; busy: boolean; offlineReady: boolean; canInstall: boolean; standalone: boolean; registrationError: string; importResult: ImportResult | null; importKey: number }>();
 const emit = defineEmits<{ theme: []; export: []; import: [raw: string]; delete: []; install: []; guide: [] }>();
 const input = ref<HTMLInputElement>();
@@ -33,6 +34,7 @@ async function requestPersistence() {
   finally { persistenceBusy.value = false; }
 }
 onMounted(async () => {
+  if (isNativeApp) { persistence.value = '保存在应用私有空间；已关闭系统自动备份'; return; }
   try { persistence.value = await navigator.storage?.persisted?.() ? '已获得持久存储许可' : '由浏览器管理存储空间'; }
   catch { persistence.value = '由浏览器管理存储空间'; }
 });
@@ -44,21 +46,21 @@ function install() { if (props.canInstall) emit('install'); else installHelp.val
     <section class="settings-section">
       <span class="eyebrow">01 / 你的档案室</span>
       <div class="setting-row"><div><h3>界面外观</h3><p>{{ settings.theme === 'dark' ? '夜间档案室' : '日间档案室' }}</p></div><button class="button button-secondary button-small" :disabled="busy" @click="emit('theme')"><Icon :name="settings.theme === 'dark' ? 'sun' : 'moon'" />切换{{ settings.theme === 'dark' ? '浅色' : '深色' }}</button></div>
-      <div class="setting-row"><div><h3>装进口袋，随时开庭</h3><p>{{ standalone ? '正在以独立应用模式运行' : offlineReady ? '离线文件已就绪' : '首次联网打开后，应用将准备离线文件' }}</p></div><button v-if="!standalone" class="button button-secondary button-small" @click="install"><Icon name="download" />安装到桌面</button><span v-else class="status-tag">已安装</span></div>
+      <div class="setting-row"><div><h3>装进口袋，随时开庭</h3><p>{{ isNativeApp ? 'Android 应用 · 所有页面已内置，可离线使用' : standalone ? '正在以独立应用模式运行' : offlineReady ? '离线文件已就绪' : '首次联网打开后，应用将准备离线文件' }}</p></div><button v-if="!standalone" class="button button-secondary button-small" @click="install"><Icon name="download" />安装到桌面</button><span v-else class="status-tag">已安装</span></div>
       <div v-if="installHelp" class="note-box" role="status"><strong>使用浏览器菜单安装</strong><p>安卓 Chrome / Edge：打开右上角菜单，选择「安装应用」或「添加到主屏幕」。iPhone Safari：分享 → 添加到主屏幕。</p><p>需要通过 HTTPS 或本机 localhost 打开；普通局域网 HTTP 地址不支持离线安装。首次联网打开完成后即可离线使用。</p></div>
       <p v-if="registrationError" class="inline-error" role="alert">{{ registrationError }}</p>
     </section>
     <section class="settings-section">
       <span class="eyebrow">02 / 证据的另一份副本</span>
-      <h3>备份与迁移</h3><p class="section-copy">记录保存在当前浏览器的 IndexedDB 中。清理网站数据、卸载浏览器或更换设备可能使记录丢失，建议定期导出。</p>
+      <h3>备份与迁移</h3><p v-if="isNativeApp" class="section-copy">记录保存在本应用的 IndexedDB 中。卸载应用、清除应用数据或更换设备会使记录丢失，请先导出备份。浏览器版与 APK 版的数据相互独立，可用 JSON 迁移。</p><p v-else class="section-copy">记录保存在当前浏览器的 IndexedDB 中。清理网站数据、卸载浏览器或更换设备可能使记录丢失，建议定期导出。</p>
       <div class="button-row"><button class="button button-secondary" :disabled="busy" @click="emit('export')"><Icon name="download" />导出 JSON</button><button class="button button-secondary" :disabled="busy || reading" @click="input?.click()"><Icon name="upload" />{{ reading ? '正在读取…' : '导入备份' }}</button></div>
       <input ref="input" class="sr-only" type="file" accept=".json,application/json" aria-label="选择 JSON 备份文件" :disabled="busy || reading" @change="selectBackup" />
       <p class="fine-print">备份是明文，包含尚未解封的正文、辩护和预测。请自行保管，不要随意分享。</p>
       <p v-if="fileError" class="inline-error" role="alert">{{ fileError }}</p>
       <div v-if="prepared" class="note-box import-preview"><strong>准备合并 {{ prepared.count }} 条记录</strong><p class="file-name">{{ prepared.name }}</p><p>只补充新记录；重复项跳过。同一份证据发生内容冲突时保留本机版本，不覆盖已有判决。导入不会提前解封。</p><div class="button-row"><button class="button button-primary button-small" :disabled="busy" @click="emit('import', prepared.raw)">确认合并导入</button><button class="text-button" :disabled="busy" @click="prepared = null">取消导入</button></div></div>
       <p v-if="importResult && !prepared" class="note-box" role="status">导入完成：新增 {{ importResult.added }} 条，重复 {{ importResult.skipped }} 条，冲突 {{ importResult.conflicts }} 条。冲突记录已保留本机版本。</p>
-      <div class="setting-row persistence-row"><div><h3>本机存储</h3><p>{{ persistence }}</p></div><button class="text-button" :disabled="persistenceBusy" @click="requestPersistence">{{ persistenceBusy ? '申请中…' : '申请持久存储' }}</button></div>
-      <p class="fine-print">持久存储许可可减少自动清理风险，不能阻止手动删除，也不能代替备份。</p>
+      <div class="setting-row persistence-row"><div><h3>本机存储</h3><p>{{ persistence }}</p></div><button v-if="!isNativeApp" class="text-button" :disabled="persistenceBusy" @click="requestPersistence">{{ persistenceBusy ? '申请中…' : '申请持久存储' }}</button></div>
+      <p v-if="isNativeApp" class="fine-print">导出时由你选择保存位置。应用不会自动上传记录；请选择可信的本地文件夹，明文备份不受封存锁保护。</p><p v-else class="fine-print">持久存储许可可减少自动清理风险，不能阻止手动删除，也不能代替备份。</p>
     </section>
     <section class="settings-section privacy-section">
       <span class="eyebrow">03 / 本庭的能力边界</span>

@@ -10,6 +10,8 @@ import ArchiveView from './views/ArchiveView.vue';
 import StatsView from './views/StatsView.vue';
 import { useCapsules, readableError } from './composables/useCapsules';
 import { usePwa } from './composables/usePwa';
+import { isNativeApp, saveBackupFile } from './native/platform';
+import { installNativeLifecycle } from './native/lifecycle';
 import { isUnlocked, localDate, nextMidnight, nextLocalDate } from './domain/calendar';
 import { calculateStatistics } from './domain/stats';
 import { pickRemark } from './domain/humor';
@@ -32,6 +34,8 @@ const settingsOpen = ref(false), guideOpen = ref(false), deleteOpen = ref(false)
 const activeCase = ref<CaseFile | null>(null), opening = ref(false), animateVerdict = ref(false);
 const successKey = ref(0), importKey = ref(0), importResult = ref<ImportResult | null>(null);
 const deleteWord = ref('');
+const exporting = ref(false);
+let removeNativeLifecycle = () => {};
 const anyModal = computed(() => guideOpen.value || settingsOpen.value || !!activeCase.value || deleteOpen.value || updateOpen.value);
 const toast = ref<{ message: string; kind: 'success' | 'error' } | null>(null);
 let toastTimer: ReturnType<typeof setTimeout> | undefined;
@@ -85,13 +89,14 @@ async function finishGuide() {
   catch (e) { message(readableError(e), 'error'); }
 }
 async function exportBackup() {
+  if (exporting.value) return;
+  exporting.value = true;
   try {
     const backup = await db.repository.exportBackup();
-    const url = URL.createObjectURL(new Blob([JSON.stringify(backup, null, 2)], { type: 'application/json;charset=utf-8' }));
-    const anchor = document.createElement('a'); anchor.href = url; anchor.download = `yesterday-me-${localDate(new Date())}-${Date.now()}.json`;
-    document.body.append(anchor); anchor.click(); anchor.remove(); setTimeout(() => URL.revokeObjectURL(url), 3000);
-    message('备份已生成，请妥善保管。平行宇宙暂不提供保管服务。');
-  } catch (e) { message(readableError(e), 'error'); }
+    const saved = await saveBackupFile(`yesterday-me-${localDate(new Date())}-${Date.now()}.json`, JSON.stringify(backup, null, 2));
+    if (saved) message('备份已生成，请妥善保管。平行宇宙暂不提供保管服务。');
+  } catch { message('备份未能保存。请重新导出，并确认所选位置仍可写入；本机档案没有改变。', 'error'); }
+  finally { exporting.value = false; }
 }
 async function importBackup(raw: string) {
   if (busy.value) return;
@@ -118,8 +123,8 @@ watch(items, async () => {
     try { const result = await db.repository.open(id); if (activeCase.value?.id === id) activeCase.value = result; } catch { activeCase.value = null; }
   }
 });
-onMounted(() => { void start(); window.addEventListener('hashchange', hashChange); });
-onBeforeUnmount(() => { clearTimeout(toastTimer); window.removeEventListener('hashchange', hashChange); });
+onMounted(() => { void start(); window.addEventListener('hashchange', hashChange); removeNativeLifecycle = installNativeLifecycle(() => { if (page.value === 'seal') return false; navigate('seal'); return true; }, () => { void db.sync(); }); });
+onBeforeUnmount(() => { removeNativeLifecycle(); clearTimeout(toastTimer); window.removeEventListener('hashchange', hashChange); });
 </script>
 
 <template>
@@ -156,11 +161,11 @@ onBeforeUnmount(() => { clearTimeout(toastTimer); window.removeEventListener('ha
     <div class="onboarding"><p class="intro-copy">一个能让你隔着一天，和自己对话的小地方。<br />至于“审判”，请别太认真。</p><ol class="guide-steps"><li><span>01</span><div><h3>留下一份证据</h3><p>写一句想法、计划或消费理由，再猜猜明天的自己会怎么想。</p></div></li><li><span>02</span><div><h3>交给时间保管</h3><p>封存后暂时不能查看或修改。当地时间次日 00:00 起，随时都能回来打开。</p></div></li><li><span>03</span><div><h3>开个小小的庭</h3><p>可以无罪释放，也可以轻轻哈气。你也可以只读留言，暂不宣判。</p></div></li></ol><div class="note-box">休息、消费、普通生活，都不是真正的罪过。本庭不负责制造愧疚。</div><p class="fine-print">数据只在本机，封存并非加密保护。请在「设置与数据」中定期备份。</p><button class="button button-primary button-full" :disabled="busy" @click="finishGuide">{{ busy ? '正在准备…' : '开启第一份档案' }}<Icon name="arrow" /></button></div>
   </Modal>
   <Modal v-if="settingsOpen" title="档案室设置" eyebrow="PREFERENCES / 你的数据由你保管" :notice="deleteOpen ? null : toast" @dismiss-notice="toast = null" @close="settingsOpen = false">
-    <SettingsPanel :settings="settings" :busy="busy" :offline-ready="offlineReady" :can-install="canInstall" :standalone="isStandalone" :registration-error="registrationError" :import-result="importResult" :import-key="importKey" @theme="changeTheme" @export="exportBackup" @import="importBackup" @delete="deleteWord = ''; deleteOpen = true" @install="installApp" @guide="settingsOpen = false; guideOpen = true" />
+    <SettingsPanel :settings="settings" :busy="busy || exporting" :offline-ready="offlineReady" :can-install="canInstall" :standalone="isStandalone" :registration-error="registrationError" :import-result="importResult" :import-key="importKey" @theme="changeTheme" @export="exportBackup" @import="importBackup" @delete="deleteWord = ''; deleteOpen = true" @install="installApp" @guide="settingsOpen = false; guideOpen = true" />
   </Modal>
   <Modal v-if="activeCase" :title="`第 ${String(activeCase.caseNumber).padStart(3, '0')} 号案件`" :eyebrow="`${activeCase.sealedDate} / ${activeCase.status === 'judged' ? '判决已归档' : '跨时空庭审'}`" :dismissable="!busy" :notice="toast" @dismiss-notice="toast = null" wide @close="activeCase = null; animateVerdict = false"><CaseDetail :case-file="activeCase" :busy="busy" :animate-verdict="animateVerdict" @judge="judge" /></Modal>
   <Modal v-if="deleteOpen" title="确定清空全部档案？" eyebrow="最后一次确认" :dismissable="!busy" :notice="toast" @dismiss-notice="toast = null" @close="deleteOpen = false">
-    <p class="intro-copy">将删除本设备当前浏览器中的 {{ items.length }} 份胶囊、全部判决和偏好设置。操作无法撤销。</p><p class="section-copy">若需要保留记录，请先取消并导出备份。</p><label class="field-label" for="delete-word">输入「删除」以确认</label><input id="delete-word" v-model="deleteWord" class="text-input" autocomplete="off" placeholder="删除" /><div class="button-row dialog-actions"><button class="button button-secondary" :disabled="busy" @click="deleteOpen = false">保留档案</button><button class="button button-danger" :disabled="deleteWord !== '删除' || busy" @click="clearData">{{ busy ? '正在清空…' : '确认删除全部数据' }}</button></div>
+    <p class="intro-copy">将删除本设备{{ isNativeApp ? '此应用' : '当前浏览器' }}中的 {{ items.length }} 份胶囊、全部判决和偏好设置。操作无法撤销。</p><p class="section-copy">若需要保留记录，请先取消并导出备份。</p><label class="field-label" for="delete-word">输入「删除」以确认</label><input id="delete-word" v-model="deleteWord" class="text-input" autocomplete="off" placeholder="删除" /><div class="button-row dialog-actions"><button class="button button-secondary" :disabled="busy" @click="deleteOpen = false">保留档案</button><button class="button button-danger" :disabled="deleteWord !== '删除' || busy" @click="clearData">{{ busy ? '正在清空…' : '确认删除全部数据' }}</button></div>
   </Modal>
   <Modal v-if="updateOpen" title="准备更新应用" eyebrow="档案室维护" :notice="toast" @dismiss-notice="toast = null" @close="updateOpen = false"><p class="intro-copy">更新会重新加载页面。请先封存正在编辑的留言；未封存的草稿不会保留。已经存入数据库的记录不受影响。</p><div class="button-row dialog-actions"><button class="button button-secondary" @click="updateOpen = false">继续编辑</button><button class="button button-primary" @click="refreshApp">确认更新</button></div></Modal>
 </template>
