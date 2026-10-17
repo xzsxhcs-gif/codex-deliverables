@@ -1,0 +1,3 @@
+01112ec5f7d3c2bca2ec9d2d9851730f1e4c8063a102e8844abf4b9c4bd1a40d  yesterday-me-v1.0.0.apk
+f0576d0dd94328f3bc0d5f896e5e10818127f9603585aaefb2458d7761955f7f  yesterday-me-android-source.zip
+641ab91065e87e780050615bf22a3acf0dde78efd84ac03ec8770515f92ea13c  android-verification.zip

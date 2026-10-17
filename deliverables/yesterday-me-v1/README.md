@@ -2,6 +2,8 @@
 
 跨时空自我审判系统。今天封存，明天开庭。
 
+[新增：下载 Android 安装包 APK](../yesterday-me-android-v1/)
+
 - [下载可运行版本（无需安装 npm 依赖）](https://github.com/xzsxhcs-gif/codex-deliverables/raw/refs/heads/main/deliverables/yesterday-me-v1/yesterday-me-app.zip)
 - [下载完整源工程](https://github.com/xzsxhcs-gif/codex-deliverables/raw/refs/heads/main/deliverables/yesterday-me-v1/yesterday-me-source.zip)
 - [下载自动化验证记录](https://github.com/xzsxhcs-gif/codex-deliverables/raw/refs/heads/main/deliverables/yesterday-me-v1/yesterday-me-verification.zip)

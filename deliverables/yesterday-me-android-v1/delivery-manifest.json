@@ -1,0 +1,24 @@
+{
+  "sourceCommit": "5e5289d355252922b7fcdc53d30169b58a5d6869",
+  "assets": [
+    {
+      "name": "yesterday-me-v1.0.0.apk",
+      "bytes": 3071124,
+      "sha256": "01112ec5f7d3c2bca2ec9d2d9851730f1e4c8063a102e8844abf4b9c4bd1a40d"
+    },
+    {
+      "name": "yesterday-me-android-source.zip",
+      "bytes": 258534,
+      "sha256": "f0576d0dd94328f3bc0d5f896e5e10818127f9603585aaefb2458d7761955f7f"
+    },
+    {
+      "name": "android-verification.zip",
+      "bytes": 15337,
+      "sha256": "641ab91065e87e780050615bf22a3acf0dde78efd84ac03ec8770515f92ea13c"
+    }
+  ],
+  "deviceRuntimeVerification": "Not performed, as requested by user",
+  "unitTests": 79,
+  "browserTests": 8,
+  "androidLintErrors": 0
+}
