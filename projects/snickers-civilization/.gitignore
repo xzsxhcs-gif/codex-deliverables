@@ -5,3 +5,6 @@ output/
 public/audio/soundtrack.wav
 public/audio/soundtrack.m4a
 *.log
+__pycache__/
+*.py[cod]
+.venv/
