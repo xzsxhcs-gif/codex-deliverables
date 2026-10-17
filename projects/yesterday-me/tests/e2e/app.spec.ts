@@ -1,5 +1,7 @@
-import { expect, test, type Page } from '@playwright/test';
-import { readFile } from 'node:fs/promises';
+import { chromium, expect, test, type BrowserContext, type Page } from '@playwright/test';
+import { mkdtemp, readFile, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 
 const TODAY = new Date('2026-10-17T15:59:30.000Z');
 const TOMORROW = new Date('2026-10-17T16:00:01.000Z');
@@ -253,4 +255,52 @@ test('回拨日期重新锁定，其他标签页的判决和删除同步到已�
   await expect(other.getByRole('dialog')).toHaveCount(0);
   await expect(other.getByText('时空同步证据', { exact: true })).toHaveCount(0);
   await expect(other.getByText('今日休庭，昨日尚无证据。', { exact: true })).toBeVisible();
+});
+
+test('完全退出浏览器再以同一真实磁盘配置启动，证据与偏好仍保留且跨日可读', async () => {
+  const profile = await mkdtemp(join(tmpdir(), 'yesterday-me-persistence-'));
+  let active: BrowserContext | undefined;
+  const launch = () => chromium.launchPersistentContext(profile, {
+    ...test.info().project.use.launchOptions,
+    headless: true,
+    baseURL: test.info().project.use.baseURL,
+    viewport: { width: 390, height: 844 },
+    timezoneId: 'Asia/Shanghai',
+    locale: 'zh-CN',
+    serviceWorkers: 'allow',
+  });
+  try {
+    active = await launch();
+    const first = active.pages()[0] ?? await active.newPage();
+    first.on('pageerror', error => uncaught.push(error.message));
+    await start(first);
+    await seal(first, '浏览器关门之后', 'forgive');
+    await first.getByRole('button', { name: '切换浅色模式', exact: true }).click();
+    await expect(first.locator('html')).toHaveAttribute('data-theme', 'light');
+
+    // Closing a persistent context terminates its browser. No storageState or DB seeding is used.
+    await active.close();
+    active = undefined;
+    active = await launch();
+    const reopened = active.pages()[0] ?? await active.newPage();
+    reopened.on('pageerror', error => uncaught.push(error.message));
+    await reopened.clock.install({ time: TODAY });
+    await reopened.clock.setFixedTime(TODAY);
+    await reopened.goto('/');
+    await expect(reopened.getByText('1 份封存中', { exact: true })).toBeVisible();
+    await expect(reopened.locator('html')).toHaveAttribute('data-theme', 'light');
+    await expect(reopened.getByRole('button', { name: '开启第一份档案', exact: true })).toHaveCount(0);
+    await reopened.getByRole('button', { name: /^待审/ }).click();
+    await expect(reopened.getByText('浏览器关门之后', { exact: true })).toHaveCount(0);
+    await expect(reopened.getByRole('heading', { name: '尚未解锁', exact: true })).toBeVisible();
+    await midnight(reopened);
+    await reopened.getByRole('button', { name: /浏览器关门之后/ }).click();
+    await expect(reopened.getByText('浏览器关门之后的原始留言：今天休息一下也很好。', { exact: true })).toBeVisible();
+    await reopened.getByRole('button', { name: '展开昨日辩护词', exact: true }).click();
+    await expect(reopened.getByText('浏览器关门之后的辩护：我当时确实需要休息。', { exact: true })).toBeVisible();
+    await expect(reopened.getByRole('heading', { name: '昨日的预测', exact: true })).toHaveCount(0);
+  } finally {
+    await active?.close();
+    await rm(profile, { recursive: true, force: true });
+  }
 });
