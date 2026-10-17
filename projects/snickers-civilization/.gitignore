@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.cache/
+output/
+public/audio/soundtrack.wav
+public/audio/soundtrack.m4a
+*.log

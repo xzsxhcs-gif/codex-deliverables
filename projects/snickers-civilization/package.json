@@ -1,0 +1,17 @@
+{
+  "name": "snickers-civilization",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "audio": "python scripts/audio.py",
+    "render": "node scripts/render.mjs",
+    "stills": "node scripts/stills.mjs",
+    "verify": "python scripts/verify.py"
+  },
+  "dependencies": { "@napi-rs/canvas": "^0.1.80" },
+  "devDependencies": { "typescript": "^5.9.3", "vite": "^7.1.9", "esbuild": "^0.25.10", "playwright": "^1.55.1" }
+}
