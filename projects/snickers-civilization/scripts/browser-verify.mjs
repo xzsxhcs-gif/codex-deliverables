@@ -75,9 +75,10 @@ try {
   if (args.video !== 'none') {
   const videoPage = await browser.newPage({ viewport: { width: 700, height: 1100 } });
   videoPage.on('pageerror', error => errors.push(String(error)));
-  await videoPage.goto(base, { waitUntil: 'domcontentloaded' });
+  await videoPage.goto(new URL('?t=0', base).href, { waitUntil: 'domcontentloaded' });
+  await videoPage.waitForFunction(() => window.film?.ready, { timeout: 30000 });
   const media = await videoPage.evaluate(async url => {
-    window.film?.renderAt(0);
+    window.film.renderAt(0);
     document.body.replaceChildren();
     const video = document.createElement('video');
     video.id = 'final-video'; video.controls = true; video.preload = 'auto'; video.style.width = '540px';

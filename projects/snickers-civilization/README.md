@@ -61,4 +61,8 @@ npm run render -- --width 540 --height 960 --output output/preview.mp4
 
 ## 交付
 
-制作过程分阶段提交到仓库。完整 MP4、原声音轨、源工程压缩包与审片材料将在对应 GitHub Release 中提供。只将通过验证的真实文件列为交付成果。
+[v1 完整交付与下载](https://github.com/xzsxhcs-gif/codex-deliverables/releases/tag/snickers-civilization-v1)：MP4、包含已生成音轨的完整源工程、24-bit WAV、审片材料与 SHA-256 校验文件。
+
+最终 MP4 为 22,225,924 字节；50 秒、1,500 帧。通过 21 项媒体检查与 13 项 Chromium 预览／播放检查。已从成片抽取 33 个关键时刻进行视觉检查；完整结果见 [REVIEW.md](REVIEW.md)。
+
+浏览器检查需安装 Chromium；预览服务器运行时执行 `node scripts/browser-verify.mjs`。可以通过 `CHROMIUM` 环境变量指定浏览器可执行文件。
