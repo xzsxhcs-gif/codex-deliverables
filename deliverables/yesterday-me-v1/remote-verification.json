@@ -1,0 +1,41 @@
+{
+  "artifactCommit": "e39df804520efe6487fb059d971b189ad3ec32c4",
+  "sourceCommit": "9e3fdf21bc93a8b166ac0fa5207f834a74db161a",
+  "downloads": [
+    {
+      "name": "yesterday-me-app.zip",
+      "bytes": 110013,
+      "sha256": "087b68ef4cb134fa78033f494c530c606d448c038c3d3960f1d6883850f5dd4a",
+      "url": "https://github.com/xzsxhcs-gif/codex-deliverables/raw/e39df804520efe6487fb059d971b189ad3ec32c4/deliverables/yesterday-me-v1/yesterday-me-app.zip",
+      "httpStatus": 200,
+      "sha256Verified": true,
+      "zipIntegrityVerified": true
+    },
+    {
+      "name": "yesterday-me-source.zip",
+      "bytes": 153171,
+      "sha256": "6a494738e268c4f865679fd52887953f7a6701791a3b0d9bb2aead1ea8159182",
+      "url": "https://github.com/xzsxhcs-gif/codex-deliverables/raw/e39df804520efe6487fb059d971b189ad3ec32c4/deliverables/yesterday-me-v1/yesterday-me-source.zip",
+      "httpStatus": 200,
+      "sha256Verified": true,
+      "zipIntegrityVerified": true
+    },
+    {
+      "name": "yesterday-me-verification.zip",
+      "bytes": 10980,
+      "sha256": "f81f5afdedacdbf1b573ad17797c73a046589b63e049446949de6b6fa4dd47e8",
+      "url": "https://github.com/xzsxhcs-gif/codex-deliverables/raw/e39df804520efe6487fb059d971b189ad3ec32c4/deliverables/yesterday-me-v1/yesterday-me-verification.zip",
+      "httpStatus": 200,
+      "sha256Verified": true,
+      "zipIntegrityVerified": true
+    }
+  ],
+  "downloadedAppSmokeTest": {
+    "httpStatus": 200,
+    "title": "昨日的我 · 跨时空自我审判系统",
+    "firstUseDialogVisible": true,
+    "manifest": "./manifest.webmanifest",
+    "offlineWorkerActive": true,
+    "jsErrors": []
+  }
+}
