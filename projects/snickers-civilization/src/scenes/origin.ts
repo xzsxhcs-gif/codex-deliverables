@@ -70,7 +70,7 @@ export function drawOrigin(ctx:Ctx,t:number){
 function comicFrame(ctx:Ctx,x:number,y:number,w:number,h:number,fn:()=>void){ctx.save();ctx.beginPath();ctx.rect(x,y,w,h);ctx.clip();fn();ctx.restore();ctx.strokeStyle=P.ink;ctx.lineWidth=14;ctx.strokeRect(x,y,w,h);}
 
 export function drawIdentity(ctx:Ctx,t:number){
-  const u=t-6.4,shot=Math.min(5,Math.floor(u/1.6)),s=(u%1.6)/1.6;
+  const u=t-6.4,shot=Math.min(5,Math.floor((u+1e-8)/1.6)),s=clamp((u-shot*1.6)/1.6);
   const accent=pulse(t,12);
   if(shot===0){
     backdrop(ctx,P.red);burst(ctx,540,950,.4+accent*.4,71,P.paper);

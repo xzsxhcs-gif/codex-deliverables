@@ -126,6 +126,7 @@ try:
     for filename in (ROOT / 'src').rglob('*'):
         if filename.suffix in ['.ts', '.tsx', '.css', '.html']:
             source_chars |= {ord(char) for char in filename.read_text() if '\u3400' <= char <= '\u9fff' or char in '，。；：？！—·×÷±∑∫∞→←↑↓⊕πθλΔΩμ√≈≤≥²³∂∇'}
+    source_chars |= {ord(char) for char in (ROOT / 'index.html').read_text() if '\u3400' <= char <= '\u9fff' or char in '，。；：？！—·×÷±∑∫∞→←↑↓⊕πθλΔΩμ√≈≤≥²³∂∇'}
     font_details = []
     for weight in ['Regular', 'Bold']:
         fontfile = ROOT / f'public/fonts/FilmSans-{weight}.ttf'
@@ -139,6 +140,7 @@ try:
         changed = [filename for filename, digest in manifest['sourceHashes'].items() if not (ROOT / filename).is_file() or hashlib.sha256((ROOT / filename).read_bytes()).hexdigest() != digest]
         check('Export used the current source and font inputs', not changed, changed)
         check('Completed render manifest matches final MP4', manifest.get('status') == 'complete' and manifest.get('sha256') == facts['sha256'])
+        check('Exported audio matches current source WAV', manifest.get('audioSha256') == hashlib.sha256(wav.read_bytes()).hexdigest())
     else:
         check('Render provenance manifest exists', False, str(render_report))
 except Exception as error:

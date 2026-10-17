@@ -18,7 +18,7 @@ const browser = await chromium.launch({ headless: true, executablePath: process.
 try {
   const page = await browser.newPage({ viewport: { width: 1280, height: 1080 }, deviceScaleFactor: 1 });
   page.on('pageerror', error => errors.push(String(error)));
-  page.on('console', message => { if (message.type() === 'error' && !message.text().includes('favicon')) errors.push(message.text()); });
+  page.on('console', message => { if (message.type() === 'error' && !message.text().includes('favicon') && !message.location().url.includes('/favicon')) errors.push(message.text()); });
   await page.addInitScript(() => {
     const OriginalAudio = window.Audio;
     window.__qaAudioElements = [];
@@ -72,6 +72,7 @@ try {
   const paused = await page.evaluate(() => ({ clock: document.querySelector('#clock').value, allPaused: window.__qaAudioElements.every(a => a.paused) }));
   check('Pause freezes visual time and soundtrack', paused.allPaused && paused.clock === pauseStart, paused);
 
+  if (args.video !== 'none') {
   const videoPage = await browser.newPage({ viewport: { width: 700, height: 1100 } });
   videoPage.on('pageerror', error => errors.push(String(error)));
   await videoPage.goto(base, { waitUntil: 'domcontentloaded' });
@@ -125,6 +126,7 @@ try {
     await context.close(); return result;
   }, videoUrl);
   check('Browser decodes real stereo soundtrack and silent ending', decodedAudio.channels === 2 && decodedAudio.sampleRate === 48000 && decodedAudio.musicRms > .001 && decodedAudio.tailPeak === 0, decodedAudio);
+  }
   check('Preview and playback produce no JavaScript errors', errors.length === 0, errors);
 } catch (error) {
   check('Browser verification completes without internal errors', false, String(error));

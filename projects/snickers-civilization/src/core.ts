@@ -9,7 +9,7 @@ export const easeOut = (v: number) => 1-Math.pow(1-clamp(v),3);
 export const easeInOut = (v: number) => {const u=clamp(v);return u<.5?4*u*u*u:1-Math.pow(-2*u+2,3)/2;};
 export const hash = (n: number) => {const s=Math.sin(n*127.1+311.7)*43758.5453123;return s-Math.floor(s);};
 export const beat = (t: number) => t * BPM / 60;
-export const pulse = (t: number, decay = 10) => Math.exp(-(beat(t)%1)*decay);
+export const pulse = (t: number, decay = 10) => {const b=beat(t);return Math.exp(-Math.max(0,b-Math.floor(b+1e-8))*decay);};
 export function poly(ctx: Ctx, points: Vec2[], fill?: string, stroke?: string, width = 2, close = true) {
   if (!points.length) return; ctx.beginPath();ctx.moveTo(points[0].x, points[0].y);
   for (const p of points.slice(1)) ctx.lineTo(p.x,p.y);if(close)ctx.closePath();

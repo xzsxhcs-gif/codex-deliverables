@@ -69,7 +69,7 @@ function contour(stage:number,i:number,p:Vec2,k:number,t:number):Vec2 {
   }
   if(stage===4){
     // Crossing the inherited stroke once around a seal produces a heraldic ligature.
-    return {x:Math.sin(theta*2)*(.27+p.x*.28),y:Math.cos(theta)*(.40+p.y*.24)};
+    return {x:p.x*.22+Math.sin(theta*2)*(.13+geneExtent(i)*.36+p.x*.18),y:Math.cos(theta)*(.40+p.y*.24)+p.y*.08};
   }
   if(stage===5){
     // Read the contour as a signal: two traversals become the edges of a measured band.
@@ -264,13 +264,13 @@ function energy(ctx:Ctx,t:number,alpha:number){
   ctx.save();ctx.globalAlpha*=alpha;
   for(let i=0;i<8;i++){
     const p=points(5,i,t),c=pose(5,i,t);
-    line(ctx,c.x-144,c.y+124,c.x+144,c.y+124,P.ink,1,.44);
-    line(ctx,c.x-136,c.y+134,c.x-136,c.y-135,P.ink,1,.44);
-    // Oscillograms use contour coordinates as their measured signal.
-    const trace=genes()[i].map((g,k)=>({x:c.x-128+k*4.1,y:c.y+124-g.y*40-20}));
-    openPath(ctx,trace,P.red,2,.8);
-    for(let k=0;k<64;k+=16){const v=p[k];line(ctx,v.x,v.y,c.x-128+k*4.1,c.y+124,P.blue,1,.24);ring(ctx,v.x,v.y,4,P.red,2);}
-    text(ctx,['S = f(t)','N = 2S','I / dt','C = S²','K = ΔS','E = ∑ S','R = S⁻¹','S = S'][i],c.x+132,c.y-118,22,P.blue,'right',500);
+    line(ctx,176,c.y+66,900,c.y+66,P.ink,1,.36);
+    line(ctx,176,c.y+72,176,c.y-68,P.ink,1,.36);
+    for(let j=0;j<9;j++)line(ctx,210+j*78,c.y+62,210+j*78,c.y+70,P.ink,1,.3);
+    for(let k=0;k<64;k+=16){const v=p[k];line(ctx,v.x,v.y,v.x,c.y+66,P.blue,1,.25);ring(ctx,v.x,v.y,4,P.red,2);}
+    text(ctx,['S = f(t)','N = 2S','I / dt','C = S²','K = ΔS','E = ∑ S','R = 1/S','S = S'][i],954,c.y-58,20,P.blue,'right',500);
+    emblem(ctx,117,c.y,44,i,P.ink,.6);
+    line(ctx,145,c.y,200,c.y,P.red,1,.36);
   }
   line(ctx,94,1644,986,1644,P.ink,2,.4);
   text(ctx,'FORM IS CONSERVED',540,1695,30,P.ink,'center',600);
@@ -279,6 +279,15 @@ function energy(ctx:Ctx,t:number,alpha:number){
 
 function circuit(ctx:Ctx,t:number,alpha:number){
   ctx.save();ctx.globalAlpha*=alpha;
+  for(let layer=0;layer<4;layer++){
+    const half=58+layer*16;
+    ctx.strokeStyle=layer%2?P.red:P.electric;ctx.lineWidth=1.5;ctx.strokeRect(540-half,960-half,half*2,half*2);
+  }
+  for(let i=0;i<8;i++){
+    const c=pose(6,i,t),v=points(6,i,t)[(i*8)%64];
+    openPath(ctx,[v,{x:c.x,y:960},{x:540,y:960}],P.electric,1.2,.35);
+  }
+  text(ctx,'VIII',540,960,43,P.paper,'center',700);
   for(let i=0;i<8;i++){
     const p=points(6,i,t),c=pose(6,i,t);
     ctx.strokeStyle=P.blue;ctx.lineWidth=2;ctx.strokeRect(c.x-118,c.y-124,236,248);
@@ -366,8 +375,8 @@ export function drawCivilization(ctx:Ctx,t:number){
   backdrop(ctx,colorMix(ground(previous),ground(stage),transition));
 
   const cameraBurst=smooth((local-.78)/.17)*(1-smooth((local-1.42)/.36));
-  const lenses=[1.92,1.65,1.98,1.39,1.52,2.1,2.04,1.32];
-  const targets=[{x:540,y:810},{x:540,y:943},{x:350,y:790},{x:540,y:935},{x:540,y:905},{x:758,y:790},{x:318,y:1092},{x:540,y:1090}];
+  const lenses=[1.92,1.65,1.98,1.39,1.52,1.8,1.62,1.32];
+  const targets=[{x:540,y:810},{x:540,y:943},{x:350,y:790},{x:540,y:935},{x:540,y:905},{x:540,y:995},{x:540,y:960},{x:540,y:1090}];
   const cam=1+cameraBurst*(lenses[stage]-1)*(1-finish);
   const focus={x:lerp(540,targets[stage].x,cameraBurst*(1-finish)),y:lerp(945,targets[stage].y,cameraBurst*(1-finish))};
   ctx.save();ctx.translate(540,945);ctx.scale(cam,cam);ctx.rotate((stage%2?1:-1)*cameraBurst*.024*(1-finish));ctx.translate(-focus.x,-focus.y);
@@ -390,7 +399,17 @@ export function drawCivilization(ctx:Ctx,t:number){
   const accent=light?P.blue:P.paper;
   for(let i=0;i<8;i++){
     const pts=actualPoints(stage,previous,i,t,transition);
-    const color=stage===4?P.blue:(i%4===1?P.red:i%4===2?(light?P.blue:P.electric):accent);
+    const originalColor=stage===4?P.blue:(i%4===1?P.red:i%4===2?(light?P.blue:P.electric):accent);
+    const handoffColors=[P.white,P.red,P.electric,P.white,P.electric,P.red,P.white,P.electric];
+    const color=stage===7?colorMix(originalColor,handoffColors[i],finish):originalColor;
+    if(stage>0&&transition<.64){
+      const c=mixPose(pose(previous,i,t),pose(stage,i,t),transition);
+      ctx.save();ctx.globalAlpha*=(1-transition/.64)*.25;
+      const original=genes()[i].map(v=>{const q=rotate(v,c.angle);return {x:c.x+q.x*c.size,y:c.y+q.y*c.size};});
+      poly(ctx,original,undefined,light?P.ink:P.paper,1.4);
+      for(let k=0;k<64;k+=16)line(ctx,original[k].x,original[k].y,pts[k].x,pts[k].y,P.gold,1,.7);
+      ctx.restore();
+    }
     // Three offset contours show the inherited wrapper laminate under each symbol.
     if(stage!==3&&stage!==5){
       const dx=(1.2+hit*3)*(1-finish),dy=(2+hit*2)*(1-finish);
@@ -398,8 +417,8 @@ export function drawCivilization(ctx:Ctx,t:number){
       poly(ctx,pts.map(v=>({x:v.x+dx*3,y:v.y+dy*3})),undefined,P.red,2);
       poly(ctx,pts.map(v=>({x:v.x-dx*2,y:v.y-dy*2})),undefined,P.blue,2);ctx.restore();
     }
-    ctx.save();ctx.globalAlpha*=stage===4?.98:stage===6?.32:stage===7?.24:.13+(stage===0?.19:0);poly(ctx,pts,color);ctx.restore();
-    poly(ctx,pts,undefined,color,stage===0?3.7:stage===4?2:3.1);
+    ctx.save();ctx.globalAlpha*=stage===4?.98:stage===3?0:stage===6?.15:stage===7?.24:.13+(stage===0?.19:0);poly(ctx,pts,color);ctx.restore();
+    poly(ctx,pts,undefined,color,stage===0?4:stage===4?2.5:lerp(4.2,3.1,finish));
     // One moving vertex remains attached to each source contour throughout morphs.
     const marker=pts[(Math.floor(t*20)+i*7)%pts.length];
     if(stage!==0&&stage!==4&&finish<1){ctx.save();ctx.globalAlpha*=.65*(1-finish);ctx.fillStyle=light?P.red:P.gold;ctx.fillRect(marker.x-3,marker.y-3,6,6);ctx.restore();}

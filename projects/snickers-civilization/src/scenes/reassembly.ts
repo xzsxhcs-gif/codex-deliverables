@@ -105,7 +105,7 @@ function genealogy(ctx: Ctx, t: number) {
   poly(ctx, [{x:-diameter/2,y:-diameter/2},{x:diameter/2,y:-diameter/2},{x:diameter/2,y:diameter/2},{x:-diameter/2,y:diameter/2}], P.blue, P.paper, 5);
   ctx.restore();
   if (entrance > .05) {
-    const remaining = Math.max(1, 8 - Math.floor(local / .4));
+    const remaining = Math.max(1, 8 - Math.floor((local + 1e-7) / .4));
     ctx.save(); ctx.globalAlpha = entrance;
     text(ctx, String(remaining).padStart(2, '0'), cx, cy - 17, 133, P.white, 'center', 800);
     text(ctx, '→ 01', cx, cy + 91, 28, P.white, 'center', 600);

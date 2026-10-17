@@ -4,19 +4,19 @@
   "fonts": [
     {
       "weight": "Regular",
-      "glyphs": 221,
-      "missingSourceCharacters": "⁻",
-      "ttfBytes": 114156,
-      "woff2Bytes": 75012,
-      "ttfSha256": "f075bf0336c9b5fcfec36f4458ac8c56bfdc65929269157ff85e2531b87bf622"
+      "glyphs": 247,
+      "missingSourceCharacters": "",
+      "ttfBytes": 124604,
+      "woff2Bytes": 83044,
+      "ttfSha256": "05a6249b39c33751c3d0afd4c998d1d18f6f47267b6da1419fba147a5efb9202"
     },
     {
       "weight": "Bold",
-      "glyphs": 221,
-      "missingSourceCharacters": "⁻",
-      "ttfBytes": 117196,
-      "woff2Bytes": 76172,
-      "ttfSha256": "41dada984a0d91beb66dda7909886192e986ace80ef146d7e734afe16b568b0c"
+      "glyphs": 247,
+      "missingSourceCharacters": "",
+      "ttfBytes": 127812,
+      "woff2Bytes": 84180,
+      "ttfSha256": "aba67cf6c10a7ddf6ffd11df64fc6d25be5e4bac4a4872805cd11fc92c171650"
     }
   ]
 }

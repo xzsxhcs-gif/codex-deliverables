@@ -100,6 +100,7 @@ export async function renderMain(argv = process.argv.slice(2)) {
   if (!args.silent) options.push('-map', '1:a:0');
   options.push('-c:v', 'libx264', '-preset', args.preset ?? 'fast', '-crf', String(args.crf ?? 20), '-profile:v', 'high', '-pix_fmt', 'yuv420p', '-threads', '2', '-r', String(fps), '-g', String(fps * 2), '-keyint_min', String(fps), '-sc_threshold', '40');
   if (width * height <= 1080 * 1920 && fps <= 30) options.push('-level:v', '4.0');
+  if (duration >= 49.5) options.push('-force_key_frames', '49.5');
   options.push('-vf', 'scale=in_range=pc:out_range=tv:out_color_matrix=bt709', '-color_range', 'tv', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709');
   if (!args.silent) options.push('-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-ac', '2', '-af', `apad,atrim=duration=${duration},asetpts=PTS-STARTPTS`);
   options.push('-frames:v', String(count), '-t', String(duration), '-movflags', '+faststart', '-metadata', 'title=SNICKERS：文明的底层代码', '-metadata', 'comment=Original procedural vector animation. No product images or video footage.', temporary);
