@@ -1,3 +1,9 @@
+<script lang="ts">
+// Nested confirmations share one lock, regardless of their unmount order.
+let openModalCount = 0;
+let originalBodyOverflow = '';
+</script>
+
 <script setup lang="ts">
 import { onMounted, onBeforeUnmount, ref, useId } from 'vue';
 import Icon from './Icon.vue';
@@ -6,7 +12,7 @@ const emit = defineEmits<{ close: []; dismissNotice: [] }>();
 const dialog = ref<HTMLDialogElement>();
 const titleId = useId();
 let previous: HTMLElement | null = null;
-let overflow = '';
+let hasScrollLock = false;
 function requestClose() { if (props.dismissable) emit('close'); }
 function outside(event: MouseEvent) {
   if (event.target !== dialog.value || !dialog.value) return;
@@ -15,14 +21,25 @@ function outside(event: MouseEvent) {
 }
 onMounted(() => {
   previous = document.activeElement as HTMLElement;
-  overflow = document.body.style.overflow;
+  if (openModalCount === 0) originalBodyOverflow = document.body.style.overflow;
+  openModalCount += 1;
+  hasScrollLock = true;
   document.body.style.overflow = 'hidden';
   dialog.value?.showModal();
 });
 onBeforeUnmount(() => {
   dialog.value?.close();
-  document.body.style.overflow = overflow;
-  if (previous?.isConnected) previous.focus({ preventScroll: true });
+  if (hasScrollLock) {
+    openModalCount -= 1;
+    hasScrollLock = false;
+    if (openModalCount === 0) document.body.style.overflow = originalBodyOverflow;
+  }
+  queueMicrotask(() => {
+    const remaining = Array.from(document.querySelectorAll('dialog[open]')).at(-1);
+    if (previous?.isConnected && (!remaining || remaining.contains(previous))) {
+      previous.focus({ preventScroll: true });
+    }
+  });
 });
 </script>
 
