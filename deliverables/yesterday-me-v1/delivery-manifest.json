@@ -1,0 +1,26 @@
+{
+  "sourceCommit": "1c825436d343011d3cbbf0dd98ecc6f778fee6d5",
+  "assets": [
+    {
+      "name": "yesterday-me-app.zip",
+      "bytes": 109813,
+      "sha256": "f5ef12cfb97f80a440371e56fe93364d457923e16c068d08d57d588a0cdebe61"
+    },
+    {
+      "name": "yesterday-me-source.zip",
+      "bytes": 152769,
+      "sha256": "b9d7ebef622c3185028dc42dd00da9c99a8187853af60012bd8901278d8b7281"
+    },
+    {
+      "name": "yesterday-me-verification.zip",
+      "bytes": 10575,
+      "sha256": "5780e6fe3f34b251798390603b567ee3b22fd71b4c35082339a15ba6da4fb419"
+    }
+  ],
+  "validation": {
+    "unitTests": 71,
+    "browserTests": 8,
+    "pwaChecks": 10
+  },
+  "onlineDeployment": "not-enabled: GitHub Pages integration permission returned HTTP 403"
+}
