@@ -15,7 +15,7 @@
 
 50 秒、1080×1920 竖屏、30 FPS 的程序化实验剪辑。包装与八个字母从零绘制，展开为八阶段文明符号，再收束成一根普通士力架；配有原创程序音轨。
 
-- [完整视频与全部附件](https://github.com/xzsxhcs-gif/codex-deliverables/releases/tag/snickers-civilization-v1)
+- [完整视频与工程下载](deliverables/snickers-civilization-v1/)
 - [源代码与运行说明](projects/snickers-civilization/)
 - [成片检查记录](projects/snickers-civilization/REVIEW.md)
 
