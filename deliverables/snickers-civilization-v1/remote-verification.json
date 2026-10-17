@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "commit": "a965f9ec2d2271113f84f4fa8167dd93c8be6f0f",
+  "remoteFiles": [
+    {
+      "name": "README.md",
+      "remoteBytes": 1516,
+      "remoteGitBlob": "ea3dbfe6f16a9556047a132c14d71ba0bbb39877",
+      "gitContentMatches": true
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "remoteBytes": 499,
+      "remoteGitBlob": "ea045365bc74598ffdbd36a0832c217351234764",
+      "gitContentMatches": true
+    },
+    {
+      "name": "snickers-civilization-contact-sheet.jpg",
+      "remoteBytes": 619937,
+      "remoteGitBlob": "d684093e13b89584a452ee2ccfc7616bbbbaec95",
+      "gitContentMatches": true
+    },
+    {
+      "name": "snickers-civilization-review.zip",
+      "remoteBytes": 18401361,
+      "remoteGitBlob": "4f88a08e0c7e1baa1ca6f65007effe5812611e16",
+      "gitContentMatches": true
+    },
+    {
+      "name": "snickers-civilization-soundtrack.wav",
+      "remoteBytes": 14400102,
+      "remoteGitBlob": "1a571c0e39e7ea7a2a1577606721e25ca11f2505",
+      "gitContentMatches": true
+    },
+    {
+      "name": "snickers-civilization-source.zip",
+      "remoteBytes": 14389820,
+      "remoteGitBlob": "49167e1addb00bd196fe026e2132ccf45d85bb7b",
+      "gitContentMatches": true
+    },
+    {
+      "name": "snickers-civilization.mp4",
+      "remoteBytes": 22225924,
+      "remoteGitBlob": "ceeeb2b1313b1a4dbaa808b7173a61cc2a7a125e",
+      "gitContentMatches": true
+    }
+  ],
+  "actualPublicDownloads": [
+    {
+      "name": "snickers-civilization.mp4",
+      "url": "https://github.com/xzsxhcs-gif/codex-deliverables/raw/a965f9ec2d2271113f84f4fa8167dd93c8be6f0f/deliverables/snickers-civilization-v1/snickers-civilization.mp4",
+      "bytes": 22225924,
+      "sha256": "0695ac81761655b1a2c957e6c9a10b149fb4f2f6c3d1eb1802eb523168b52e1f",
+      "matchesLocal": true
+    },
+    {
+      "name": "snickers-civilization-source.zip",
+      "url": "https://github.com/xzsxhcs-gif/codex-deliverables/raw/a965f9ec2d2271113f84f4fa8167dd93c8be6f0f/deliverables/snickers-civilization-v1/snickers-civilization-source.zip",
+      "bytes": 14389820,
+      "sha256": "786e618e95262cb1411ca7b0c4cccf608d8e87de234d7be65a6daa0efcc53cf8",
+      "matchesLocal": true
+    }
+  ]
+}
