@@ -56,6 +56,18 @@ npm run preview -- --port 4175
 
 部署时将 `dist/` 上传到任意 HTTPS 静态站点即可；无需后端。项目使用相对资源路径与 hash 导航，支持子目录部署。不要使用文件管理器直接打开 `dist/index.html`，浏览器安全限制会阻止模块与离线功能。
 
+### 已准备好的 GitHub Pages 文件
+
+仓库的 `docs/yesterday-me/` 已保存同一份通过验证的生产构建。当前 GitHub 连接可写代码，但开启 Pages 时返回 `403 Resource not accessible by integration`，因此**尚未发布在线网址**。
+
+仓库所有者可以在 [Settings → Pages](https://github.com/xzsxhcs-gif/codex-deliverables/settings/pages) 中一次性启用：
+
+1. Source 选择 **Deploy from a branch**。
+2. Branch 选择 **main**，文件夹选择 **/docs**，点击 **Save**。
+3. 等待 GitHub 显示部署完成，再打开其提供的网址，并进入「昨日的我」。
+
+这只发布静态应用文件，不会把浏览器中的日记或备份上传。此后可以在手机上通过 HTTPS 打开并安装；现有本地预览数据不会自动搬到新网址，请使用 JSON 备份迁移。
+
 ## 测试
 
 ```bash
