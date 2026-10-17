@@ -1,0 +1,363 @@
+{
+  "sample_rate": 48000,
+  "samples_per_channel": 2400000,
+  "channels": 2,
+  "duration": 50.0,
+  "bpm": 150,
+  "beat_seconds": 0.4,
+  "seed": "0x534e4943",
+  "peak_dbfs": -1.7834,
+  "integrated_lufs": -13.98,
+  "true_peak_dbtp": -1.78,
+  "loudness_range_lu": 6.8,
+  "final_half_second_exact_digital_zero": true,
+  "stereo_difference_rms": 0.06976415484758218,
+  "frequency_energy_fractions": {
+    "27-120Hz": 0.55974,
+    "120-500Hz": 0.29517,
+    "500-2000Hz": 0.09739,
+    "2000-8000Hz": 0.03431,
+    "8000-16000Hz": 0.01271
+  },
+  "sha256": "bd3ac0ba04b055173f75e5d23e1ebf6e8a26fe92c60e23ede8a45680aa5da3e5",
+  "aac": {
+    "codec": "aac",
+    "duration": 50.0,
+    "bytes": 849718,
+    "full_decode_without_errors": true
+  },
+  "provenance": "Original deterministic numpy/scipy synthesis; no downloaded or sampled audio.",
+  "physical_audition": "Not performed; numerical and FFmpeg checks only.",
+  "events": [
+    {
+      "t": 0,
+      "kind": "harmonic-bed",
+      "gain": 0.035
+    },
+    {
+      "t": 1.6,
+      "kind": "structural-impact",
+      "gain": 0.16
+    },
+    {
+      "t": 3.2,
+      "kind": "structural-impact",
+      "gain": 0.16
+    },
+    {
+      "t": 4.8,
+      "kind": "structural-impact",
+      "gain": 0.16
+    },
+    {
+      "t": 4.8,
+      "kind": "convergence-riser",
+      "gain": 0.25
+    },
+    {
+      "t": 6.4,
+      "kind": "harmonic-bed",
+      "gain": 0.12
+    },
+    {
+      "t": 8.0,
+      "kind": "harmonic-bed",
+      "gain": 0.12
+    },
+    {
+      "t": 9.6,
+      "kind": "harmonic-bed",
+      "gain": 0.12
+    },
+    {
+      "t": 11.2,
+      "kind": "harmonic-bed",
+      "gain": 0.12
+    },
+    {
+      "t": 12.8,
+      "kind": "harmonic-bed",
+      "gain": 0.12
+    },
+    {
+      "t": 14.4,
+      "kind": "harmonic-bed",
+      "gain": 0.12
+    },
+    {
+      "t": 16.0,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 16,
+      "kind": "structural-impact",
+      "gain": 0.29
+    },
+    {
+      "t": 16,
+      "kind": "civilization-epoch",
+      "epoch": 0
+    },
+    {
+      "t": 16,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 17.6,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 18,
+      "kind": "structural-impact",
+      "gain": 0.306
+    },
+    {
+      "t": 18,
+      "kind": "civilization-epoch",
+      "epoch": 1
+    },
+    {
+      "t": 18,
+      "kind": "harmonic-bed",
+      "gain": 0.24
+    },
+    {
+      "t": 19.2,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 20,
+      "kind": "structural-impact",
+      "gain": 0.322
+    },
+    {
+      "t": 20,
+      "kind": "civilization-epoch",
+      "epoch": 2
+    },
+    {
+      "t": 20,
+      "kind": "harmonic-bed",
+      "gain": 0.11
+    },
+    {
+      "t": 20.8,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 22,
+      "kind": "structural-impact",
+      "gain": 0.338
+    },
+    {
+      "t": 22,
+      "kind": "civilization-epoch",
+      "epoch": 3
+    },
+    {
+      "t": 22,
+      "kind": "harmonic-bed",
+      "gain": 0.11
+    },
+    {
+      "t": 22.4,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 24.0,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 24,
+      "kind": "structural-impact",
+      "gain": 0.354
+    },
+    {
+      "t": 24,
+      "kind": "civilization-epoch",
+      "epoch": 4
+    },
+    {
+      "t": 24,
+      "kind": "harmonic-bed",
+      "gain": 0.24
+    },
+    {
+      "t": 24.6,
+      "kind": "harmonic-bed",
+      "gain": 0.24
+    },
+    {
+      "t": 25.2,
+      "kind": "harmonic-bed",
+      "gain": 0.24
+    },
+    {
+      "t": 25.6,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 25.6,
+      "kind": "harmonic-bed",
+      "gain": 0.24
+    },
+    {
+      "t": 26,
+      "kind": "structural-impact",
+      "gain": 0.37
+    },
+    {
+      "t": 26,
+      "kind": "civilization-epoch",
+      "epoch": 5
+    },
+    {
+      "t": 27.2,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 28,
+      "kind": "structural-impact",
+      "gain": 0.386
+    },
+    {
+      "t": 28,
+      "kind": "civilization-epoch",
+      "epoch": 6
+    },
+    {
+      "t": 28.8,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 28.8,
+      "kind": "convergence-riser",
+      "gain": 0.17
+    },
+    {
+      "t": 30,
+      "kind": "structural-impact",
+      "gain": 0.402
+    },
+    {
+      "t": 30,
+      "kind": "civilization-epoch",
+      "epoch": 7
+    },
+    {
+      "t": 30.4,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 30.8,
+      "kind": "convergence-riser",
+      "gain": 0.2
+    },
+    {
+      "t": 32.0,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 32.0,
+      "kind": "structural-impact",
+      "gain": 0.42
+    },
+    {
+      "t": 33.6,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 33.6,
+      "kind": "structural-impact",
+      "gain": 0.42
+    },
+    {
+      "t": 35.2,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 35.2,
+      "kind": "structural-impact",
+      "gain": 0.42
+    },
+    {
+      "t": 36.8,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 36.8,
+      "kind": "structural-impact",
+      "gain": 0.42
+    },
+    {
+      "t": 38.4,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 38.4,
+      "kind": "structural-impact",
+      "gain": 0.42
+    },
+    {
+      "t": 40.0,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 40,
+      "kind": "convergence-riser",
+      "gain": 0.39
+    },
+    {
+      "t": 41.6,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 43.2,
+      "kind": "harmonic-bed",
+      "gain": 0.09
+    },
+    {
+      "t": 43.2,
+      "kind": "structural-impact",
+      "gain": 0.85
+    },
+    {
+      "t": 43.2,
+      "kind": "harmonic-bed",
+      "gain": 0.42
+    },
+    {
+      "t": 45.25,
+      "kind": "tiny-procedural-wrapper",
+      "gain": 0.028
+    },
+    {
+      "t": 45.51,
+      "kind": "tiny-procedural-wrapper",
+      "gain": 0.019
+    },
+    {
+      "t": 46.15,
+      "kind": "tiny-procedural-wrapper",
+      "gain": 0.012
+    }
+  ]
+}
