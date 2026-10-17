@@ -1,20 +1,20 @@
 {
-  "sourceCommit": "1c825436d343011d3cbbf0dd98ecc6f778fee6d5",
+  "sourceCommit": "9e3fdf21bc93a8b166ac0fa5207f834a74db161a",
   "assets": [
     {
       "name": "yesterday-me-app.zip",
-      "bytes": 109813,
-      "sha256": "f5ef12cfb97f80a440371e56fe93364d457923e16c068d08d57d588a0cdebe61"
+      "bytes": 110013,
+      "sha256": "087b68ef4cb134fa78033f494c530c606d448c038c3d3960f1d6883850f5dd4a"
     },
     {
       "name": "yesterday-me-source.zip",
-      "bytes": 152769,
-      "sha256": "b9d7ebef622c3185028dc42dd00da9c99a8187853af60012bd8901278d8b7281"
+      "bytes": 153171,
+      "sha256": "6a494738e268c4f865679fd52887953f7a6701791a3b0d9bb2aead1ea8159182"
     },
     {
       "name": "yesterday-me-verification.zip",
-      "bytes": 10575,
-      "sha256": "5780e6fe3f34b251798390603b567ee3b22fd71b4c35082339a15ba6da4fb419"
+      "bytes": 10980,
+      "sha256": "f81f5afdedacdbf1b573ad17797c73a046589b63e049446949de6b6fa4dd47e8"
     }
   ],
   "validation": {
