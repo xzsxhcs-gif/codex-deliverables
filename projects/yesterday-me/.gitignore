@@ -1,0 +1,11 @@
+node_modules/
+dist/
+output/
+test-results/
+playwright-report/
+coverage/
+*.log
+.DS_Store
+CONTRACT.md
+.env*
+!.env.example
