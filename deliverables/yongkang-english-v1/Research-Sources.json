@@ -1,0 +1,246 @@
+{
+  "accessed_date": "2026-10-22",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Yongkang",
+      "url": "https://www.ezhejiang.gov.cn/jinhua/2025-03/10/c_642703.htm",
+      "publisher": "Information Office of Jinhua Municipal People’s Government / eZhejiang; presented by China Daily",
+      "published": "2025-03-10",
+      "accessed": "2026-10-22",
+      "type": "official municipal English profile",
+      "access_status": "full text opened",
+      "supported_claims": [
+        "Yongkang is in Zhejiang and is a manufacturing-focused city.",
+        "Its hardware industries include household doors, power tools, electrical appliances and kitchenware.",
+        "Zhiying is a nationally recognised historic and cultural town; tin carving and local folk arts are part of Yongkang culture."
+      ],
+      "confidence": "high for the listed claims",
+      "caution": "Do not repeat the page’s southwest-of-Jinhua direction. Avoid current population / industry counts without a need."
+    },
+    {
+      "id": "S02",
+      "title": "Yongkang launches initiatives to propel hardware enterprises towards global expansion",
+      "url": "https://www.ezhejiang.gov.cn/jinhua/2024-02/27/c_965668.htm",
+      "publisher": "Information Office of Jinhua Municipal People’s Government / eZhejiang",
+      "published": "2024-02-27",
+      "accessed": "2026-10-22",
+      "type": "official municipal industry report",
+      "access_status": "full text opened",
+      "supported_claims": [
+        "Yongkang is a county-level city in Jinhua, Zhejiang.",
+        "Yongkang hardware enterprises sell internationally; the report describes government support for overseas markets."
+      ],
+      "confidence": "high",
+      "caution": "The 2023 export numbers and 2024 programme targets are historical, not current 2026 figures. Narration uses no numbers."
+    },
+    {
+      "id": "S03",
+      "title": "美丽城市丨浙中明珠永康 千年丽州藏风华",
+      "url": "https://www.xinhuanet.com/ci/20260312/5bf0922237a44f61bd0bb88631a6d85c/c.html",
+      "publisher": "Xinhua Net",
+      "published": "2026-03-12",
+      "accessed": "2026-10-22",
+      "type": "national news agency city introduction",
+      "access_status": "full text opened",
+      "supported_claims": [
+        "Yongkang is in central Zhejiang.",
+        "The conventional official account places county establishment in AD 245, in the Three Kingdoms period.",
+        "Xijin is a covered bridge with stone piers and wooden beams.",
+        "Zhiying, Fangyan, the Fangyan Temple Fair and roumaibing are local cultural / tourism features."
+      ],
+      "confidence": "high for geographical and broad historical / cultural claims",
+      "caution": "Treat the city-name origin explicitly labelled 相传 as legend. Do not narrate the Yellow Emperor story as fact. Avoid longest/oldest superlatives and precise bridge length."
+    },
+    {
+      "id": "S04",
+      "title": "Go on a tour of Yongkang",
+      "url": "https://www.ezhejiang.gov.cn/jinhua/2023-09/18/c_926827.htm",
+      "publisher": "Information Office of Jinhua Municipal People’s Government / eZhejiang",
+      "published": "2023-09-18",
+      "accessed": "2026-10-22",
+      "type": "official municipal tourism article",
+      "access_status": "full text opened",
+      "supported_claims": [
+        "Yongkang is called the capital of hardware.",
+        "Fangyan scenic area is known for Danxia landforms, cliffs, natural rock formations and historic relics.",
+        "Dachen is a Yongkang village with old buildings and traditional handicraft tourism."
+      ],
+      "confidence": "high",
+      "caution": "Do not reuse the site photos without permission: the footer reserves rights. No UNESCO World Heritage claim is established for Fangyan."
+    },
+    {
+      "id": "S05",
+      "title": "Temple fair showcases Jinhua’s intangible cultural heritage",
+      "url": "https://www.ezhejiang.gov.cn/jinhua/2024-10/12/c_1033369.htm",
+      "publisher": "Information Office of Jinhua Municipal People’s Government / eZhejiang",
+      "published": "2024-10-12",
+      "accessed": "2026-10-22",
+      "type": "official municipal culture report",
+      "access_status": "full text opened",
+      "supported_claims": [
+        "The Fangyan Temple Fair took place at Fangyan Scenic Area in Yongkang in October 2024.",
+        "The event featured folk performances, crafts and food; this supports calling it a living local cultural celebration."
+      ],
+      "confidence": "high",
+      "caution": "Some performances are from elsewhere in Jinhua. Do not label every shown performance as uniquely Yongkang."
+    },
+    {
+      "id": "S06",
+      "title": "保护“陈大宗祠”，留住文化根脉",
+      "url": "https://www.zjjcy.gov.cn/art/2023/10/13/art_28_198805.html",
+      "publisher": "Zhejiang People’s Procuratorate; reporting from Yongkang People’s Procuratorate",
+      "published": "2023-10-13",
+      "accessed": "2026-10-22",
+      "type": "primary official heritage protection report",
+      "access_status": "full text opened",
+      "supported_claims": [
+        "Zhiying has an important ancestral-hall heritage.",
+        "Chen ancestral hall in Xiabaishi village is a protected heritage site and is still connected with ancestral remembrance.",
+        "Local authorities documented efforts to conserve the hall’s timber, roof and paintings."
+      ],
+      "confidence": "high",
+      "caution": "Do not use the dated counts of protected buildings as current totals."
+    },
+    {
+      "id": "S07",
+      "title": "金华地方传统小吃 永康肉麦饼 (DB 3307/T 119-2021)",
+      "url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=D7B6AF366D5FB0BFE05397BE0A0A41EF",
+      "publisher": "State Administration for Market Regulation / National Standardization Administration; Jinhua Market Supervision Administration",
+      "published": "2021-03-11",
+      "accessed": "2026-10-22",
+      "type": "official local-standard catalogue",
+      "access_status": "full catalogue metadata opened; recipe standard body not downloaded",
+      "supported_claims": [
+        "Yongkang roumaibing is recognised as a traditional local Jinhua snack."
+      ],
+      "confidence": "high",
+      "caution": "Catalogue metadata alone does not establish recipe ingredients."
+    },
+    {
+      "id": "S08",
+      "title": "永康肉麦饼制作技艺比武活动报道",
+      "url": "https://paper.lifeyk.com/html/2016-10/11/content_1624464.htm?div=-1",
+      "publisher": "Yongkang Daily",
+      "published": "2016-10-11",
+      "accessed": "2026-10-22",
+      "type": "original local newspaper report of a public industry event",
+      "access_status": "search-indexed text reviewed; direct full-page open timed out",
+      "supported_claims": [
+        "The event was organised by the city market-regulation authority and partners.",
+        "The described local flatbread uses wheat flour and pork with preserved vegetables (either dried or pickled greens)."
+      ],
+      "confidence": "medium-high; ingredient description corroborated by S09",
+      "caution": "Do not call all versions identical; fillings vary."
+    },
+    {
+      "id": "S09",
+      "title": "永康传统美食：肉麦饼",
+      "url": "https://epaper.zjgrrb.com/html/2020-12/05/content_2734181.htm?div=0",
+      "publisher": "Zhejiang Workers’ Daily",
+      "published": "2020-12-05",
+      "accessed": "2026-10-22",
+      "type": "regional newspaper food feature",
+      "access_status": "search-indexed text reviewed; direct full-page open timed out",
+      "supported_claims": [
+        "Describes roumaibing using wheat flour, pork and preserved greens."
+      ],
+      "confidence": "medium-high; corroborates S08",
+      "caution": "No claim about exclusive invention, health or product quality."
+    },
+    {
+      "id": "S10",
+      "title": "永康市志：建置沿革（第114页）",
+      "url": "https://dfz.zj.gov.cn/zlyz/ossfs/h5/ZS-Z-330784-2007-001-0101/files/basic-html/page114.html",
+      "publisher": "Zhejiang Local Gazetteer Office collection; Yongkang City Gazetteer",
+      "published": null,
+      "accessed": "2026-10-22",
+      "type": "official gazetteer archive",
+      "access_status": "search-indexed text reviewed; direct open returned 404",
+      "supported_claims": [
+        "The conventional gazetteer account gives county establishment in AD 245.",
+        "Describes Yongkang as a county-level city in central Zhejiang."
+      ],
+      "confidence": "high for conventional account; broad period used in script",
+      "caution": "A 2018 archaeological news report suggested an earlier date of 238. Avoid presenting the exact year as an uncontested new finding."
+    },
+    {
+      "id": "S11",
+      "title": "永康惊现唐朝石幢 有望改写建县历史",
+      "url": "https://jinhua.zjol.com.cn/201811/t20181122_8815161.shtml",
+      "publisher": "Zhejiang Online",
+      "published": "2018-11-22",
+      "accessed": "2026-10-22",
+      "type": "regional original archaeology report",
+      "access_status": "search-indexed text reviewed",
+      "supported_claims": [
+        "Reports archaeological evidence that may move county establishment from the conventional 245 to 238."
+      ],
+      "confidence": "sufficient to flag uncertainty, not used to rewrite official history",
+      "caution": "Narrate the Three Kingdoms period, not an exact disputed founding date."
+    },
+    {
+      "id": "S12",
+      "title": "永康市古山镇胡库下村历史文化名村保护规划（公示）",
+      "url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3586/site/attach/0/ab5afcd577254234ae5c106848ae35f3.pdf",
+      "publisher": "Yongkang Municipal Government / local planning authority",
+      "published": null,
+      "accessed": "2026-10-22",
+      "type": "official historic-village planning notice",
+      "access_status": "search-indexed document title reviewed; supplementary only",
+      "supported_claims": [
+        "Hukuxia in Gushan town is the subject of a historic-village conservation plan."
+      ],
+      "confidence": "medium; not used in narration",
+      "caution": "Huku is not included in the short narration; do not improvise a monument name or founding year."
+    },
+    {
+      "id": "S13",
+      "title": "A glimpse of ancient buildings in Jinhua",
+      "url": "https://www.ezhejiang.gov.cn/jinhua/2023-07/11/c_902654.htm",
+      "publisher": "Information Office of Jinhua Municipal People’s Government / eZhejiang; presented by China Daily",
+      "published": "2023-07-11",
+      "accessed": "2026-10-22",
+      "type": "official municipal culture and tourism article",
+      "access_status": "full text opened",
+      "supported_claims": [
+        "Houwu village is in Yongkang, a county-level city in Jinhua.",
+        "Houwu is known for old buildings and folk culture.",
+        "The official article expressly identifies an ancestral hall in Houwu village."
+      ],
+      "confidence": "high",
+      "caution": "Photographic rights remain reserved; the article is factual corroboration, not the licence for the production photograph. The separately cleared Commons file supplies its own attribution and licence."
+    },
+    {
+      "id": "S14",
+      "title": "永康方岩镇国土空间总体规划：构建历史文化保护体系",
+      "url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3586/site/attach/0/155e6ed89429418d86a2ff223d4c628e.pdf",
+      "publisher": "Yongkang Municipal Government / Fangyan town planning document",
+      "published": null,
+      "accessed": "2026-10-22",
+      "type": "official local spatial-planning document",
+      "access_status": "search-indexed PDF heritage list reviewed; not used for detailed building typology",
+      "supported_claims": [
+        "The Fangyan heritage inventory names Yanyi Hall (燕贻堂), Cixiao Hall, Renshou Hall and Zhanao ancestral hall as local historic buildings / heritage features."
+      ],
+      "confidence": "high for listing, not used to infer precise construction date or function",
+      "caution": "Yanyi Hall is not automatically an ancestral hall because its name ends in Hall. Caption the cleared photo as Yanyi Hall, Xianghuli village; do not call it Houwu or Zhiying."
+    },
+    {
+      "id": "S15",
+      "title": "〖纪检监察人·镜头〗一座桥 一座城",
+      "url": "https://www.zjsjw.gov.cn/zhuantizhuanlan/jingtoushouji/jingtou/202108/t20210812_4528259.shtml",
+      "publisher": "Zhejiang Provincial Commission for Discipline Inspection and Supervisory Commission; contribution from Jinhua Municipal Commission",
+      "published": "2021-09-06",
+      "accessed": "2026-10-22",
+      "type": "primary provincial-government cultural photography feature",
+      "access_status": "full text opened; Yongkang paragraph directly reviewed",
+      "supported_claims": [
+        "Xijin Bridge in Yongkang crosses the Yongkang River.",
+        "Xijin Bridge is a covered bridge with stone piers and a wooden superstructure."
+      ],
+      "confidence": "high for the listed geographical and structural claims",
+      "caution": "The visible publication date is 2021-09-06, despite the older-looking URL path. No photograph from this page is reused. Do not copy its longest-bridge superlative or imply that the archival production photographs show a new 2026 shoot."
+    }
+  ]
+}

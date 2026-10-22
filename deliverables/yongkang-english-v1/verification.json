@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "movies": [
+    {
+      "file": "Yongkang-An-English-City-Portrait-1080p.mp4",
+      "bytes": 29525983,
+      "sha256": "870a6d842154e05c8cb08814279c59cfbd91b6f7c93126cc5fbb5354f9de3018",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "frames": 4040,
+      "duration": 134.666667,
+      "videoCodec": "h264",
+      "pixelFormat": "yuv420p",
+      "audioCodec": "aac",
+      "channels": 2,
+      "sampleRate": 48000,
+      "fastStart": true,
+      "completeDecodePassed": true
+    },
+    {
+      "file": "Yongkang-An-English-City-Portrait-720p.mp4",
+      "bytes": 14821597,
+      "sha256": "116440d157b442b89dfbb78de59a08b1982ced8de5f8b3acf4d43dfe26732872",
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "frames": 4040,
+      "duration": 134.677,
+      "videoCodec": "h264",
+      "pixelFormat": "yuv420p",
+      "audioCodec": "aac",
+      "channels": 2,
+      "sampleRate": 48000,
+      "fastStart": true,
+      "completeDecodePassed": true
+    }
+  ],
+  "captionCount": 19,
+  "captionsWithinAudioTimeline": true,
+  "sourcePhotosHashVerified": 16,
+  "usedPhotoCount": 11,
+  "soundtrackPeak": 0.5724050998687744,
+  "noDigitalClipping": true,
+  "lastFrameNearBlack": true,
+  "factualReview": "docs/EDITORIAL-REVIEW.md",
+  "humanListeningReview": "not performed",
+  "cost": "No paid API or billable cloud generation used"
+}

@@ -1,0 +1,58 @@
+{
+  "sourceCommit": "eeb63297d9799a08a46474c5e2ee0b0cc82e21ba",
+  "durationSeconds": 134.666667,
+  "assets": [
+    {
+      "name": "Photo-Credits.md",
+      "bytes": 12631,
+      "sha256": "dd926311194c933cc6af7cd5f5775f145fc2dccae3a2fb38d455126f729a112d"
+    },
+    {
+      "name": "Research-Sources.json",
+      "bytes": 13524,
+      "sha256": "376cb41deaa42cf2ce06bce58a5c80406d13951c503ce75c3413d0b25c4f0ff6"
+    },
+    {
+      "name": "Yongkang-An-English-City-Portrait-1080p.mp4",
+      "bytes": 29525983,
+      "sha256": "870a6d842154e05c8cb08814279c59cfbd91b6f7c93126cc5fbb5354f9de3018"
+    },
+    {
+      "name": "Yongkang-An-English-City-Portrait-720p.mp4",
+      "bytes": 14821597,
+      "sha256": "116440d157b442b89dfbb78de59a08b1982ced8de5f8b3acf4d43dfe26732872"
+    },
+    {
+      "name": "Yongkang-English-Narration.txt",
+      "bytes": 1546,
+      "sha256": "094e75c4fa8dcbbdb37e8c8099a4def1792402106c675722f0c8ab450c47a74e"
+    },
+    {
+      "name": "Yongkang-English.srt",
+      "bytes": 2164,
+      "sha256": "cdbcd30b3d61e1e07e8266287d5228161c142dd7e340ead7ad20fd7a52d84050"
+    },
+    {
+      "name": "Yongkang-Project.zip",
+      "bytes": 43879475,
+      "sha256": "8391474f6b468b80436d96796ca2857613cdbacbbb531d7e320f06dadf154535"
+    },
+    {
+      "name": "Yongkang-Review-Records.zip",
+      "bytes": 204194,
+      "sha256": "b6dee05b71dc42e8484d5fd041024539317cb819948ff2c1170ba4669a4465df"
+    },
+    {
+      "name": "final-audio-loudness.json",
+      "bytes": 263,
+      "sha256": "e54f39316c89d96bd08ef281a9ec800df9191facfbb882830e6642b9c5c8ea12"
+    },
+    {
+      "name": "verification.json",
+      "bytes": 1385,
+      "sha256": "64a0c24e4a1d2aa8bb237c0b82b2341f55a16194e6572e64d3095ff8cd22e9fb"
+    }
+  ],
+  "humanListeningReview": "not performed",
+  "cost": "No paid API used"
+}
