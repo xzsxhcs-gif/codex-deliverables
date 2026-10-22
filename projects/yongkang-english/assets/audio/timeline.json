@@ -1,0 +1,270 @@
+{
+  "fps": 30,
+  "duration": 134.66666666666666,
+  "spoken_end": 126.14077097505667,
+  "segments": [
+    {
+      "section": "intro",
+      "text": "Some places are known for what they make. Yongkang is one of them.",
+      "sources": [
+        "S01",
+        "S02"
+      ],
+      "start": 3.4,
+      "end": 8.1253,
+      "caption": [
+        "Some places are known for what they make. Yongkang is one of them."
+      ],
+      "tts_text": "Some places are known for what they make. [[ jˈʊŋ kˈɑːŋ ]] is one of them."
+    },
+    {
+      "section": "location",
+      "text": "This county-level city is administered by Jinhua, in central Zhejiang Province, eastern China.",
+      "sources": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "start": 8.7853,
+      "end": 15.5887,
+      "caption": [
+        "This county-level city is administered by Jinhua,",
+        "in central Zhejiang Province, eastern China."
+      ],
+      "tts_text": "This county-level city is administered by [[ dʒˈɪn hwˈɑː ]], in central [[ dʒə dʒˈjɑːŋ ]] Province, eastern China."
+    },
+    {
+      "section": "location",
+      "text": "Here, hills, old neighborhoods, and a busy manufacturing economy exist side by side.",
+      "sources": [
+        "S01",
+        "S03"
+      ],
+      "start": 15.8987,
+      "end": 23.1434,
+      "caption": [
+        "Here, hills, old neighborhoods, and a busy",
+        "manufacturing economy exist side by side."
+      ],
+      "tts_text": "Here, hills, old neighborhoods, and a busy manufacturing economy exist side by side."
+    },
+    {
+      "section": "history",
+      "text": "Yongkang's county history reaches back to the Three Kingdoms period, more than seventeen hundred years ago.",
+      "sources": [
+        "S03",
+        "S10"
+      ],
+      "start": 23.8034,
+      "end": 31.6385,
+      "caption": [
+        "Yongkang's county history reaches back to the Three",
+        "Kingdoms period, more than seventeen hundred years ago."
+      ],
+      "tts_text": "[[ jˈʊŋ kˈɑːŋ ]]'s county history reaches back to the Three Kingdoms period, more than seventeen hundred years ago."
+    },
+    {
+      "section": "making",
+      "text": "Today, Yongkang is often called China's hardware capital.",
+      "sources": [
+        "S04"
+      ],
+      "start": 32.2985,
+      "end": 36.7568,
+      "caption": [
+        "Today, Yongkang is often called China's hardware capital."
+      ],
+      "tts_text": "Today, [[ jˈʊŋ kˈɑːŋ ]] is often called China's hardware capital."
+    },
+    {
+      "section": "making",
+      "text": "Its factories produce goods such as power tools, household doors, and kitchenware.",
+      "sources": [
+        "S01"
+      ],
+      "start": 37.0668,
+      "end": 43.7774,
+      "caption": [
+        "Its factories produce goods such as power",
+        "tools, household doors, and kitchenware."
+      ],
+      "tts_text": "Its factories produce goods such as power tools, household doors, and kitchenware."
+    },
+    {
+      "section": "making",
+      "text": "These ordinary objects help connect this city with everyday life far beyond Zhejiang.",
+      "sources": [
+        "S02"
+      ],
+      "start": 44.0874,
+      "end": 50.322,
+      "caption": [
+        "These ordinary objects help connect this",
+        "city with everyday life far beyond Zhejiang."
+      ],
+      "tts_text": "These ordinary objects help connect this city with everyday life far beyond [[ dʒə dʒˈjɑːŋ ]]."
+    },
+    {
+      "section": "transition",
+      "text": "But industry is only part of the story.",
+      "sources": [],
+      "start": 50.982,
+      "end": 54.0238,
+      "caption": [
+        "But industry is only part of the story."
+      ],
+      "tts_text": "But industry is only part of the story."
+    },
+    {
+      "section": "transition",
+      "text": "To understand a city, it helps to look at both its workplaces and the places where people gather.",
+      "sources": [],
+      "start": 54.3338,
+      "end": 60.905,
+      "caption": [
+        "To understand a city, it helps to look at both",
+        "its workplaces and the places where people gather."
+      ],
+      "tts_text": "To understand a city, it helps to look at both its workplaces and the places where people gather."
+    },
+    {
+      "section": "fangyan",
+      "text": "At Fangyan, steep cliffs and striking rock formations create a dramatic landscape.",
+      "sources": [
+        "S04"
+      ],
+      "start": 61.565,
+      "end": 68.1128,
+      "caption": [
+        "At Fangyan, steep cliffs and striking rock",
+        "formations create a dramatic landscape."
+      ],
+      "tts_text": "At [[ fˈɑːŋ jˈɛn ]], steep cliffs and striking rock formations create a dramatic landscape."
+    },
+    {
+      "section": "fangyan",
+      "text": "This scenic area is known for its Danxia landforms.",
+      "sources": [
+        "S04"
+      ],
+      "start": 68.4229,
+      "end": 72.7766,
+      "caption": [
+        "This scenic area is known for its Danxia landforms."
+      ],
+      "tts_text": "This scenic area is known for its Danxia landforms."
+    },
+    {
+      "section": "xijin",
+      "text": "Back in town, Xijin Bridge stretches across the Yongkang River.",
+      "sources": [
+        "S03",
+        "S15"
+      ],
+      "start": 73.4366,
+      "end": 79.23,
+      "caption": [
+        "Back in town, Xijin Bridge stretches across the Yongkang River."
+      ],
+      "tts_text": "Back in town, [[ ʃˈiː dʒˈɪn ]] Bridge stretches across the [[ jˈʊŋ kˈɑːŋ ]] River."
+    },
+    {
+      "section": "xijin",
+      "text": "Its covered walkway and timber structure offer a quieter view of the city and its history.",
+      "sources": [
+        "S03"
+      ],
+      "start": 79.54,
+      "end": 85.5075,
+      "caption": [
+        "Its covered walkway and timber structure offer",
+        "a quieter view of the city and its history."
+      ],
+      "tts_text": "Its covered walkway and timber structure offer a quieter view of the city and its history."
+    },
+    {
+      "section": "heritage",
+      "text": "Across Yongkang's historic villages, ancestral halls preserve family memories and local craftsmanship.",
+      "sources": [
+        "S01",
+        "S06",
+        "S13"
+      ],
+      "start": 86.1675,
+      "end": 93.8923,
+      "caption": [
+        "Across Yongkang's historic villages, ancestral halls",
+        "preserve family memories and local craftsmanship."
+      ],
+      "tts_text": "Across [[ jˈʊŋ kˈɑːŋ ]]'s historic villages, ancestral halls preserve family memories and local craftsmanship."
+    },
+    {
+      "section": "culture",
+      "text": "Traditional celebrations, including the Fangyan Temple Fair, keep parts of that shared culture alive.",
+      "sources": [
+        "S05"
+      ],
+      "start": 94.5523,
+      "end": 102.3542,
+      "caption": [
+        "Traditional celebrations, including the Fangyan",
+        "Temple Fair, keep parts of that shared culture alive."
+      ],
+      "tts_text": "Traditional celebrations, including the [[ fˈɑːŋ jˈɛn ]] Temple Fair, keep parts of that shared culture alive."
+    },
+    {
+      "section": "food",
+      "text": "There is also something to taste: roumaibing, a savory local flatbread with pork and preserved vegetables.",
+      "sources": [
+        "S07",
+        "S08",
+        "S09"
+      ],
+      "start": 103.0142,
+      "end": 110.224,
+      "caption": [
+        "There is also something to taste: roumaibing, a savory",
+        "local flatbread with pork and preserved vegetables."
+      ],
+      "tts_text": "There is also something to taste: [[ ɹˌoʊ mˈaɪ bˌɪŋ ]], a savory local flatbread with pork and preserved vegetables."
+    },
+    {
+      "section": "closing",
+      "text": "Yongkang is more than a place that makes things.",
+      "sources": [],
+      "start": 110.884,
+      "end": 114.7269,
+      "caption": [
+        "Yongkang is more than a place that makes things."
+      ],
+      "tts_text": "[[ jˈʊŋ kˈɑːŋ ]] is more than a place that makes things."
+    },
+    {
+      "section": "closing",
+      "text": "It is a place where useful objects, living traditions, and distinctive landscapes come together.",
+      "sources": [
+        "S01",
+        "S03",
+        "S04"
+      ],
+      "start": 115.0369,
+      "end": 121.9216,
+      "caption": [
+        "It is a place where useful objects, living",
+        "traditions, and distinctive landscapes come together."
+      ],
+      "tts_text": "It is a place where useful objects, living traditions, and distinctive landscapes come together."
+    },
+    {
+      "section": "closing",
+      "text": "That is a different side of Zhejiang worth getting to know.",
+      "sources": [],
+      "start": 122.2317,
+      "end": 125.8307,
+      "caption": [
+        "That is a different side of Zhejiang worth getting to know."
+      ],
+      "tts_text": "That is a different side of [[ dʒə dʒˈjɑːŋ ]] worth getting to know."
+    }
+  ]
+}

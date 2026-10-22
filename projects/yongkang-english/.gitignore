@@ -1,0 +1,8 @@
+output/
+.venv/
+__pycache__/
+.cache/
+models/
+*.log
+
+assets/audio/*.wav

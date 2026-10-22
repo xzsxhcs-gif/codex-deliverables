@@ -1,0 +1,32 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Default,DejaVu Sans,36,&H00FFFFFF,&H000000FF,&H20120D0A,&H8A120D0A,0,0,0,0,100,100,0,0,3,11,0,2,100,100,48,1
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:03.40,0:00:08.13,Default,,0,0,0,,{\fad(90,90)}Some places are known for what they make. Yongkang is one of them.
+Dialogue: 0,0:00:08.79,0:00:15.59,Default,,0,0,0,,{\fad(90,90)}This county-level city is administered by Jinhua,\Nin central Zhejiang Province, eastern China.
+Dialogue: 0,0:00:15.90,0:00:23.14,Default,,0,0,0,,{\fad(90,90)}Here, hills, old neighborhoods, and a busy\Nmanufacturing economy exist side by side.
+Dialogue: 0,0:00:23.80,0:00:31.64,Default,,0,0,0,,{\fad(90,90)}Yongkang's county history reaches back to the Three\NKingdoms period, more than seventeen hundred years ago.
+Dialogue: 0,0:00:32.30,0:00:36.76,Default,,0,0,0,,{\fad(90,90)}Today, Yongkang is often called China's hardware capital.
+Dialogue: 0,0:00:37.07,0:00:43.78,Default,,0,0,0,,{\fad(90,90)}Its factories produce goods such as power\Ntools, household doors, and kitchenware.
+Dialogue: 0,0:00:44.09,0:00:50.32,Default,,0,0,0,,{\fad(90,90)}These ordinary objects help connect this\Ncity with everyday life far beyond Zhejiang.
+Dialogue: 0,0:00:50.98,0:00:54.02,Default,,0,0,0,,{\fad(90,90)}But industry is only part of the story.
+Dialogue: 0,0:00:54.33,0:01:00.90,Default,,0,0,0,,{\fad(90,90)}To understand a city, it helps to look at both\Nits workplaces and the places where people gather.
+Dialogue: 0,0:01:01.56,0:01:08.11,Default,,0,0,0,,{\fad(90,90)}At Fangyan, steep cliffs and striking rock\Nformations create a dramatic landscape.
+Dialogue: 0,0:01:08.42,0:01:12.78,Default,,0,0,0,,{\fad(90,90)}This scenic area is known for its Danxia landforms.
+Dialogue: 0,0:01:13.44,0:01:19.23,Default,,0,0,0,,{\fad(90,90)}Back in town, Xijin Bridge stretches across the Yongkang River.
+Dialogue: 0,0:01:19.54,0:01:25.51,Default,,0,0,0,,{\fad(90,90)}Its covered walkway and timber structure offer\Na quieter view of the city and its history.
+Dialogue: 0,0:01:26.17,0:01:33.89,Default,,0,0,0,,{\fad(90,90)}Across Yongkang's historic villages, ancestral halls\Npreserve family memories and local craftsmanship.
+Dialogue: 0,0:01:34.55,0:01:42.35,Default,,0,0,0,,{\fad(90,90)}Traditional celebrations, including the Fangyan\NTemple Fair, keep parts of that shared culture alive.
+Dialogue: 0,0:01:43.01,0:01:50.22,Default,,0,0,0,,{\fad(90,90)}There is also something to taste: roumaibing, a savory\Nlocal flatbread with pork and preserved vegetables.
+Dialogue: 0,0:01:50.88,0:01:54.73,Default,,0,0,0,,{\fad(90,90)}Yongkang is more than a place that makes things.
+Dialogue: 0,0:01:55.04,0:02:01.92,Default,,0,0,0,,{\fad(90,90)}It is a place where useful objects, living\Ntraditions, and distinctive landscapes come together.
+Dialogue: 0,0:02:02.23,0:02:05.83,Default,,0,0,0,,{\fad(90,90)}That is a different side of Zhejiang worth getting to know.

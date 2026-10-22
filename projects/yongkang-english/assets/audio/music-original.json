@@ -1,0 +1,18 @@
+{
+  "file": "music-original.wav",
+  "duration_seconds": 140.0,
+  "sample_rate": 48000,
+  "channels": 2,
+  "sample_format": "signed 16-bit PCM",
+  "bpm": 82.0,
+  "seed": 20261022,
+  "peak": 0.1357249617576599,
+  "rms": 0.029128704220056534,
+  "clipped_samples": 0,
+  "sha256": "4ed2268007d45b2c5751d2e2ddc6e0729a338855f196edadce39b80912e2305e",
+  "license": "CC BY-SA 4.0",
+  "external_audio_or_samples": false,
+  "ffmpeg_input_loudness_lufs": -28.4,
+  "ffmpeg_input_true_peak_dbtp": -17.35,
+  "ffmpeg_input_lra_lu": 2.9
+}

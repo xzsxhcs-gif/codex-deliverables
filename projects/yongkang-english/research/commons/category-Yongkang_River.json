@@ -1,0 +1,27 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "categorymembers": [
+      {
+        "pageid": 41879387,
+        "ns": 14,
+        "title": "Category:Xijin Bridge"
+      },
+      {
+        "pageid": 9697792,
+        "ns": 6,
+        "title": "File:Yongkang Night.jpg"
+      },
+      {
+        "pageid": 60561400,
+        "ns": 6,
+        "title": "File:Yongkang, Jinhua, Zhejiang, China - panoramio (1).jpg"
+      },
+      {
+        "pageid": 11122294,
+        "ns": 6,
+        "title": "File:永康三江交汇.jpg"
+      }
+    ]
+  }
+}
