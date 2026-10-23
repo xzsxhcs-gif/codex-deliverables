@@ -1,0 +1,584 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-23T13:58:48.110256+00:00",
+  "repository": "https://github.com/xzsxhcs-gif/codex-deliverables",
+  "artifact_commit": "5402b93a0e33b5544fe0960d9395f50a45824ba1",
+  "scope": "Actual unauthenticated public GitHub downloads, SHA-256 and sizes, full MP4 audio/video decoding, and complete ZIP source manifest.",
+  "public_files_verified": 14,
+  "files": [
+    {
+      "file": "final_video.mp4",
+      "bytes": 52851612,
+      "sha256": "fe1ca4c81a939fa331f1d4a4ce7c62a940856b86264f549c0afd4d18ae602883",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/5402b93a0e33b5544fe0960d9395f50a45824ba1/deliverables/a-note-a-world-v1/final_video.mp4",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "final-video-720p.mp4",
+      "bytes": 10868584,
+      "sha256": "0c6d8b40e738a7527c9831fe3c5b2caa120e5c973e50fecac4a23441c53a73a1",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/5402b93a0e33b5544fe0960d9395f50a45824ba1/deliverables/a-note-a-world-v1/final-video-720p.mp4",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "preview-360p.mp4",
+      "bytes": 3548604,
+      "sha256": "719113271eca44f1a1c6254f669689ff0ba66709bd891e1e031118b859e72d1c",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/5402b93a0e33b5544fe0960d9395f50a45824ba1/deliverables/a-note-a-world-v1/preview-360p.mp4",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "final_music.wav",
+      "bytes": 17996844,
+      "sha256": "22b53bb1a741213d0f51c055b16f518b6a1e897cf49af43cb5b16af9f6c18db9",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/5402b93a0e33b5544fe0960d9395f50a45824ba1/deliverables/a-note-a-world-v1/final_music.wav",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "final_music.mid",
+      "bytes": 29228,
+      "sha256": "5165ada01749034a7e2eca1baa58cfed940a756f41666b2864e86c8582eabf81",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/5402b93a0e33b5544fe0960d9395f50a45824ba1/deliverables/a-note-a-world-v1/final_music.mid",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "notes.json",
+      "bytes": 838317,
+      "sha256": "e1ef4e3d360c7879765455697f66dc7552627a1bd7166fb54d0987548fcb8651",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/5402b93a0e33b5544fe0960d9395f50a45824ba1/deliverables/a-note-a-world-v1/notes.json",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "A-Note-A-World-Project.zip",
+      "bytes": 75561135,
+      "sha256": "38c6d2052c9b38514007c26f94b20d060e7c1f1ef09167bbe797fd4a09a7212e",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/5402b93a0e33b5544fe0960d9395f50a45824ba1/deliverables/a-note-a-world-v1/A-Note-A-World-Project.zip",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "QA.json",
+      "bytes": 20095,
+      "sha256": "57cff08d1143fe1b39ee7bf8b9cce148ac4c4f2584e69188c6aa94b9b6712bec",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/5402b93a0e33b5544fe0960d9395f50a45824ba1/deliverables/a-note-a-world-v1/QA.json",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "scene-QA.json",
+      "bytes": 6934,
+      "sha256": "ce7d0c1a2446293fb92faafd86b01920b8d3689590cfa31f9bfb43e7beff81e1",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/5402b93a0e33b5544fe0960d9395f50a45824ba1/deliverables/a-note-a-world-v1/scene-QA.json",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "720p-QA.json",
+      "bytes": 20119,
+      "sha256": "8cb47e97a362f58c556e98d20d86126ffe80c4aeeacc2b9fd6fc8107ac84b106",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/5402b93a0e33b5544fe0960d9395f50a45824ba1/deliverables/a-note-a-world-v1/720p-QA.json",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "360p-QA.json",
+      "bytes": 20119,
+      "sha256": "cdfb6327aad9dba56810ac6cea0bda7fe301ff474e1349381ba54483e7eb539a",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/5402b93a0e33b5544fe0960d9395f50a45824ba1/deliverables/a-note-a-world-v1/360p-QA.json",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "compatibility.json",
+      "bytes": 15780,
+      "sha256": "83b321a286fca3479ff3418e1bfc6b47bd2c9b80562e9ad362decf7eb10f8062",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/5402b93a0e33b5544fe0960d9395f50a45824ba1/deliverables/a-note-a-world-v1/compatibility.json",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "final-contact-sheet.jpg",
+      "bytes": 217368,
+      "sha256": "444329640865966c4502230f129b0f2248cc5ae55fd6dc0c0365512971829337",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/5402b93a0e33b5544fe0960d9395f50a45824ba1/deliverables/a-note-a-world-v1/final-contact-sheet.jpg",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "VISUAL-REVIEW.md",
+      "bytes": 6255,
+      "sha256": "d1b0c5f8fd382a5dd9da0ad894c3672bdb05128db6753fac5c24b79bcb67f7fd",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/5402b93a0e33b5544fe0960d9395f50a45824ba1/deliverables/a-note-a-world-v1/VISUAL-REVIEW.md",
+      "http_status": 200,
+      "sha256_matches": true
+    }
+  ],
+  "media": [
+    {
+      "file": "final_video.mp4",
+      "full_video_audio_decode": "passed",
+      "metadata": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 1920,
+            "height": 1080,
+            "coded_width": 1920,
+            "coded_height": 1080,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 2,
+            "sample_aspect_ratio": "1:1",
+            "display_aspect_ratio": "16:9",
+            "pix_fmt": "yuv420p",
+            "level": 40,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "chroma_location": "center",
+            "field_order": "progressive",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "30/1",
+            "avg_frame_rate": "30/1",
+            "time_base": "1/90000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 8436000,
+            "duration": "93.733333",
+            "bit_rate": "4320688",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "2812",
+            "extradata_size": 51,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]",
+              "encoder": "Lavc61.19.101 libx264"
+            },
+            "side_data_list": [
+              {
+                "side_data_type": "ICC Profile"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "sample_fmt": "fltp",
+            "sample_rate": "48000",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 0,
+            "id": "0x2",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 4499184,
+            "duration": "93.733000",
+            "bit_rate": "181480",
+            "nb_frames": "4395",
+            "extradata_size": 5,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "SoundHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/workspace/output/a-note-a-world-remote-check/final_video.mp4",
+          "nb_streams": 2,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "93.733333",
+          "size": "52851612",
+          "bit_rate": "4510806",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf61.7.103"
+          }
+        }
+      }
+    },
+    {
+      "file": "final-video-720p.mp4",
+      "full_video_audio_decode": "passed",
+      "metadata": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 1280,
+            "height": 720,
+            "coded_width": 1280,
+            "coded_height": 720,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 2,
+            "sample_aspect_ratio": "1:1",
+            "display_aspect_ratio": "16:9",
+            "pix_fmt": "yuv420p",
+            "level": 31,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "chroma_location": "center",
+            "field_order": "progressive",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "30/1",
+            "avg_frame_rate": "30/1",
+            "time_base": "1/15360",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 1439744,
+            "duration": "93.733333",
+            "bit_rate": "737198",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "2812",
+            "extradata_size": 51,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]",
+              "encoder": "Lavc61.19.101 libx264"
+            },
+            "side_data_list": [
+              {
+                "side_data_type": "ICC Profile"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "sample_fmt": "fltp",
+            "sample_rate": "48000",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 0,
+            "id": "0x2",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 4499184,
+            "duration": "93.733000",
+            "bit_rate": "181480",
+            "nb_frames": "4395",
+            "extradata_size": 5,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "SoundHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/workspace/output/a-note-a-world-remote-check/final-video-720p.mp4",
+          "nb_streams": 2,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "93.733333",
+          "size": "10868584",
+          "bit_rate": "927617",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf61.7.103"
+          }
+        }
+      }
+    },
+    {
+      "file": "preview-360p.mp4",
+      "full_video_audio_decode": "passed",
+      "metadata": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "codec_tag": "0x31637661",
+            "width": 640,
+            "height": 360,
+            "coded_width": 640,
+            "coded_height": 360,
+            "closed_captions": 0,
+            "film_grain": 0,
+            "has_b_frames": 2,
+            "sample_aspect_ratio": "1:1",
+            "display_aspect_ratio": "16:9",
+            "pix_fmt": "yuv420p",
+            "level": 31,
+            "color_range": "tv",
+            "color_space": "bt709",
+            "chroma_location": "center",
+            "field_order": "progressive",
+            "refs": 1,
+            "is_avc": "true",
+            "nal_length_size": "4",
+            "id": "0x1",
+            "r_frame_rate": "30/1",
+            "avg_frame_rate": "30/1",
+            "time_base": "1/15360",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 1439744,
+            "duration": "93.733333",
+            "bit_rate": "112385",
+            "bits_per_raw_sample": "8",
+            "nb_frames": "2812",
+            "extradata_size": 51,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "VideoHandler",
+              "vendor_id": "[0][0][0][0]",
+              "encoder": "Lavc61.19.101 libx264"
+            },
+            "side_data_list": [
+              {
+                "side_data_type": "ICC Profile"
+              }
+            ]
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_long_name": "AAC (Advanced Audio Coding)",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "codec_tag": "0x6134706d",
+            "sample_fmt": "fltp",
+            "sample_rate": "48000",
+            "channels": 2,
+            "channel_layout": "stereo",
+            "bits_per_sample": 0,
+            "initial_padding": 0,
+            "id": "0x2",
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "start_pts": 0,
+            "start_time": "0.000000",
+            "duration_ts": 4499184,
+            "duration": "93.733000",
+            "bit_rate": "181480",
+            "nb_frames": "4395",
+            "extradata_size": 5,
+            "disposition": {
+              "default": 1,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0,
+              "multilayer": 0
+            },
+            "tags": {
+              "language": "und",
+              "handler_name": "SoundHandler",
+              "vendor_id": "[0][0][0][0]"
+            }
+          }
+        ],
+        "format": {
+          "filename": "/workspace/output/a-note-a-world-remote-check/preview-360p.mp4",
+          "nb_streams": 2,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "format_long_name": "QuickTime / MOV",
+          "start_time": "0.000000",
+          "duration": "93.733333",
+          "size": "3548604",
+          "bit_rate": "302868",
+          "probe_score": 100,
+          "tags": {
+            "major_brand": "isom",
+            "minor_version": "512",
+            "compatible_brands": "isomiso2avc1mp41",
+            "encoder": "Lavf61.7.103"
+          }
+        }
+      }
+    }
+  ],
+  "source_zip": {
+    "crc": "passed",
+    "all_source_manifest_hashes": "passed",
+    "members": 140,
+    "required_source_inputs": "all present"
+  },
+  "limitations": [
+    "No Windows physical-machine or phone-player test was performed.",
+    "Byte hashes and media decoding verify delivery integrity, not subjective musical taste."
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "status": "local files packaged and ZIP contents verified; public downloads pending",
+  "status": "published and all public artifact downloads verified",
   "format": "1920x1080 / 30fps / 2812 frames / H.264 yuv420p + AAC stereo 48kHz",
   "duration_seconds": 93.73333333333333,
   "source_archive_crc": "passed",
@@ -75,5 +75,8 @@
       "bytes": 6255,
       "sha256": "d1b0c5f8fd382a5dd9da0ad894c3672bdb05128db6753fac5c24b79bcb67f7fd"
     }
-  ]
+  ],
+  "artifact_commit": "5402b93a0e33b5544fe0960d9395f50a45824ba1",
+  "remote_verification": "remote-verification.json",
+  "remote_checked_at_utc": "2026-10-23T13:58:48.110256+00:00"
 }
