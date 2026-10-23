@@ -60,7 +60,7 @@ int main(int argc, char** argv) {
     long frames = (long)(total * SR);
     FILE* out = fopen(argv[3], "wb");
     if (!out) { fprintf(stderr, "Cannot open output: %s\n", argv[3]); free(ev); tsf_close(f); return 2; }
-    const int BLK = 64; float buf[BLK * 2];
+    enum { BLK = 64 }; float buf[BLK * 2];
     int ei = 0;
     for (long pos = 0; pos < frames; pos += BLK) {
         double t = (double)pos / SR;

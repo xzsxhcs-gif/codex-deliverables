@@ -99,8 +99,8 @@
     },
     {
       "path": "engine/render.c",
-      "bytes": 4546,
-      "sha256": "5d0dcb7352e25963729b999255024799a3c8c5899d814c82bcff648efe9f866e"
+      "bytes": 4545,
+      "sha256": "167c1111881f4bdd3ca804bac941822b631ba891d69d248ec17bfdb324d22fb4"
     },
     {
       "path": "engine/requirements.txt",
