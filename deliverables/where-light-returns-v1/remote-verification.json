@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "artifactCommit": "d97f7e2b39cccbcf7d1a91fab98b65027ef8bddf",
+  "downloads": [
+    {
+      "name": "QA.md",
+      "bytes": 2236,
+      "sha256": "bb38778bf64c918e22bb9aad49289d65459af255304ba3c776ab14a860c62799",
+      "url": "https://github.com/xzsxhcs-gif/codex-deliverables/raw/d97f7e2b39cccbcf7d1a91fab98b65027ef8bddf/deliverables/where-light-returns-v1/QA.md",
+      "verified": true
+    },
+    {
+      "name": "Where-Light-Returns-Project.zip",
+      "bytes": 48305124,
+      "sha256": "785280bf7569706cf0002ef56c3080a27083199cb023e1df20e8afff0dc2c030",
+      "url": "https://github.com/xzsxhcs-gif/codex-deliverables/raw/85938c3262b242b7cc13a03417199e7c7b740cd0/deliverables/where-light-returns-v1/Where-Light-Returns-Project.zip",
+      "verified": true
+    },
+    {
+      "name": "audio-quality.png",
+      "bytes": 1542361,
+      "sha256": "7efc4a3923bbd2894a176d63065b0e449b28d649749577759822b396600d4d7d",
+      "url": "https://github.com/xzsxhcs-gif/codex-deliverables/raw/d97f7e2b39cccbcf7d1a91fab98b65027ef8bddf/deliverables/where-light-returns-v1/audio-quality.png",
+      "verified": true
+    },
+    {
+      "name": "loudness-report.json",
+      "bytes": 172,
+      "sha256": "f1198fc9481f5aaa8737437156755a4b4603dc26fc263c9e005d028b4d8200ad",
+      "url": "https://github.com/xzsxhcs-gif/codex-deliverables/raw/d97f7e2b39cccbcf7d1a91fab98b65027ef8bddf/deliverables/where-light-returns-v1/loudness-report.json",
+      "verified": true
+    },
+    {
+      "name": "notes.json",
+      "bytes": 643711,
+      "sha256": "7c49938292f5fe05a0512ab60c316efc81692b4bb286a7ebb040da1ecec7117d",
+      "url": "https://github.com/xzsxhcs-gif/codex-deliverables/raw/d97f7e2b39cccbcf7d1a91fab98b65027ef8bddf/deliverables/where-light-returns-v1/notes.json",
+      "verified": true
+    },
+    {
+      "name": "song.mid",
+      "bytes": 29228,
+      "sha256": "4ced3e2885f994bee4983ce46c8c56857f4cbfa201a45ce146173ef064cda00d",
+      "url": "https://github.com/xzsxhcs-gif/codex-deliverables/raw/d97f7e2b39cccbcf7d1a91fab98b65027ef8bddf/deliverables/where-light-returns-v1/song.mid",
+      "verified": true
+    },
+    {
+      "name": "song.mp3",
+      "bytes": 2162503,
+      "sha256": "63c852d97f8652467d53b09746fdeb83bc235eb4fdfb1d0a3f7abc37d1427484",
+      "url": "https://github.com/xzsxhcs-gif/codex-deliverables/raw/d97f7e2b39cccbcf7d1a91fab98b65027ef8bddf/deliverables/where-light-returns-v1/song.mp3",
+      "verified": true
+    },
+    {
+      "name": "song.wav",
+      "bytes": 17285756,
+      "sha256": "739db8166ca57d5f7697b7fc918677909d7ea61b1bdfcc4504e9309d18ba0e91",
+      "url": "https://github.com/xzsxhcs-gif/codex-deliverables/raw/d97f7e2b39cccbcf7d1a91fab98b65027ef8bddf/deliverables/where-light-returns-v1/song.wav",
+      "verified": true
+    },
+    {
+      "name": "validation.json",
+      "bytes": 13501,
+      "sha256": "822e0ea89af9b3f5ac6c437834a88e8bb399d4f3a110c0ed5a2591a2732d993b",
+      "url": "https://github.com/xzsxhcs-gif/codex-deliverables/raw/d97f7e2b39cccbcf7d1a91fab98b65027ef8bddf/deliverables/where-light-returns-v1/validation.json",
+      "verified": true
+    }
+  ],
+  "zip_crc_and_required_contents": "passed",
+  "downloaded_audio_full_decode": "passed",
+  "source_score_matches_local": true,
+  "finalArchiveCommit": "85938c3262b242b7cc13a03417199e7c7b740cd0",
+  "final_zip_manifest_files_verified": 45,
+  "release_url": "https://github.com/xzsxhcs-gif/codex-deliverables/releases/tag/where-light-returns-v1"
+}
