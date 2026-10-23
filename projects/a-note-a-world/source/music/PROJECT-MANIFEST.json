@@ -1,0 +1,232 @@
+{
+  "title": "Where Light Returns / 微光归途",
+  "scope": "Full project ZIP snapshot; Git projects directory omits WAV/MP3 which are provided in deliverables.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 38,
+      "sha256": "b76d02068d85b266bc7e5e3e44248c89cf62baf9fbac18f182e26b2129009077"
+    },
+    {
+      "path": "BUILD-ENVIRONMENT.json",
+      "bytes": 356,
+      "sha256": "97d430eade8ad172d77eaf4d3c11a4a64dffc334c2ce9cfc76a7bd5de5e9be6a"
+    },
+    {
+      "path": "COMPOSITION-PLAN.md",
+      "bytes": 2820,
+      "sha256": "eb2fb5dcb07f39f1de1f6fa0e23bfc586bb5b85ad8b58a579398b38f9949e220"
+    },
+    {
+      "path": "ENGINE-AUDIT.md",
+      "bytes": 6672,
+      "sha256": "a9e328430137942130ac7738c3fa5c2cf5895fabc2ef5a7e00faec9617655445"
+    },
+    {
+      "path": "LICENSE_许可.txt",
+      "bytes": 2700,
+      "sha256": "3451ea6eebad46d2c382f1c5bc930b32b305747b0d623e73ce700f957134202e"
+    },
+    {
+      "path": "MUSIC-REVIEW.md",
+      "bytes": 4211,
+      "sha256": "68f2146a159586350a2aada05d3fce216099f9336fedb9bc2c71eb07b2c54c3d"
+    },
+    {
+      "path": "PROGRESS.md",
+      "bytes": 1830,
+      "sha256": "37a0a62503c9286cdb360126009f5acd7ef44d74df34797f2b04443cc1e367cd"
+    },
+    {
+      "path": "QA.md",
+      "bytes": 2236,
+      "sha256": "bb38778bf64c918e22bb9aad49289d65459af255304ba3c776ab14a860c62799"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6700,
+      "sha256": "a0446920f6bc149c3ab1bb0d1282f49e675f6ac4c2cd0d4988dc9fb8e4499624"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 6794,
+      "sha256": "fa70abf13d4cce6e922912f4f6edd2bbe8ac8e8ba6fbf0fa60ba4976649d9874"
+    },
+    {
+      "path": "UPSTREAM-README.txt",
+      "bytes": 2635,
+      "sha256": "728a783c78d545e2287128e8fde380540062c08523a1f8d16b67a938da82ff54"
+    },
+    {
+      "path": "UPSTREAM.json",
+      "bytes": 349,
+      "sha256": "cf7d37f72afa47ff27a804c8412cc6612913e04225b569e08ced9c816aac1166"
+    },
+    {
+      "path": "audio-quality.png",
+      "bytes": 1542361,
+      "sha256": "7efc4a3923bbd2894a176d63065b0e449b28d649749577759822b396600d4d7d"
+    },
+    {
+      "path": "engine/TinySoundFont-LICENSE.txt",
+      "bytes": 1155,
+      "sha256": "ef10cb839de73fb6d5d32ea7151979e87809a6df70dc7e7ee8457ae1c9e7aa7e"
+    },
+    {
+      "path": "engine/build.bat",
+      "bytes": 1608,
+      "sha256": "99df954d71f459289d7e1243b24d615d144419a3d4f4c11695ab4fadb511a06e"
+    },
+    {
+      "path": "engine/build.sh",
+      "bytes": 896,
+      "sha256": "70297a51eecf89c6f88e2aa8bda48485016050d5973239ae3a54717e48271656"
+    },
+    {
+      "path": "engine/compose_kit.py",
+      "bytes": 16327,
+      "sha256": "c01e7781aca41a8c413864e8b1df03d34436eb0365b6c60c77256d3e4c562a0e"
+    },
+    {
+      "path": "engine/example_song.py",
+      "bytes": 4586,
+      "sha256": "97e8f3a17ad550c5c737752ca84fed58d8e51bb90facc1447be98c96bf429348"
+    },
+    {
+      "path": "engine/mix_kit.py",
+      "bytes": 5821,
+      "sha256": "6b948483a57deedeaac60a0c3c68e8f10aa29120cd3e245bd73e1e655c745ad1"
+    },
+    {
+      "path": "engine/render.c",
+      "bytes": 4545,
+      "sha256": "167c1111881f4bdd3ca804bac941822b631ba891d69d248ec17bfdb324d22fb4"
+    },
+    {
+      "path": "engine/requirements.txt",
+      "bytes": 24,
+      "sha256": "6bd31e587c06276bf231cec25395b5d4a0b1e38c4d2b00813b2dd96aad14f17a"
+    },
+    {
+      "path": "engine/tsf.h",
+      "bytes": 92719,
+      "sha256": "70d55963c98f60ebb81518eaa1f25d46888d5180eb5f5289fd6b74ffc177d197"
+    },
+    {
+      "path": "loudness-log.txt",
+      "bytes": 1048,
+      "sha256": "19ba31713f30624cb3b204b996c87a81efb49e556caf2dc808a8b1fe01a2a5bb"
+    },
+    {
+      "path": "loudness-report.json",
+      "bytes": 172,
+      "sha256": "f1198fc9481f5aaa8737437156755a4b4603dc26fc263c9e005d028b4d8200ad"
+    },
+    {
+      "path": "mix-log.txt",
+      "bytes": 89,
+      "sha256": "c61a9fd404d7657737ca591e1c0b77cc5857e4272732185e8a29e9225b7473c7"
+    },
+    {
+      "path": "mix-report.json",
+      "bytes": 192,
+      "sha256": "042f2de4f79c8fbfe4e7d513cd773cdc4c33d4692bc21341749dd31b88fbdb18"
+    },
+    {
+      "path": "mix.json",
+      "bytes": 1392,
+      "sha256": "61d95ba46a071b62546468bafe962e53996b5811a63921f948319f6c1d1fcac4"
+    },
+    {
+      "path": "notes.json",
+      "bytes": 643711,
+      "sha256": "7c49938292f5fe05a0512ab60c316efc81692b4bb286a7ebb040da1ecec7117d"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 49,
+      "sha256": "918080dd0563866316e2e00c785771a10801b86a8f388a191541e8de22e0e419"
+    },
+    {
+      "path": "score.py",
+      "bytes": 16253,
+      "sha256": "278eb68bad8eb40ac4abdc2a3f3e8754a640adcdc66d48531265e4c0f3b36b87"
+    },
+    {
+      "path": "song.mid",
+      "bytes": 29228,
+      "sha256": "4ced3e2885f994bee4983ce46c8c56857f4cbfa201a45ce146173ef064cda00d"
+    },
+    {
+      "path": "song.mp3",
+      "bytes": 2162503,
+      "sha256": "63c852d97f8652467d53b09746fdeb83bc235eb4fdfb1d0a3f7abc37d1427484"
+    },
+    {
+      "path": "song.wav",
+      "bytes": 17285756,
+      "sha256": "739db8166ca57d5f7697b7fc918677909d7ea61b1bdfcc4504e9309d18ba0e91"
+    },
+    {
+      "path": "sound_library/GeneralUser-GS/CHANGELOG.md",
+      "bytes": 15928,
+      "sha256": "2ed3138c31d43c8a36e106703679e3ec88bf579da7c34051bd9531ec08939b44"
+    },
+    {
+      "path": "sound_library/GeneralUser-GS/GeneralUser-GS.sf2",
+      "bytes": 32319396,
+      "sha256": "9575028c7a1f589f5770fccc8cff2734566af40cd26ed836944e9a5152688cfe"
+    },
+    {
+      "path": "sound_library/GeneralUser-GS/GeneralUser-GS.sf2.sha256",
+      "bytes": 65,
+      "sha256": "ebbfdd608fdc67e2938208e0be7b963339c4bcd9029eb9cb7eb781a48e81b6b7"
+    },
+    {
+      "path": "sound_library/GeneralUser-GS/LICENSE.txt",
+      "bytes": 2317,
+      "sha256": "7b32efefdf95ce38a043799f0659853ddc00fbaa14d8c50f0aca16b9b8b405be"
+    },
+    {
+      "path": "sound_library/GeneralUser-GS/README.md",
+      "bytes": 1049,
+      "sha256": "f1a5d1ef99591763617689d064e57113b1db900a920e145233aa2789331e085a"
+    },
+    {
+      "path": "sound_library/GeneralUser-GS/percussion map.pdf",
+      "bytes": 32137,
+      "sha256": "a2372d2b80feb2847b104b43efff137f3925b627e7507c9ab31980ee65e7c90d"
+    },
+    {
+      "path": "sound_library/GeneralUser-GS/合并音色库.bat",
+      "bytes": 323,
+      "sha256": "ee27bda43e7fd5d08f3d6029dd911a87950331f338129adc0b1a08fe064b1066"
+    },
+    {
+      "path": "soundfont-presets.json",
+      "bytes": 20039,
+      "sha256": "6d47c91d844b7d5f2236726539e5a40fc5766cbaa64e75921f0bf5132d7d4d69"
+    },
+    {
+      "path": "tests/test_engine_midi.py",
+      "bytes": 6951,
+      "sha256": "a747940265517a4ee738fe5107037e2315d5459c94d9d4ecbeac6302c7a74939"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 13501,
+      "sha256": "822e0ea89af9b3f5ac6c437834a88e8bb399d4f3a110c0ed5a2591a2732d993b"
+    },
+    {
+      "path": "verify_music.py",
+      "bytes": 18942,
+      "sha256": "9949b6bc6f0da0f685d813dac7901cabd4f0812127af9ca7b0c8a6c38b277180"
+    },
+    {
+      "path": "免费分享声明_FREE_SHARING_NOTICE.txt",
+      "bytes": 2025,
+      "sha256": "7b02bf3b06400e2c461a2adc2ed7de0fa9359990ddb2a32657582d04d774dc35"
+    }
+  ],
+  "note": "Excludes this manifest itself and generated work/stems."
+}

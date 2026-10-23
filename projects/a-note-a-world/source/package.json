@@ -1,0 +1,8 @@
+{
+  "name": "a-note-a-world",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Original deterministic music film: A Note, A World",
+  "dependencies": {"three": "0.180.0"}
+}

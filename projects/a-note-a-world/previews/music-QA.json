@@ -1,0 +1,304 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "WAV is 48kHz stereo 16-bit PCM",
+      "passed": true
+    },
+    {
+      "name": "Film clock and PCM length agree exactly",
+      "passed": true,
+      "detail": {
+        "pcm_frames": 4499200,
+        "video_frames": 2812,
+        "fps": 30
+      }
+    },
+    {
+      "name": "Duration is approximately 94 seconds",
+      "passed": true
+    },
+    {
+      "name": "Leading 3.7 seconds is silent",
+      "passed": true
+    },
+    {
+      "name": "Original musical PCM is completely unchanged",
+      "passed": true,
+      "detail": {
+        "source_pcm_sha256": "9984645243e40bc4eb2ab8580941fac0bbd451ff7672daaaa0a2ea2ce4ba6c6a",
+        "embedded_pcm_sha256": "9984645243e40bc4eb2ab8580941fac0bbd451ff7672daaaa0a2ea2ce4ba6c6a"
+      }
+    },
+    {
+      "name": "Only silent frame-alignment padding was appended",
+      "passed": true,
+      "detail": 172
+    },
+    {
+      "name": "No PCM clipping",
+      "passed": true,
+      "detail": {
+        "peak_dbfs": -2.7479485269414567
+      }
+    },
+    {
+      "name": "All samples finite",
+      "passed": true
+    },
+    {
+      "name": "643 musical notes and nine instruments retained",
+      "passed": true
+    },
+    {
+      "name": "Every note uses the same global time offset",
+      "passed": true
+    },
+    {
+      "name": "All visual notes remain within the film",
+      "passed": true
+    },
+    {
+      "name": "bars: same musical clock",
+      "passed": true
+    },
+    {
+      "name": "beats: same musical clock",
+      "passed": true
+    },
+    {
+      "name": "Section boundaries use the same global time offset",
+      "passed": true
+    },
+    {
+      "name": "Every MIDI note and velocity matches film-clock JSON",
+      "passed": true,
+      "detail": {
+        "note_boundaries_checked": 1286,
+        "max_error_ms": 0.8676770834057379
+      }
+    },
+    {
+      "name": "MIDI ends at film duration within MIDI tick precision",
+      "passed": true,
+      "detail": {
+        "midi_duration_seconds": 93.73292197916669,
+        "film_duration_seconds": 93.73333333333333
+      }
+    },
+    {
+      "name": "MIDI instruments, controllers and event payloads preserved",
+      "passed": true
+    },
+    {
+      "name": "Every expression controller uses the same film clock",
+      "passed": true,
+      "detail": {
+        "events_checked": 4041,
+        "max_error_ms": 1.0443770832893051
+      }
+    },
+    {
+      "name": "First audible note matches documented film onset",
+      "passed": true,
+      "detail": {
+        "note_seconds": 4.00327,
+        "detected_pcm_seconds": 4.0,
+        "first_onset_visual_frame": 121,
+        "maximum_30fps_visual_quantization_ms": 33.333333333333336
+      }
+    }
+  ],
+  "limitations": [
+    "Numerical frame statistics cannot establish artistic quality or rule out every geometry problem.",
+    "Keyframe and motion review must be documented separately; this script does not claim human listening.",
+    "The musical PCM master is unchanged; AAC is a lossy listening copy in the MP4."
+  ],
+  "music": {
+    "duration_seconds": 93.73333333333333,
+    "frames": 2812,
+    "fps": 30,
+    "pcm_parameters": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "sample_width": 2,
+      "frames": 4499200
+    },
+    "first_note_seconds": 4.00327,
+    "first_audio_seconds": 4.0,
+    "midi_max_error_ms": 0.8676770834057379
+  },
+  "keyframe_statistics": [
+    {
+      "name": "test-01.50.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.013493611477315426,
+        0.021267445757985115,
+        0.03292902559041977
+      ],
+      "maximum_rgb": 0.658823549747467,
+      "sha256": "9a379d1c06cc78d877d2768e112391e1d7a091656b80e83f7102442957d26cdf"
+    },
+    {
+      "name": "test-04.05.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.03500622883439064,
+        0.04900473728775978,
+        0.07358825206756592
+      ],
+      "maximum_rgb": 0.6901960968971252,
+      "sha256": "02b88e911dd02c1ce220a3f485bc28a01ba4905c78f9dd50a26086e7053fdbd3"
+    },
+    {
+      "name": "test-16.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.03573635220527649,
+        0.04967071861028671,
+        0.07697048783302307
+      ],
+      "maximum_rgb": 0.6941176652908325,
+      "sha256": "2d157857eea06c80bd575e88c4ffdd82acfd5da2f513424272287bca13a71a7a"
+    },
+    {
+      "name": "test-28.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.03761336952447891,
+        0.05169675499200821,
+        0.07916254550218582
+      ],
+      "maximum_rgb": 0.686274528503418,
+      "sha256": "94f9c9d18a5eed01fe042955eeeda7484b231c349e6d086ed2ce54c20cf23200"
+    },
+    {
+      "name": "test-38.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.03757831081748009,
+        0.05158774182200432,
+        0.07879742980003357
+      ],
+      "maximum_rgb": 0.7058823704719543,
+      "sha256": "1a374a097c665e492b33fb4729f056b43f735a884c84db1fa2abe0fa3f6cac1f"
+    },
+    {
+      "name": "test-45.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.05007046088576317,
+        0.06479821354150772,
+        0.087497279047966
+      ],
+      "maximum_rgb": 0.5215686559677124,
+      "sha256": "057285c20f8845da874e3fc38add85c62c75493ef17a701795a3d5b6a4deb19b"
+    },
+    {
+      "name": "test-52.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.07095614075660706,
+        0.09350287914276123,
+        0.11776190251111984
+      ],
+      "maximum_rgb": 0.43529412150382996,
+      "sha256": "39b96bd4ec3f03624fe5284531501f03cc31be675ecc8bbb8cbc7f514de6801f"
+    },
+    {
+      "name": "test-58.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.07151684165000916,
+        0.0939619243144989,
+        0.11865253746509552
+      ],
+      "maximum_rgb": 0.4431372582912445,
+      "sha256": "c8b89f44f5684cd967dad70439ba74ed09b84304b41a759064aa6df9a135e725"
+    },
+    {
+      "name": "test-66.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.07134361565113068,
+        0.09360295534133911,
+        0.1182340607047081
+      ],
+      "maximum_rgb": 0.501960813999176,
+      "sha256": "9e687c638640711e5d896c8a6c288bf83f372fb09bb21ac039296ab5024aee32"
+    },
+    {
+      "name": "test-74.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.07352224737405777,
+        0.09579099714756012,
+        0.12263217568397522
+      ],
+      "maximum_rgb": 0.6117647290229797,
+      "sha256": "54947b5878223316b3b42eb64e171645bec49672606d2062f72ca90ffb38e25e"
+    },
+    {
+      "name": "test-80.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.07641975581645966,
+        0.09970115125179291,
+        0.1286478191614151
+      ],
+      "maximum_rgb": 0.615686297416687,
+      "sha256": "0d9ec69b8a20e859f87328f2fa39f2a8e03a21fb99019c504e63b6e4bec5e220"
+    },
+    {
+      "name": "test-85.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.07713782787322998,
+        0.09604157507419586,
+        0.1212243065237999
+      ],
+      "maximum_rgb": 0.35686275362968445,
+      "sha256": "774f643f9d94f1adbdf47a4afa3fe336d680de87fa2d5ed45282ba18d2e777d8"
+    },
+    {
+      "name": "test-89.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.03805220127105713,
+        0.05330098420381546,
+        0.08179700374603271
+      ],
+      "maximum_rgb": 0.5647059082984924,
+      "sha256": "d7b1fcff416c62cc12ebc094543df86e15d3f2f0fe5b5f71bad96d6ceba65896"
+    },
+    {
+      "name": "test-93.70.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_rgb": 0.0,
+      "sha256": "7a5175f59992a07616d58b06a310b2a3909c43df6d406a736ef54995563a09ed"
+    }
+  ],
+  "keyframe_review_scope": "Numeric file statistics only; see visual review document for composition and geometry assessment.",
+  "passed": 19,
+  "total_checks": 19
+}

@@ -1,0 +1,20 @@
+{
+  "phase": "production complete; source archive snapshot",
+  "render_command": "python source/render_film.py",
+  "transient_exec_session": null,
+  "cache_directory": ".render-cache/film-321582a7637152523383",
+  "preview": "previews/preview.mp4",
+  "preview_validation": "40/40 passed on final-derived 360p copy",
+  "scene_validation": "12/12 passed after title and depth fixes",
+  "source_sha256": {
+    "main.js": "b0cb8e26f7ae4fd1e9fdc47b6a44292cc632c2e8e2c3c0eb83785e0a0d36c1f1",
+    "workspace.js": "381dcca152efcb95a0938c41b24d9aeacdfe34e5ec6eaa55259893a2889e6b39",
+    "landscape.js": "49ed2293b3f49fa844f6e2cb30e225fc76a48ab6fa1889b8d0b873136ab478c4"
+  },
+  "delivery_repository": "https://github.com/xzsxhcs-gif/codex-deliverables",
+  "remaining": [],
+  "final_validation": "40/40 passed on actual HD MP4",
+  "visual_review": "Final encoded HD frames and return motion accepted; see VISUAL-REVIEW.md",
+  "portable_reconstruction": "11/11 passed; WAV, MIDI, notes and features byte-identical",
+  "delivery_record": "https://github.com/xzsxhcs-gif/codex-deliverables/tree/main/deliverables/a-note-a-world-v1"
+}

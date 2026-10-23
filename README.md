@@ -11,6 +11,14 @@
 
 ## 已完成项目
 
+### 一音成境 / A Note, A World
+
+93.73秒原创音乐可视化短片。一个折翼小助手放下首音，协作者把九个声部织成乐谱；乐谱连续展开为旋律山脉、和声河湖与微光，再折回完整总谱。原创音乐《微光归途》，所有画面由Canvas、Three.js与音符数据确定性生成。
+
+- [1080p成片、手机版本、音乐与完整工程](deliverables/a-note-a-world-v1/)
+- [源码、分镜及Windows重渲染说明](projects/a-note-a-world/)
+- [最终影片40项验收](projects/a-note-a-world/QA.json) · [编码画面复核](projects/a-note-a-world/VISUAL-REVIEW.md)
+
 ### 微光归途 / Where Light Returns
 
 约90秒原创电影感纯音乐。钢琴主题经过大提琴、弦乐、木管与圆号逐渐展开，再回归宁静。实际输出48kHz立体声WAV、MP3试听、完整MIDI和音符时间数据，工程含可重新运行的Python总谱与原项目SoundFont。

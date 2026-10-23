@@ -212,7 +212,7 @@
       "name": "No extreme whole-frame luminance jumps",
       "passed": true,
       "detail": {
-        "maximum_mean_frame_difference": 0.007508018985390663,
+        "maximum_mean_frame_difference": 0.007373365573585033,
         "candidate_times": []
       }
     },
@@ -258,7 +258,7 @@
     "midi_max_error_ms": 0.8676770834057379
   },
   "video": {
-    "path": "previews/preview.mp4",
+    "path": "previews/preview-final-360p.mp4",
     "metadata": {
       "streams": [
         {
@@ -279,7 +279,7 @@
           "sample_aspect_ratio": "1:1",
           "display_aspect_ratio": "16:9",
           "pix_fmt": "yuv420p",
-          "level": 30,
+          "level": 31,
           "color_range": "tv",
           "color_space": "bt709",
           "chroma_location": "center",
@@ -290,12 +290,12 @@
           "id": "0x1",
           "r_frame_rate": "30/1",
           "avg_frame_rate": "30/1",
-          "time_base": "1/90000",
+          "time_base": "1/15360",
           "start_pts": 0,
           "start_time": "0.000000",
-          "duration_ts": 8436000,
+          "duration_ts": 1439744,
           "duration": "93.733333",
-          "bit_rate": "189568",
+          "bit_rate": "112385",
           "bits_per_raw_sample": "8",
           "nb_frames": "2812",
           "extradata_size": 51,
@@ -386,7 +386,7 @@
         }
       ],
       "format": {
-        "filename": "/workspace/output/a-note-a-world/previews/preview.mp4",
+        "filename": "/workspace/output/a-note-a-world/previews/preview-final-360p.mp4",
         "nb_streams": 2,
         "nb_programs": 0,
         "nb_stream_groups": 0,
@@ -394,8 +394,8 @@
         "format_long_name": "QuickTime / MOV",
         "start_time": "0.000000",
         "duration": "93.733333",
-        "size": "4453050",
-        "bit_rate": "380061",
+        "size": "3548604",
+        "bit_rate": "302868",
         "probe_score": 100,
         "tags": {
           "major_brand": "isom",
@@ -423,10 +423,22 @@
     ],
     "decoded_frames": 2812,
     "first_aac_seconds": 4.0,
-    "frame_difference_max": 0.007508018985390663,
-    "frame_difference_p99": 0.0025402444880455732
+    "frame_difference_max": 0.007373365573585033,
+    "frame_difference_p99": 0.0022276057861745358
   },
   "keyframe_statistics": [
+    {
+      "name": "diagnostic-desk-depth-off-089.800s.png",
+      "width": 640,
+      "height": 360,
+      "mean_rgb": [
+        0.039306383579969406,
+        0.053327254951000214,
+        0.08012524247169495
+      ],
+      "maximum_rgb": 0.5843137502670288,
+      "sha256": "550fec39bf349a44a0746ff780ee95eb017d3ec7c019a71cf456bb0e2e77f785"
+    },
     {
       "name": "frame-001.500s.png",
       "width": 640,
@@ -608,172 +620,124 @@
       "sha256": "d1eb4ed343fe095b2c8a3ffb4af5bf1be69bb431e6ddd8ad9e6503aa71b16bf7"
     },
     {
-      "name": "test-01.50.png",
-      "width": 1280,
-      "height": 720,
+      "name": "review-final-depth-042.000s.png",
+      "width": 640,
+      "height": 360,
       "mean_rgb": [
-        0.013493611477315426,
-        0.021267445757985115,
-        0.03292902559041977
+        0.038596462458372116,
+        0.05261370912194252,
+        0.07953993231058121
       ],
-      "maximum_rgb": 0.658823549747467,
-      "sha256": "9a379d1c06cc78d877d2768e112391e1d7a091656b80e83f7102442957d26cdf"
+      "maximum_rgb": 0.7019608020782471,
+      "sha256": "6903e9e3cc547f0c738087e80c068451256276c23bd3ec3b8c8a277ed7ad1e72"
     },
     {
-      "name": "test-04.05.png",
-      "width": 1280,
-      "height": 720,
+      "name": "review-final-depth-049.000s.png",
+      "width": 640,
+      "height": 360,
       "mean_rgb": [
-        0.03500622883439064,
-        0.04900473728775978,
-        0.07358825206756592
+        0.07160305231809616,
+        0.09394389390945435,
+        0.12034503370523453
       ],
-      "maximum_rgb": 0.6901960968971252,
-      "sha256": "02b88e911dd02c1ce220a3f485bc28a01ba4905c78f9dd50a26086e7053fdbd3"
+      "maximum_rgb": 0.3843137323856354,
+      "sha256": "3d3a2ed483f94fe34e673b3a3ddd1f4ce254c675de5a19a871b794b7ab9a8224"
     },
     {
-      "name": "test-16.00.png",
-      "width": 1280,
-      "height": 720,
+      "name": "review-final-depth-089.800s.png",
+      "width": 640,
+      "height": 360,
       "mean_rgb": [
-        0.03573635220527649,
-        0.04967071861028671,
-        0.07697048783302307
+        0.039306383579969406,
+        0.053327254951000214,
+        0.08012524247169495
       ],
-      "maximum_rgb": 0.6941176652908325,
-      "sha256": "2d157857eea06c80bd575e88c4ffdd82acfd5da2f513424272287bca13a71a7a"
+      "maximum_rgb": 0.5843137502670288,
+      "sha256": "550fec39bf349a44a0746ff780ee95eb017d3ec7c019a71cf456bb0e2e77f785"
     },
     {
-      "name": "test-28.00.png",
-      "width": 1280,
-      "height": 720,
+      "name": "review-final-depth-090.300s.png",
+      "width": 640,
+      "height": 360,
       "mean_rgb": [
-        0.03761336952447891,
-        0.05169675499200821,
-        0.07916254550218582
+        0.03883618116378784,
+        0.048863183706998825,
+        0.06868546456098557
       ],
-      "maximum_rgb": 0.686274528503418,
-      "sha256": "94f9c9d18a5eed01fe042955eeeda7484b231c349e6d086ed2ce54c20cf23200"
+      "maximum_rgb": 0.7960784435272217,
+      "sha256": "1b5aea4c3be39a4298357500543630a3bdadf3bcb2ba16470a660dd890ff38a4"
     },
     {
-      "name": "test-38.00.png",
-      "width": 1280,
-      "height": 720,
+      "name": "review-final-title-088.800s.png",
+      "width": 640,
+      "height": 360,
       "mean_rgb": [
-        0.03757831081748009,
-        0.05158774182200432,
-        0.07879742980003357
+        0.037275925278663635,
+        0.053106606006622314,
+        0.08208314329385757
       ],
-      "maximum_rgb": 0.7058823704719543,
-      "sha256": "1a374a097c665e492b33fb4729f056b43f735a884c84db1fa2abe0fa3f6cac1f"
+      "maximum_rgb": 0.5490196347236633,
+      "sha256": "5c1d00f9f2f3a26a0b5b80f00658a6672e0c340ba81dde8b32d1e0b1a5182a03"
     },
     {
-      "name": "test-45.00.png",
-      "width": 1280,
-      "height": 720,
+      "name": "review-final-title-089.800s.png",
+      "width": 640,
+      "height": 360,
       "mean_rgb": [
-        0.05007046088576317,
-        0.06479821354150772,
-        0.087497279047966
+        0.03915972635149956,
+        0.053112585097551346,
+        0.07977649569511414
       ],
-      "maximum_rgb": 0.5215686559677124,
-      "sha256": "057285c20f8845da874e3fc38add85c62c75493ef17a701795a3d5b6a4deb19b"
+      "maximum_rgb": 0.5843137502670288,
+      "sha256": "49e646b26592dc6ae1e1315b1c650135e895294f9e1ef7bf4d08ab9df1799551"
     },
     {
-      "name": "test-52.00.png",
-      "width": 1280,
-      "height": 720,
+      "name": "review-final-title-090.300s.png",
+      "width": 640,
+      "height": 360,
       "mean_rgb": [
-        0.07095614075660706,
-        0.09350287914276123,
-        0.11776190251111984
+        0.03883618116378784,
+        0.048863183706998825,
+        0.06868546456098557
       ],
-      "maximum_rgb": 0.43529412150382996,
-      "sha256": "39b96bd4ec3f03624fe5284531501f03cc31be675ecc8bbb8cbc7f514de6801f"
+      "maximum_rgb": 0.7960784435272217,
+      "sha256": "1b5aea4c3be39a4298357500543630a3bdadf3bcb2ba16470a660dd890ff38a4"
     },
     {
-      "name": "test-58.00.png",
-      "width": 1280,
-      "height": 720,
+      "name": "review-first-transform.png",
+      "width": 1920,
+      "height": 270,
       "mean_rgb": [
-        0.07151684165000916,
-        0.0939619243144989,
-        0.11865253746509552
+        0.018130578100681305,
+        0.04133443161845207,
+        0.05923396721482277
       ],
-      "maximum_rgb": 0.4431372582912445,
-      "sha256": "c8b89f44f5684cd967dad70439ba74ed09b84304b41a759064aa6df9a135e725"
+      "maximum_rgb": 0.9254902005195618,
+      "sha256": "ebb70bdc813d0211bb28b400d870b0791e782e18ed747c8007232d87d44ae7a6"
     },
     {
-      "name": "test-66.00.png",
-      "width": 1280,
-      "height": 720,
+      "name": "review-return.png",
+      "width": 1920,
+      "height": 810,
       "mean_rgb": [
-        0.07134361565113068,
-        0.09360295534133911,
-        0.1182340607047081
+        0.058256082236766815,
+        0.08565421402454376,
+        0.11285187304019928
       ],
-      "maximum_rgb": 0.501960813999176,
-      "sha256": "9e687c638640711e5d896c8a6c288bf83f372fb09bb21ac039296ab5024aee32"
+      "maximum_rgb": 0.5764706134796143,
+      "sha256": "04edb2ffdd2f5272a203571410a0e6f933e96afee3ed2a1db2d342fd7663c1cd"
     },
     {
-      "name": "test-74.00.png",
-      "width": 1280,
-      "height": 720,
+      "name": "review-world-entry.png",
+      "width": 2400,
+      "height": 270,
       "mean_rgb": [
-        0.07352224737405777,
-        0.09579099714756012,
-        0.12263217568397522
+        0.06591001898050308,
+        0.09537948668003082,
+        0.11902928352355957
       ],
-      "maximum_rgb": 0.6117647290229797,
-      "sha256": "54947b5878223316b3b42eb64e171645bec49672606d2062f72ca90ffb38e25e"
-    },
-    {
-      "name": "test-80.00.png",
-      "width": 1280,
-      "height": 720,
-      "mean_rgb": [
-        0.07641975581645966,
-        0.09970115125179291,
-        0.1286478191614151
-      ],
-      "maximum_rgb": 0.615686297416687,
-      "sha256": "0d9ec69b8a20e859f87328f2fa39f2a8e03a21fb99019c504e63b6e4bec5e220"
-    },
-    {
-      "name": "test-85.00.png",
-      "width": 1280,
-      "height": 720,
-      "mean_rgb": [
-        0.07713782787322998,
-        0.09604157507419586,
-        0.1212243065237999
-      ],
-      "maximum_rgb": 0.35686275362968445,
-      "sha256": "774f643f9d94f1adbdf47a4afa3fe336d680de87fa2d5ed45282ba18d2e777d8"
-    },
-    {
-      "name": "test-89.00.png",
-      "width": 1280,
-      "height": 720,
-      "mean_rgb": [
-        0.03805220127105713,
-        0.05330098420381546,
-        0.08179700374603271
-      ],
-      "maximum_rgb": 0.5647059082984924,
-      "sha256": "d7b1fcff416c62cc12ebc094543df86e15d3f2f0fe5b5f71bad96d6ceba65896"
-    },
-    {
-      "name": "test-93.70.png",
-      "width": 1280,
-      "height": 720,
-      "mean_rgb": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "maximum_rgb": 0.0,
-      "sha256": "7a5175f59992a07616d58b06a310b2a3909c43df6d406a736ef54995563a09ed"
+      "maximum_rgb": 0.3921568691730499,
+      "sha256": "fd5d57f1e879e45c6f22711510f29dc48618b7b02b9211846a6058c11f03ed2b"
     }
   ],
   "keyframe_review_scope": "Numeric file statistics only; see visual review document for composition and geometry assessment.",

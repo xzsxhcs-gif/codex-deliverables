@@ -1,0 +1,95 @@
+{
+ "total": 90.02975922415015,
+ "channels": {
+  "0": {
+   "name": "Piano",
+   "program": 0,
+   "bank": 0,
+   "gain": 1.2,
+   "pan": -0.07,
+   "reverb": 0.23,
+   "hpf": 48,
+   "haas": 0
+  },
+  "1": {
+   "name": "Cello",
+   "program": 42,
+   "bank": 0,
+   "gain": 0.83,
+   "pan": 0.14,
+   "reverb": 0.2,
+   "hpf": 70,
+   "haas": 0
+  },
+  "2": {
+   "name": "Violin",
+   "program": 40,
+   "bank": 0,
+   "gain": 0.88,
+   "pan": -0.24,
+   "reverb": 0.29,
+   "hpf": 170,
+   "haas": 0
+  },
+  "3": {
+   "name": "String ensemble",
+   "program": 49,
+   "bank": 0,
+   "gain": 0.56,
+   "pan": -0.03,
+   "reverb": 0.38,
+   "hpf": 125,
+   "haas": 0
+  },
+  "4": {
+   "name": "Flute",
+   "program": 73,
+   "bank": 0,
+   "gain": 0.67,
+   "pan": -0.14,
+   "reverb": 0.35,
+   "hpf": 250,
+   "haas": 0
+  },
+  "5": {
+   "name": "French horns",
+   "program": 60,
+   "bank": 0,
+   "gain": 0.55,
+   "pan": 0.23,
+   "reverb": 0.26,
+   "hpf": 130,
+   "haas": 0
+  },
+  "6": {
+   "name": "Harp",
+   "program": 46,
+   "bank": 0,
+   "gain": 0.64,
+   "pan": 0.29,
+   "reverb": 0.32,
+   "hpf": 120,
+   "haas": 0
+  },
+  "7": {
+   "name": "Timpani",
+   "program": 47,
+   "bank": 0,
+   "gain": 0.77,
+   "pan": 0.04,
+   "reverb": 0.1,
+   "hpf": 35,
+   "haas": 0
+  },
+  "9": {
+   "name": "Orchestral cymbals",
+   "program": 48,
+   "bank": 0,
+   "gain": 0.44,
+   "pan": 0.13,
+   "reverb": 0.18,
+   "hpf": 330,
+   "haas": 0
+  }
+ }
+}

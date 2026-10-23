@@ -1,0 +1,12 @@
+{
+  "kind": "360p viewing copy derived from the final encoded HD film",
+  "source": "final_video.mp4",
+  "source_sha256": "fe1ca4c81a939fa331f1d4a4ce7c62a940856b86264f549c0afd4d18ae602883",
+  "output": "previews/preview.mp4",
+  "output_sha256": "719113271eca44f1a1c6254f669689ff0ba66709bd891e1e031118b859e72d1c",
+  "frame_count": 2812,
+  "duration_seconds": 93.73333333333333,
+  "width": 640,
+  "height": 360,
+  "fps": 30
+}

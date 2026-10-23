@@ -1,0 +1,48 @@
+{
+  "source": "final_video.mp4",
+  "sha256": "fe1ca4c81a939fa331f1d4a4ce7c62a940856b86264f549c0afd4d18ae602883",
+  "frames": [
+    {
+      "frame": 1920,
+      "time": 64.0,
+      "file": "frame-001920-064.000s.png",
+      "sha256": "f2be0f5db1d0878e5ec537c4594a2a2a79b3453381a2a83ef2344d633f21ea98"
+    },
+    {
+      "frame": 2490,
+      "time": 83.0,
+      "file": "frame-002490-083.000s.png",
+      "sha256": "d22f1f684af2189c4b34e858f9a5552fdaec70e583990b9397362a4936d23965"
+    },
+    {
+      "frame": 2610,
+      "time": 87.0,
+      "file": "frame-002610-087.000s.png",
+      "sha256": "6c44392f030c93364a93f95df981b53de063a2e3d1ebd13f3001db62e644c992"
+    },
+    {
+      "frame": 2640,
+      "time": 88.0,
+      "file": "frame-002640-088.000s.png",
+      "sha256": "83cc391050e4bd867e97d915af2ef7af4b060e844a75f999087ee32196b2914a"
+    },
+    {
+      "frame": 2670,
+      "time": 89.0,
+      "file": "frame-002670-089.000s.png",
+      "sha256": "7dac4c9affbb459aca3a7b0aac5ecbdfa847980da41ba0e4e24623719af804d7"
+    },
+    {
+      "frame": 2694,
+      "time": 89.8,
+      "file": "frame-002694-089.800s.png",
+      "sha256": "491379f51a483249b4cb18cd46a32df1fad5fcc8911650c214c3b57b7dd20bb0"
+    },
+    {
+      "frame": 2709,
+      "time": 90.3,
+      "file": "frame-002709-090.300s.png",
+      "sha256": "065c7e5f55f6e1c9b023932c2d752071af97fbd043acaa51cb55909e0e9422b0"
+    }
+  ]
+}

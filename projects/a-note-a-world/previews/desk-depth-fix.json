@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "scope": "Actual frozen source, no runtime overrides",
+  "timestamp": 89.8,
+  "center_row_mean_rgb": [
+    9.1953125,
+    12.7890625,
+    19.6921875
+  ],
+  "seam_removed": true,
+  "frames": [
+    "review-final-depth-042.000s.png",
+    "review-final-depth-049.000s.png",
+    "review-final-depth-089.800s.png",
+    "review-final-depth-090.300s.png"
+  ],
+  "source_main_sha256": "b0cb8e26f7ae4fd1e9fdc47b6a44292cc632c2e8e2c3c0eb83785e0a0d36c1f1"
+}

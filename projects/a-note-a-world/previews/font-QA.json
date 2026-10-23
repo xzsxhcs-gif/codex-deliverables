@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "scope": "All actual on-screen Chinese title, instrument labels and preview controls",
+  "unique_characters": 39,
+  "missing_glyphs": [],
+  "font": "source/fonts/FilmSans.otf"
+}

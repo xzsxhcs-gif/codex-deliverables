@@ -1,0 +1,112 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-23T13:54:30.514488+00:00",
+  "scope": "Independent extraction and music-clock reconstruction from first packaged source snapshot; final ZIP will be rebuilt to include this report.",
+  "archive_sha256_scope": "This SHA-256 identifies the first tested snapshot, not the rebuilt final archive containing this report.",
+  "archive_path": "/workspace/output/A-Note-A-World-Project.zip",
+  "checks": [
+    {
+      "name": "Fresh extraction directory does not exist",
+      "passed": true
+    },
+    {
+      "name": "No duplicate ZIP names",
+      "passed": true
+    },
+    {
+      "name": "All ZIP paths are relative and stay inside extraction directory",
+      "passed": true
+    },
+    {
+      "name": "ZIP CRC test",
+      "passed": true
+    },
+    {
+      "name": "All manifest sizes and SHA-256 match ZIP entries",
+      "passed": true,
+      "detail": {
+        "verified": 131,
+        "failed": []
+      }
+    },
+    {
+      "name": "Archive members exactly equal manifest plus manifest file",
+      "passed": true
+    },
+    {
+      "name": "Final video and root film WAV excluded as documented",
+      "passed": true
+    },
+    {
+      "name": "Extracted source entries match both manifest and original production source",
+      "passed": true,
+      "detail": {
+        "source_files": 64
+      }
+    },
+    {
+      "name": "Extracted music reconstruction command succeeds",
+      "passed": true
+    },
+    {
+      "name": "All five reconstructed film inputs are byte-identical to production outputs",
+      "passed": true
+    },
+    {
+      "name": "Source inputs remain unchanged after reconstruction",
+      "passed": true
+    }
+  ],
+  "tested_snapshot_sha256": "47b180b901b5451f2c4bb48a37bbfb835d1df6d230b761d344c63143366eb022",
+  "tested_snapshot_bytes": 70093672,
+  "manifest_entries": 131,
+  "archive_members": 132,
+  "reconstruction_command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "source/prepare_music.py"
+  ],
+  "reconstruction_cwd": "/workspace/output/a-note-a-world-portable-check/a-note-a-world",
+  "reconstruction_returncode": 0,
+  "reconstruction_stdout": "{\n  \"status\": \"passed\",\n  \"duration_seconds\": 93.73333333333333,\n  \"frame_count\": 2812,\n  \"fps\": 30,\n  \"sample_rate\": 48000,\n  \"channels\": 2,\n  \"bit_depth\": 16,\n  \"source_pcm_frames\": 4321428,\n  \"lead_in_pcm_frames\": 177600,\n  \"tail_padding_pcm_frames\": 172,\n  \"original_pcm_sha256\": \"9984645243e40bc4eb2ab8580941fac0bbd451ff7672daaaa0a2ea2ce4ba6c6a\",\n  \"embedded_pcm_sha256\": \"9984645243e40bc4eb2ab8580941fac0bbd451ff7672daaaa0a2ea2ce4ba6c6a\",\n  \"midi_offset_ticks\": 2664,\n  \"midi_note_boundaries_checked\": 1286,\n  \"midi_max_note_error_seconds\": 0.0008676770834057379,\n  \"midi_duration_seconds\": 93.73292197916669,\n  \"first_note_seconds\": 4.00327\n}\n",
+  "reconstruction_stderr": "",
+  "reconstructed_outputs": [
+    {
+      "file": "final_music.wav",
+      "reconstructed_bytes": 17996844,
+      "reconstructed_sha256": "22b53bb1a741213d0f51c055b16f518b6a1e897cf49af43cb5b16af9f6c18db9",
+      "production_sha256": "22b53bb1a741213d0f51c055b16f518b6a1e897cf49af43cb5b16af9f6c18db9",
+      "byte_identical": true
+    },
+    {
+      "file": "final_music.mid",
+      "reconstructed_bytes": 29228,
+      "reconstructed_sha256": "5165ada01749034a7e2eca1baa58cfed940a756f41666b2864e86c8582eabf81",
+      "production_sha256": "5165ada01749034a7e2eca1baa58cfed940a756f41666b2864e86c8582eabf81",
+      "byte_identical": true
+    },
+    {
+      "file": "notes.json",
+      "reconstructed_bytes": 838317,
+      "reconstructed_sha256": "e1ef4e3d360c7879765455697f66dc7552627a1bd7166fb54d0987548fcb8651",
+      "production_sha256": "e1ef4e3d360c7879765455697f66dc7552627a1bd7166fb54d0987548fcb8651",
+      "byte_identical": true
+    },
+    {
+      "file": "music_features.json",
+      "reconstructed_bytes": 22259,
+      "reconstructed_sha256": "0b34cf25edc1277bbd53861da00ecc313c1869bb4ab5a3b4f78069fae146b26b",
+      "production_sha256": "0b34cf25edc1277bbd53861da00ecc313c1869bb4ab5a3b4f78069fae146b26b",
+      "byte_identical": true
+    },
+    {
+      "file": "music-preparation.json",
+      "reconstructed_bytes": 650,
+      "reconstructed_sha256": "9379c8bcbfc3b69932ceacab76c6ef02adc48b1d95f9d52e40c6e2a197785259",
+      "production_sha256": "9379c8bcbfc3b69932ceacab76c6ef02adc48b1d95f9d52e40c6e2a197785259",
+      "byte_identical": true
+    }
+  ],
+  "source_input_sha256_stable": true,
+  "passed": 11,
+  "total_checks": 11
+}

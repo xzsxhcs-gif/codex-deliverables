@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "duration_seconds": 93.73333333333333,
+  "frame_count": 2812,
+  "fps": 30,
+  "sample_rate": 48000,
+  "channels": 2,
+  "bit_depth": 16,
+  "source_pcm_frames": 4321428,
+  "lead_in_pcm_frames": 177600,
+  "tail_padding_pcm_frames": 172,
+  "original_pcm_sha256": "9984645243e40bc4eb2ab8580941fac0bbd451ff7672daaaa0a2ea2ce4ba6c6a",
+  "embedded_pcm_sha256": "9984645243e40bc4eb2ab8580941fac0bbd451ff7672daaaa0a2ea2ce4ba6c6a",
+  "midi_offset_ticks": 2664,
+  "midi_note_boundaries_checked": 1286,
+  "midi_max_note_error_seconds": 0.0008676770834057379,
+  "midi_duration_seconds": 93.73292197916669,
+  "first_note_seconds": 4.00327
+}

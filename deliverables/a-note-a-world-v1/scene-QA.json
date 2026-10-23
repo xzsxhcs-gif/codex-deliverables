@@ -1,0 +1,229 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "All camera coordinates and lens values are finite",
+      "passed": true
+    },
+    {
+      "name": "No camera-target collapse",
+      "passed": true,
+      "detail": {
+        "minimum_distance": 59.739622976063835
+      }
+    },
+    {
+      "name": "No camera orientation flip in one frame",
+      "passed": true,
+      "detail": {
+        "maximum_degrees_per_frame": 0.15894277690001593,
+        "time": 85.93333333333334
+      }
+    },
+    {
+      "name": "Camera travel has no teleport",
+      "passed": true,
+      "detail": {
+        "maximum_world_units_per_frame": 0.4477697901190503,
+        "time": 85.43333333333334
+      }
+    },
+    {
+      "name": "Camera remains in front of composition plane",
+      "passed": true,
+      "detail": {
+        "minimum_camera_z": 7.000000000003706
+      }
+    },
+    {
+      "name": "World up never approaches a look-at singularity",
+      "passed": true
+    },
+    {
+      "name": "Lens remains within intended restrained range",
+      "passed": true
+    },
+    {
+      "name": "World camera clears full-height terrain",
+      "passed": true,
+      "detail": {
+        "t": 48,
+        "clearance": 9.583640732671773
+      }
+    },
+    {
+      "name": "All 643 note onsets quantize within one video frame",
+      "passed": true,
+      "detail": {
+        "events": 643,
+        "maximum_delay_ms": 33.33000000000652
+      }
+    },
+    {
+      "name": "Rendered active-note intervals use the shared film clock",
+      "passed": true,
+      "detail": {
+        "sampled_times": 35,
+        "mismatch_times": []
+      }
+    },
+    {
+      "name": "Same timestamp produces the same decoded pixels after arbitrary seeks",
+      "passed": true,
+      "detail": [
+        {
+          "t": 90.3,
+          "identical_png": true,
+          "maximum_pixel_difference": 0,
+          "mean_pixel_difference": 0.0,
+          "sha256": "1b5aea4c3be39a4298357500543630a3bdadf3bcb2ba16470a660dd890ff38a4"
+        },
+        {
+          "t": 87.0,
+          "identical_png": true,
+          "maximum_pixel_difference": 0,
+          "mean_pixel_difference": 0.0,
+          "sha256": "d3b23730b5d5cea6568546bbb4d3e8f39474eba2721f13d6e81fa8c7b91a16f9"
+        },
+        {
+          "t": 83.0,
+          "identical_png": true,
+          "maximum_pixel_difference": 0,
+          "mean_pixel_difference": 0.0,
+          "sha256": "3738ab6fb90cd21aa5ee18e5b4944a0e3960b067d93298066426e12cfdd20a2b"
+        },
+        {
+          "t": 66.0,
+          "identical_png": true,
+          "maximum_pixel_difference": 0,
+          "mean_pixel_difference": 0.0,
+          "sha256": "ef1c906b7bd1d5b41158e3e50641f2d039b7910ba3b9b7d89bb86a0a18a36a36"
+        },
+        {
+          "t": 56.0,
+          "identical_png": true,
+          "maximum_pixel_difference": 0,
+          "mean_pixel_difference": 0.0,
+          "sha256": "bd43cdbb5c06ddd63bbb118065880f2c5fe71f61459139fa540f66d6e84d63c0"
+        },
+        {
+          "t": 42.0,
+          "identical_png": true,
+          "maximum_pixel_difference": 0,
+          "mean_pixel_difference": 0.0,
+          "sha256": "d2943918f03e22518d664785148c9eb441ff253d2f01919a3b0acacaca4bbb87"
+        },
+        {
+          "t": 35.8,
+          "identical_png": true,
+          "maximum_pixel_difference": 0,
+          "mean_pixel_difference": 0.0,
+          "sha256": "3877a1339c81aa73a2849a9782c2b8a24d703a9bc757652c77247178484772bf"
+        },
+        {
+          "t": 4.05,
+          "identical_png": true,
+          "maximum_pixel_difference": 0,
+          "mean_pixel_difference": 0.0,
+          "sha256": "51c193ccfe04f69c901459998d1d65b384f69e9b57466cd0aaf49785ca461425"
+        }
+      ]
+    },
+    {
+      "name": "No JavaScript, shader or resource errors",
+      "passed": true,
+      "detail": {
+        "errors": [],
+        "failed_requests": []
+      }
+    }
+  ],
+  "limitations": [
+    "Pixel determinism is checked on the attached Chromium/SwiftShader environment; other GPUs may differ slightly.",
+    "Camera metrics and image comparisons do not replace visual composition review.",
+    "Active-note API intervals are sampled; all onset quantization is checked independently from the complete event list."
+  ],
+  "camera": {
+    "samples": 2812,
+    "maximum_step": 0.4477697901190503,
+    "maximum_turn_degrees": 0.15894277690001593,
+    "maximum_acceleration_world_units_per_second_squared": 12.887759304914734,
+    "minimum_z": 7.000000000003706
+  },
+  "deterministic_frames": [
+    {
+      "t": 90.3,
+      "identical_png": true,
+      "maximum_pixel_difference": 0,
+      "mean_pixel_difference": 0.0,
+      "sha256": "1b5aea4c3be39a4298357500543630a3bdadf3bcb2ba16470a660dd890ff38a4"
+    },
+    {
+      "t": 87.0,
+      "identical_png": true,
+      "maximum_pixel_difference": 0,
+      "mean_pixel_difference": 0.0,
+      "sha256": "d3b23730b5d5cea6568546bbb4d3e8f39474eba2721f13d6e81fa8c7b91a16f9"
+    },
+    {
+      "t": 83.0,
+      "identical_png": true,
+      "maximum_pixel_difference": 0,
+      "mean_pixel_difference": 0.0,
+      "sha256": "3738ab6fb90cd21aa5ee18e5b4944a0e3960b067d93298066426e12cfdd20a2b"
+    },
+    {
+      "t": 66.0,
+      "identical_png": true,
+      "maximum_pixel_difference": 0,
+      "mean_pixel_difference": 0.0,
+      "sha256": "ef1c906b7bd1d5b41158e3e50641f2d039b7910ba3b9b7d89bb86a0a18a36a36"
+    },
+    {
+      "t": 56.0,
+      "identical_png": true,
+      "maximum_pixel_difference": 0,
+      "mean_pixel_difference": 0.0,
+      "sha256": "bd43cdbb5c06ddd63bbb118065880f2c5fe71f61459139fa540f66d6e84d63c0"
+    },
+    {
+      "t": 42.0,
+      "identical_png": true,
+      "maximum_pixel_difference": 0,
+      "mean_pixel_difference": 0.0,
+      "sha256": "d2943918f03e22518d664785148c9eb441ff253d2f01919a3b0acacaca4bbb87"
+    },
+    {
+      "t": 35.8,
+      "identical_png": true,
+      "maximum_pixel_difference": 0,
+      "mean_pixel_difference": 0.0,
+      "sha256": "3877a1339c81aa73a2849a9782c2b8a24d703a9bc757652c77247178484772bf"
+    },
+    {
+      "t": 4.05,
+      "identical_png": true,
+      "maximum_pixel_difference": 0,
+      "mean_pixel_difference": 0.0,
+      "sha256": "51c193ccfe04f69c901459998d1d65b384f69e9b57466cd0aaf49785ca461425"
+    }
+  ],
+  "browser": {
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "fonts": "loaded",
+    "canvas": [
+      640,
+      360
+    ],
+    "browser": "154.0.8037.57",
+    "software_gl": true
+  },
+  "passed": 12,
+  "total_checks": 12,
+  "audited_source_sha256": {
+    "source/main.js": "b0cb8e26f7ae4fd1e9fdc47b6a44292cc632c2e8e2c3c0eb83785e0a0d36c1f1",
+    "source/workspace.js": "381dcca152efcb95a0938c41b24d9aeacdfe34e5ec6eaa55259893a2889e6b39",
+    "source/landscape.js": "49ed2293b3f49fa844f6e2cb30e225fc76a48ab6fa1889b8d0b873136ab478c4",
+    "notes.json": "e1ef4e3d360c7879765455697f66dc7552627a1bd7166fb54d0987548fcb8651"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "completed and visually reviewed",
+  "primary": "/workspace/output/a-note-a-world/final_video.mp4",
+  "primary_sha256": "fe1ca4c81a939fa331f1d4a4ce7c62a940856b86264f549c0afd4d18ae602883",
+  "viewing_copies": [
+    "previews/final-video-720p.mp4",
+    "previews/preview-final-360p.mp4"
+  ],
+  "final_keyframes": 19,
+  "visual_review": "VISUAL-REVIEW.md"
+}
