@@ -1,6 +1,6 @@
 {
   "project": "微光归途 / Where Light Returns",
-  "status": "local artifacts complete; remote verification follows upload",
+  "status": "local production complete; downloadable audio and project verified from GitHub; remote-verification.json records exact versions",
   "files": [
     {
       "name": "QA.md",
@@ -9,8 +9,8 @@
     },
     {
       "name": "Where-Light-Returns-Project.zip",
-      "bytes": 48304721,
-      "sha256": "d416dfb73238b10d1f212d5bff7aec0e2cf11368cf24e0c919b1a37c5ddac09a"
+      "bytes": 48305124,
+      "sha256": "785280bf7569706cf0002ef56c3080a27083199cb023e1df20e8afff0dc2c030"
     },
     {
       "name": "audio-quality.png",

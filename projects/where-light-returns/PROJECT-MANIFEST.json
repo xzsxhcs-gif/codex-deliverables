@@ -1,5 +1,6 @@
 {
   "title": "Where Light Returns / 微光归途",
+  "scope": "Full project ZIP snapshot; Git projects directory omits WAV/MP3 which are provided in deliverables.",
   "files": [
     {
       "path": ".gitignore",
@@ -33,8 +34,8 @@
     },
     {
       "path": "PROGRESS.md",
-      "bytes": 1259,
-      "sha256": "491beddda87577ab65f97838dc57fd8ef106323d82e90acc3a90ba0c1b0d885e"
+      "bytes": 1830,
+      "sha256": "37a0a62503c9286cdb360126009f5acd7ef44d74df34797f2b04443cc1e367cd"
     },
     {
       "path": "QA.md",
@@ -227,5 +228,5 @@
       "sha256": "7b02bf3b06400e2c461a2adc2ed7de0fa9359990ddb2a32657582d04d774dc35"
     }
   ],
-  "note": "Excludes this manifest itself and generated work/stems; all required final files included."
+  "note": "Excludes this manifest itself and generated work/stems."
 }
