@@ -1,0 +1,782 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "WAV is 48kHz stereo 16-bit PCM",
+      "passed": true
+    },
+    {
+      "name": "Film clock and PCM length agree exactly",
+      "passed": true,
+      "detail": {
+        "pcm_frames": 4499200,
+        "video_frames": 2812,
+        "fps": 30
+      }
+    },
+    {
+      "name": "Duration is approximately 94 seconds",
+      "passed": true
+    },
+    {
+      "name": "Leading 3.7 seconds is silent",
+      "passed": true
+    },
+    {
+      "name": "Original musical PCM is completely unchanged",
+      "passed": true,
+      "detail": {
+        "source_pcm_sha256": "9984645243e40bc4eb2ab8580941fac0bbd451ff7672daaaa0a2ea2ce4ba6c6a",
+        "embedded_pcm_sha256": "9984645243e40bc4eb2ab8580941fac0bbd451ff7672daaaa0a2ea2ce4ba6c6a"
+      }
+    },
+    {
+      "name": "Only silent frame-alignment padding was appended",
+      "passed": true,
+      "detail": 172
+    },
+    {
+      "name": "No PCM clipping",
+      "passed": true,
+      "detail": {
+        "peak_dbfs": -2.7479485269414567
+      }
+    },
+    {
+      "name": "All samples finite",
+      "passed": true
+    },
+    {
+      "name": "643 musical notes and nine instruments retained",
+      "passed": true
+    },
+    {
+      "name": "Every note uses the same global time offset",
+      "passed": true
+    },
+    {
+      "name": "All visual notes remain within the film",
+      "passed": true
+    },
+    {
+      "name": "bars: same musical clock",
+      "passed": true
+    },
+    {
+      "name": "beats: same musical clock",
+      "passed": true
+    },
+    {
+      "name": "Section boundaries use the same global time offset",
+      "passed": true
+    },
+    {
+      "name": "Every MIDI note and velocity matches film-clock JSON",
+      "passed": true,
+      "detail": {
+        "note_boundaries_checked": 1286,
+        "max_error_ms": 0.8676770834057379
+      }
+    },
+    {
+      "name": "MIDI ends at film duration within MIDI tick precision",
+      "passed": true,
+      "detail": {
+        "midi_duration_seconds": 93.73292197916669,
+        "film_duration_seconds": 93.73333333333333
+      }
+    },
+    {
+      "name": "MIDI instruments, controllers and event payloads preserved",
+      "passed": true
+    },
+    {
+      "name": "Every expression controller uses the same film clock",
+      "passed": true,
+      "detail": {
+        "events_checked": 4041,
+        "max_error_ms": 1.0443770832893051
+      }
+    },
+    {
+      "name": "First audible note matches documented film onset",
+      "passed": true,
+      "detail": {
+        "note_seconds": 4.00327,
+        "detected_pcm_seconds": 4.0,
+        "first_onset_visual_frame": 121,
+        "maximum_30fps_visual_quantization_ms": 33.333333333333336
+      }
+    },
+    {
+      "name": "Exactly one video and one audio stream",
+      "passed": true
+    },
+    {
+      "name": "H.264 video",
+      "passed": true
+    },
+    {
+      "name": "Universal yuv420p pixel format",
+      "passed": true,
+      "detail": "yuv420p"
+    },
+    {
+      "name": "Requested resolution",
+      "passed": true,
+      "detail": {
+        "width": 640,
+        "height": 360
+      }
+    },
+    {
+      "name": "Constant 30fps timing",
+      "passed": true
+    },
+    {
+      "name": "Encoded frame count matches timeline",
+      "passed": true,
+      "detail": {
+        "encoded_frames": "2812",
+        "expected_frames": 2812
+      }
+    },
+    {
+      "name": "AAC stereo 48kHz audio",
+      "passed": true
+    },
+    {
+      "name": "Video duration matches music frame boundary",
+      "passed": true
+    },
+    {
+      "name": "Audio/video duration differs by less than one frame",
+      "passed": true
+    },
+    {
+      "name": "Both streams begin at zero",
+      "passed": true
+    },
+    {
+      "name": "Complete AAC decode without errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Decoded AAC audio is finite and non-silent",
+      "passed": true
+    },
+    {
+      "name": "AAC audible onset is synchronized within 40ms",
+      "passed": true,
+      "detail": {
+        "pcm_onset_seconds": 4.0,
+        "aac_onset_seconds": 4.0
+      }
+    },
+    {
+      "name": "Beginning and ending audio remain sample synchronized",
+      "passed": true,
+      "detail": [
+        {
+          "start_seconds": 5,
+          "end_seconds": 15,
+          "lag_samples": 0,
+          "lag_seconds": 0.0,
+          "normalized_correlation": 0.999990701675415
+        },
+        {
+          "start_seconds": 70,
+          "end_seconds": 80,
+          "lag_samples": 0,
+          "lag_seconds": 0.0,
+          "normalized_correlation": 0.9997973442077637
+        }
+      ]
+    },
+    {
+      "name": "Encoded music matches master content",
+      "passed": true
+    },
+    {
+      "name": "Complete H.264 decode without errors",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every encoded frame decodes",
+      "passed": true,
+      "detail": 2812
+    },
+    {
+      "name": "No extreme whole-frame luminance jumps",
+      "passed": true,
+      "detail": {
+        "maximum_mean_frame_difference": 0.007508018985390663,
+        "candidate_times": []
+      }
+    },
+    {
+      "name": "Opening begins in near-black",
+      "passed": true,
+      "detail": {
+        "first_frame_mean_luminance": 0.007552650757133961
+      }
+    },
+    {
+      "name": "Final frame resolves to near-black",
+      "passed": true,
+      "detail": {
+        "last_frame_mean_luminance": 0.007552650757133961
+      }
+    },
+    {
+      "name": "Bundled fonts cover required opening Chinese glyphs",
+      "passed": true,
+      "detail": {
+        "missing": []
+      }
+    }
+  ],
+  "limitations": [
+    "Numerical frame statistics cannot establish artistic quality or rule out every geometry problem.",
+    "Keyframe and motion review must be documented separately; this script does not claim human listening.",
+    "The musical PCM master is unchanged; AAC is a lossy listening copy in the MP4."
+  ],
+  "music": {
+    "duration_seconds": 93.73333333333333,
+    "frames": 2812,
+    "fps": 30,
+    "pcm_parameters": {
+      "sample_rate": 48000,
+      "channels": 2,
+      "sample_width": 2,
+      "frames": 4499200
+    },
+    "first_note_seconds": 4.00327,
+    "first_audio_seconds": 4.0,
+    "midi_max_error_ms": 0.8676770834057379
+  },
+  "video": {
+    "path": "previews/preview.mp4",
+    "metadata": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 640,
+          "height": 360,
+          "coded_width": 640,
+          "coded_height": 360,
+          "closed_captions": 0,
+          "film_grain": 0,
+          "has_b_frames": 2,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "16:9",
+          "pix_fmt": "yuv420p",
+          "level": 30,
+          "color_range": "tv",
+          "color_space": "bt709",
+          "chroma_location": "center",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "time_base": "1/90000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 8436000,
+          "duration": "93.733333",
+          "bit_rate": "189568",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "2812",
+          "extradata_size": 51,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc61.19.101 libx264"
+          },
+          "side_data_list": [
+            {
+              "side_data_type": "ICC Profile"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 4499184,
+          "duration": "93.733000",
+          "bit_rate": "181480",
+          "nb_frames": "4395",
+          "extradata_size": 5,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "SoundHandler",
+            "vendor_id": "[0][0][0][0]"
+          }
+        }
+      ],
+      "format": {
+        "filename": "/workspace/output/a-note-a-world/previews/preview.mp4",
+        "nb_streams": 2,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "93.733333",
+        "size": "4453050",
+        "bit_rate": "380061",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf61.7.103"
+        }
+      }
+    },
+    "audio_correlations": [
+      {
+        "start_seconds": 5,
+        "end_seconds": 15,
+        "lag_samples": 0,
+        "lag_seconds": 0.0,
+        "normalized_correlation": 0.999990701675415
+      },
+      {
+        "start_seconds": 70,
+        "end_seconds": 80,
+        "lag_samples": 0,
+        "lag_seconds": 0.0,
+        "normalized_correlation": 0.9997973442077637
+      }
+    ],
+    "decoded_frames": 2812,
+    "first_aac_seconds": 4.0,
+    "frame_difference_max": 0.007508018985390663,
+    "frame_difference_p99": 0.0025402444880455732
+  },
+  "keyframe_statistics": [
+    {
+      "name": "frame-001.500s.png",
+      "width": 640,
+      "height": 360,
+      "mean_rgb": [
+        0.002294753445312381,
+        0.00223538582213223,
+        0.0021363096311688423
+      ],
+      "maximum_rgb": 0.9098039269447327,
+      "sha256": "e6d4305e37fc0ff8d399826ae089856bd6d78ceaec7b455a300ca008d497fff9"
+    },
+    {
+      "name": "frame-004.050s.png",
+      "width": 640,
+      "height": 360,
+      "mean_rgb": [
+        0.03312993049621582,
+        0.04318789020180702,
+        0.05981307476758957
+      ],
+      "maximum_rgb": 0.95686274766922,
+      "sha256": "8b6224a1daf22fc3e0ab0f7ad98eb34b1dc3a2b95c2ccdae1b1d9ef320d90011"
+    },
+    {
+      "name": "frame-016.000s.png",
+      "width": 640,
+      "height": 360,
+      "mean_rgb": [
+        0.033893514424562454,
+        0.04389556497335434,
+        0.06382790207862854
+      ],
+      "maximum_rgb": 0.9607843160629272,
+      "sha256": "208d1e381331abd786ba1fa69d1da1cfd538240a4153ab99baaaa2fb03a7632d"
+    },
+    {
+      "name": "frame-028.000s.png",
+      "width": 640,
+      "height": 360,
+      "mean_rgb": [
+        0.036612268537282944,
+        0.04678354784846306,
+        0.06686723232269287
+      ],
+      "maximum_rgb": 0.9490196108818054,
+      "sha256": "fc05e5464cd5d4294b1ae8e704a78421d11ddc711bf7814307fdbdd147bafaab"
+    },
+    {
+      "name": "frame-036.000s.png",
+      "width": 640,
+      "height": 360,
+      "mean_rgb": [
+        0.03764435276389122,
+        0.05141334980726242,
+        0.07884202152490616
+      ],
+      "maximum_rgb": 0.686274528503418,
+      "sha256": "7e66e2602160eafacf58d009240e416595cb4dd4eddae6b8550891317341eb3f"
+    },
+    {
+      "name": "frame-042.000s.png",
+      "width": 640,
+      "height": 360,
+      "mean_rgb": [
+        0.03763650730252266,
+        0.053059522062540054,
+        0.08171746879816055
+      ],
+      "maximum_rgb": 0.7019608020782471,
+      "sha256": "7012d97c4bdfbba85b07c2515f707fe11d96b5bbc8412bb289edeaa9519d9b65"
+    },
+    {
+      "name": "frame-049.000s.png",
+      "width": 640,
+      "height": 360,
+      "mean_rgb": [
+        0.0775674432516098,
+        0.10161208361387253,
+        0.12817883491516113
+      ],
+      "maximum_rgb": 0.3843137323856354,
+      "sha256": "f1690f042287049faeb8d22507dd865d4545baffa2f4f7aed7049daaaf67b687"
+    },
+    {
+      "name": "frame-056.000s.png",
+      "width": 640,
+      "height": 360,
+      "mean_rgb": [
+        0.08283308148384094,
+        0.10711952298879623,
+        0.13456377387046814
+      ],
+      "maximum_rgb": 0.7019608020782471,
+      "sha256": "bd43cdbb5c06ddd63bbb118065880f2c5fe71f61459139fa540f66d6e84d63c0"
+    },
+    {
+      "name": "frame-064.000s.png",
+      "width": 640,
+      "height": 360,
+      "mean_rgb": [
+        0.08434978872537613,
+        0.1078488677740097,
+        0.13447806239128113
+      ],
+      "maximum_rgb": 0.45490196347236633,
+      "sha256": "b0b22de5d02128b69a2839455f9ef84c6d2421d7715bbb33dbbf6fd1ea350b83"
+    },
+    {
+      "name": "frame-072.000s.png",
+      "width": 640,
+      "height": 360,
+      "mean_rgb": [
+        0.08663676679134369,
+        0.10990539193153381,
+        0.13765357434749603
+      ],
+      "maximum_rgb": 0.5921568870544434,
+      "sha256": "4e30e6aabc38736b9299054bc9f70fb46e199ddd5728d598fb1e0c1ce1f79104"
+    },
+    {
+      "name": "frame-078.700s.png",
+      "width": 640,
+      "height": 360,
+      "mean_rgb": [
+        0.08766520023345947,
+        0.111112579703331,
+        0.14064736664295197
+      ],
+      "maximum_rgb": 0.6235294342041016,
+      "sha256": "2fc0dac14f4ad96be9c694be2548b3c60fe05ae3dc44bff9819473207cf80f76"
+    },
+    {
+      "name": "frame-083.000s.png",
+      "width": 640,
+      "height": 360,
+      "mean_rgb": [
+        0.1037716418504715,
+        0.13127896189689636,
+        0.16252729296684265
+      ],
+      "maximum_rgb": 0.5411764979362488,
+      "sha256": "3738ab6fb90cd21aa5ee18e5b4944a0e3960b067d93298066426e12cfdd20a2b"
+    },
+    {
+      "name": "frame-087.000s.png",
+      "width": 640,
+      "height": 360,
+      "mean_rgb": [
+        0.03391606733202934,
+        0.054335035383701324,
+        0.0886957198381424
+      ],
+      "maximum_rgb": 0.29411765933036804,
+      "sha256": "69978e2e99e94762c0684a56851fbba842db6e132418ba04684bf1d209550aa1"
+    },
+    {
+      "name": "frame-090.300s.png",
+      "width": 640,
+      "height": 360,
+      "mean_rgb": [
+        0.03883618116378784,
+        0.048863183706998825,
+        0.06868546456098557
+      ],
+      "maximum_rgb": 0.7960784435272217,
+      "sha256": "1b5aea4c3be39a4298357500543630a3bdadf3bcb2ba16470a660dd890ff38a4"
+    },
+    {
+      "name": "frame-093.700s.png",
+      "width": 640,
+      "height": 360,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_rgb": 0.0,
+      "sha256": "d1eb4ed343fe095b2c8a3ffb4af5bf1be69bb431e6ddd8ad9e6503aa71b16bf7"
+    },
+    {
+      "name": "test-01.50.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.013493611477315426,
+        0.021267445757985115,
+        0.03292902559041977
+      ],
+      "maximum_rgb": 0.658823549747467,
+      "sha256": "9a379d1c06cc78d877d2768e112391e1d7a091656b80e83f7102442957d26cdf"
+    },
+    {
+      "name": "test-04.05.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.03500622883439064,
+        0.04900473728775978,
+        0.07358825206756592
+      ],
+      "maximum_rgb": 0.6901960968971252,
+      "sha256": "02b88e911dd02c1ce220a3f485bc28a01ba4905c78f9dd50a26086e7053fdbd3"
+    },
+    {
+      "name": "test-16.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.03573635220527649,
+        0.04967071861028671,
+        0.07697048783302307
+      ],
+      "maximum_rgb": 0.6941176652908325,
+      "sha256": "2d157857eea06c80bd575e88c4ffdd82acfd5da2f513424272287bca13a71a7a"
+    },
+    {
+      "name": "test-28.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.03761336952447891,
+        0.05169675499200821,
+        0.07916254550218582
+      ],
+      "maximum_rgb": 0.686274528503418,
+      "sha256": "94f9c9d18a5eed01fe042955eeeda7484b231c349e6d086ed2ce54c20cf23200"
+    },
+    {
+      "name": "test-38.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.03757831081748009,
+        0.05158774182200432,
+        0.07879742980003357
+      ],
+      "maximum_rgb": 0.7058823704719543,
+      "sha256": "1a374a097c665e492b33fb4729f056b43f735a884c84db1fa2abe0fa3f6cac1f"
+    },
+    {
+      "name": "test-45.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.05007046088576317,
+        0.06479821354150772,
+        0.087497279047966
+      ],
+      "maximum_rgb": 0.5215686559677124,
+      "sha256": "057285c20f8845da874e3fc38add85c62c75493ef17a701795a3d5b6a4deb19b"
+    },
+    {
+      "name": "test-52.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.07095614075660706,
+        0.09350287914276123,
+        0.11776190251111984
+      ],
+      "maximum_rgb": 0.43529412150382996,
+      "sha256": "39b96bd4ec3f03624fe5284531501f03cc31be675ecc8bbb8cbc7f514de6801f"
+    },
+    {
+      "name": "test-58.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.07151684165000916,
+        0.0939619243144989,
+        0.11865253746509552
+      ],
+      "maximum_rgb": 0.4431372582912445,
+      "sha256": "c8b89f44f5684cd967dad70439ba74ed09b84304b41a759064aa6df9a135e725"
+    },
+    {
+      "name": "test-66.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.07134361565113068,
+        0.09360295534133911,
+        0.1182340607047081
+      ],
+      "maximum_rgb": 0.501960813999176,
+      "sha256": "9e687c638640711e5d896c8a6c288bf83f372fb09bb21ac039296ab5024aee32"
+    },
+    {
+      "name": "test-74.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.07352224737405777,
+        0.09579099714756012,
+        0.12263217568397522
+      ],
+      "maximum_rgb": 0.6117647290229797,
+      "sha256": "54947b5878223316b3b42eb64e171645bec49672606d2062f72ca90ffb38e25e"
+    },
+    {
+      "name": "test-80.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.07641975581645966,
+        0.09970115125179291,
+        0.1286478191614151
+      ],
+      "maximum_rgb": 0.615686297416687,
+      "sha256": "0d9ec69b8a20e859f87328f2fa39f2a8e03a21fb99019c504e63b6e4bec5e220"
+    },
+    {
+      "name": "test-85.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.07713782787322998,
+        0.09604157507419586,
+        0.1212243065237999
+      ],
+      "maximum_rgb": 0.35686275362968445,
+      "sha256": "774f643f9d94f1adbdf47a4afa3fe336d680de87fa2d5ed45282ba18d2e777d8"
+    },
+    {
+      "name": "test-89.00.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.03805220127105713,
+        0.05330098420381546,
+        0.08179700374603271
+      ],
+      "maximum_rgb": 0.5647059082984924,
+      "sha256": "d7b1fcff416c62cc12ebc094543df86e15d3f2f0fe5b5f71bad96d6ceba65896"
+    },
+    {
+      "name": "test-93.70.png",
+      "width": 1280,
+      "height": 720,
+      "mean_rgb": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_rgb": 0.0,
+      "sha256": "7a5175f59992a07616d58b06a310b2a3909c43df6d406a736ef54995563a09ed"
+    }
+  ],
+  "keyframe_review_scope": "Numeric file statistics only; see visual review document for composition and geometry assessment.",
+  "passed": 40,
+  "total_checks": 40
+}
