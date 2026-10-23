@@ -1,0 +1,6 @@
+{
+  "integrated_lufs": -17.6,
+  "loudness_range_lu": 10.9,
+  "true_peak_dbtp": -2.7,
+  "method": "FFmpeg ebur128 peak=true; measurement only, not loudness normalization"
+}

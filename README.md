@@ -11,6 +11,14 @@
 
 ## 已完成项目
 
+### 微光归途 / Where Light Returns
+
+约90秒原创电影感纯音乐。钢琴主题经过大提琴、弦乐、木管与圆号逐渐展开，再回归宁静。实际输出48kHz立体声WAV、MP3试听、完整MIDI和音符时间数据，工程含可重新运行的Python总谱与原项目SoundFont。
+
+- [试听、成品与完整工程下载](deliverables/where-light-returns-v1/)
+- [源码、音乐设计与重建说明](projects/where-light-returns/)
+- [84项成品检查与实际测量](projects/where-light-returns/QA.md)
+
 ### 昨日的我
 
 本地优先的时间胶囊 PWA：今天封存，次日零点起解封；阅读辩护、轻松宣判，再把结果留在档案里。Vue 3 / TypeScript / IndexedDB，支持离线、深浅主题、真实统计与 JSON 备份。

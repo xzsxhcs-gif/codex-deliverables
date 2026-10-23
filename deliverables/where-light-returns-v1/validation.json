@@ -1,0 +1,608 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "name": "48 kHz stereo PCM",
+      "passed": true
+    },
+    {
+      "name": "Approximately 90 seconds",
+      "passed": true,
+      "detail": 90.02975
+    },
+    {
+      "name": "WAV duration agrees with score",
+      "passed": true
+    },
+    {
+      "name": "Mix and score duration agree",
+      "passed": true
+    },
+    {
+      "name": "Audio samples are finite",
+      "passed": true
+    },
+    {
+      "name": "No clipped samples",
+      "passed": true,
+      "detail": {
+        "clipped_samples": 0,
+        "peak_dbfs": -2.7479485269414567
+      }
+    },
+    {
+      "name": "Intersample headroom",
+      "passed": true,
+      "detail": {
+        "estimated_true_peak_dbfs": -2.727634778348507
+      }
+    },
+    {
+      "name": "Audio is not silent",
+      "passed": true
+    },
+    {
+      "name": "Limiter avoids excessive gain reduction",
+      "passed": true,
+      "detail": 1.0
+    },
+    {
+      "name": "Mix report matches WAV",
+      "passed": true
+    },
+    {
+      "name": "No unintended internal silence over 0.8 seconds",
+      "passed": true,
+      "detail": {
+        "longest_low_level_gap_seconds": 0.0
+      }
+    },
+    {
+      "name": "Ending resolves into silence",
+      "passed": true,
+      "detail": {
+        "last_100ms_peak_dbfs": -240.0
+      }
+    },
+    {
+      "name": "Climax rises above the opening",
+      "passed": true,
+      "detail": {
+        "increase_db": 5.880571409805093
+      }
+    },
+    {
+      "name": "Reprise softens after climax",
+      "passed": true,
+      "detail": {
+        "decrease_db": 10.124508443124341
+      }
+    },
+    {
+      "name": "All note events valid",
+      "passed": true
+    },
+    {
+      "name": "SoundFont checksum verified",
+      "passed": true,
+      "detail": "9575028c7a1f589f5770fccc8cff2734566af40cd26ed836944e9a5152688cfe"
+    },
+    {
+      "name": "Piano: real non-silent stem",
+      "passed": true
+    },
+    {
+      "name": "Piano: requested SoundFont preset exists",
+      "passed": true
+    },
+    {
+      "name": "Piano: practical instrument range",
+      "passed": true
+    },
+    {
+      "name": "Piano: complete frame count",
+      "passed": true
+    },
+    {
+      "name": "Cello: real non-silent stem",
+      "passed": true
+    },
+    {
+      "name": "Cello: requested SoundFont preset exists",
+      "passed": true
+    },
+    {
+      "name": "Cello: practical instrument range",
+      "passed": true
+    },
+    {
+      "name": "Cello: complete frame count",
+      "passed": true
+    },
+    {
+      "name": "Violin: real non-silent stem",
+      "passed": true
+    },
+    {
+      "name": "Violin: requested SoundFont preset exists",
+      "passed": true
+    },
+    {
+      "name": "Violin: practical instrument range",
+      "passed": true
+    },
+    {
+      "name": "Violin: complete frame count",
+      "passed": true
+    },
+    {
+      "name": "String ensemble: real non-silent stem",
+      "passed": true
+    },
+    {
+      "name": "String ensemble: requested SoundFont preset exists",
+      "passed": true
+    },
+    {
+      "name": "String ensemble: practical instrument range",
+      "passed": true
+    },
+    {
+      "name": "String ensemble: complete frame count",
+      "passed": true
+    },
+    {
+      "name": "Flute: real non-silent stem",
+      "passed": true
+    },
+    {
+      "name": "Flute: requested SoundFont preset exists",
+      "passed": true
+    },
+    {
+      "name": "Flute: practical instrument range",
+      "passed": true
+    },
+    {
+      "name": "Flute: complete frame count",
+      "passed": true
+    },
+    {
+      "name": "French horns: real non-silent stem",
+      "passed": true
+    },
+    {
+      "name": "French horns: requested SoundFont preset exists",
+      "passed": true
+    },
+    {
+      "name": "French horns: practical instrument range",
+      "passed": true
+    },
+    {
+      "name": "French horns: complete frame count",
+      "passed": true
+    },
+    {
+      "name": "Harp: real non-silent stem",
+      "passed": true
+    },
+    {
+      "name": "Harp: requested SoundFont preset exists",
+      "passed": true
+    },
+    {
+      "name": "Harp: practical instrument range",
+      "passed": true
+    },
+    {
+      "name": "Harp: complete frame count",
+      "passed": true
+    },
+    {
+      "name": "Timpani: real non-silent stem",
+      "passed": true
+    },
+    {
+      "name": "Timpani: requested SoundFont preset exists",
+      "passed": true
+    },
+    {
+      "name": "Timpani: practical instrument range",
+      "passed": true
+    },
+    {
+      "name": "Timpani: complete frame count",
+      "passed": true
+    },
+    {
+      "name": "Orchestral cymbals: real non-silent stem",
+      "passed": true
+    },
+    {
+      "name": "Orchestral cymbals: requested SoundFont preset exists",
+      "passed": true
+    },
+    {
+      "name": "Orchestral cymbals: practical instrument range",
+      "passed": true
+    },
+    {
+      "name": "Orchestral cymbals: complete frame count",
+      "passed": true
+    },
+    {
+      "name": "All nine instrument tracks rendered",
+      "passed": true
+    },
+    {
+      "name": "MIDI D major key and 4/4 meter",
+      "passed": true
+    },
+    {
+      "name": "Piano: MIDI note count",
+      "passed": true
+    },
+    {
+      "name": "Piano: MIDI program/bank/pan/name",
+      "passed": true
+    },
+    {
+      "name": "Piano: all MIDI expression events retained",
+      "passed": true
+    },
+    {
+      "name": "Cello: MIDI note count",
+      "passed": true
+    },
+    {
+      "name": "Cello: MIDI program/bank/pan/name",
+      "passed": true
+    },
+    {
+      "name": "Cello: all MIDI expression events retained",
+      "passed": true
+    },
+    {
+      "name": "Violin: MIDI note count",
+      "passed": true
+    },
+    {
+      "name": "Violin: MIDI program/bank/pan/name",
+      "passed": true
+    },
+    {
+      "name": "Violin: all MIDI expression events retained",
+      "passed": true
+    },
+    {
+      "name": "String ensemble: MIDI note count",
+      "passed": true
+    },
+    {
+      "name": "String ensemble: MIDI program/bank/pan/name",
+      "passed": true
+    },
+    {
+      "name": "String ensemble: all MIDI expression events retained",
+      "passed": true
+    },
+    {
+      "name": "Flute: MIDI note count",
+      "passed": true
+    },
+    {
+      "name": "Flute: MIDI program/bank/pan/name",
+      "passed": true
+    },
+    {
+      "name": "Flute: all MIDI expression events retained",
+      "passed": true
+    },
+    {
+      "name": "French horns: MIDI note count",
+      "passed": true
+    },
+    {
+      "name": "French horns: MIDI program/bank/pan/name",
+      "passed": true
+    },
+    {
+      "name": "French horns: all MIDI expression events retained",
+      "passed": true
+    },
+    {
+      "name": "Harp: MIDI note count",
+      "passed": true
+    },
+    {
+      "name": "Harp: MIDI program/bank/pan/name",
+      "passed": true
+    },
+    {
+      "name": "Harp: all MIDI expression events retained",
+      "passed": true
+    },
+    {
+      "name": "Timpani: MIDI note count",
+      "passed": true
+    },
+    {
+      "name": "Timpani: MIDI program/bank/pan/name",
+      "passed": true
+    },
+    {
+      "name": "Timpani: all MIDI expression events retained",
+      "passed": true
+    },
+    {
+      "name": "Orchestral cymbals: MIDI note count",
+      "passed": true
+    },
+    {
+      "name": "Orchestral cymbals: MIDI program/bank/pan/name",
+      "passed": true
+    },
+    {
+      "name": "Orchestral cymbals: all MIDI expression events retained",
+      "passed": true
+    },
+    {
+      "name": "MIDI note timings match all JSON events",
+      "passed": true,
+      "detail": {
+        "note_count": 643,
+        "boundary_count": 1286,
+        "max_error_ms": 0.8658270834018822
+      }
+    },
+    {
+      "name": "MIDI controller timing matches audio automation",
+      "passed": true,
+      "detail": {
+        "controller_count": 4041,
+        "max_error_ms": 1.0425270832712386
+      }
+    },
+    {
+      "name": "MIDI includes complete release window",
+      "passed": true,
+      "detail": {
+        "midi_seconds": 90.02934923333335,
+        "wav_seconds": 90.02975
+      }
+    }
+  ],
+  "limitations": [
+    "Signal analysis confirms technical integrity; it is not a substitute for human listening.",
+    "4x oversampling estimates intersample peaks; this is not a certified true-peak meter.",
+    "External MIDI players may use different SoundFonts, controller curves and effects."
+  ],
+  "sections": [
+    {
+      "name": "opening",
+      "first_bar": 1,
+      "end_bar_exclusive": 5,
+      "start_seconds": 0.3,
+      "end_seconds": 10.96667,
+      "rms_dbfs": -23.683252997748863,
+      "peak_dbfs": -9.194553369522838
+    },
+    {
+      "name": "development",
+      "first_bar": 5,
+      "end_bar_exclusive": 13,
+      "start_seconds": 10.96667,
+      "end_seconds": 32.3,
+      "rms_dbfs": -21.914356811250958,
+      "peak_dbfs": -7.51582397503081
+    },
+    {
+      "name": "build",
+      "first_bar": 13,
+      "end_bar_exclusive": 21,
+      "start_seconds": 32.3,
+      "end_seconds": 53.63333,
+      "rms_dbfs": -20.221644874069344,
+      "peak_dbfs": -5.006035922885034
+    },
+    {
+      "name": "climax",
+      "first_bar": 21,
+      "end_bar_exclusive": 29,
+      "start_seconds": 53.63333,
+      "end_seconds": 74.96667,
+      "rms_dbfs": -17.80268158794377,
+      "peak_dbfs": -2.7479485269414567
+    },
+    {
+      "name": "return",
+      "first_bar": 29,
+      "end_bar_exclusive": 33,
+      "start_seconds": 74.96667,
+      "end_seconds": 87.02976,
+      "rms_dbfs": -27.92719003106811,
+      "peak_dbfs": -10.58252315817905
+    }
+  ],
+  "audio": {
+    "sample_rate": 48000,
+    "channels": 2,
+    "bit_depth": 16,
+    "frames": 4321428,
+    "duration_seconds": 90.02975,
+    "rms_dbfs": -20.74171873221968,
+    "sample_peak_dbfs": -2.7479485269414567,
+    "estimated_true_peak_dbfs": -2.727634778348507,
+    "stereo_correlation": 0.9339900865324158,
+    "last_note_off_seconds": 86.96124,
+    "mix_report": {
+      "sample_rate": 48000,
+      "frames": 4321428,
+      "duration": 90.02975,
+      "peak": 0.7288150236917671,
+      "limiter_min_gain": 1.0,
+      "loudest_30pct_rms_target": 0.155,
+      "reverb_wet_gain": 0.39
+    }
+  },
+  "stems": [
+    {
+      "channel": 0,
+      "name": "Piano",
+      "note_count": 257,
+      "pitch_range": [
+        38,
+        79
+      ],
+      "active_rms_dbfs": -29.290345893903222,
+      "peak_dbfs": -12.82824953785088,
+      "preset": {
+        "name": "Grand Piano",
+        "program": 0,
+        "bank": 0
+      }
+    },
+    {
+      "channel": 1,
+      "name": "Cello",
+      "note_count": 66,
+      "pitch_range": [
+        42,
+        59
+      ],
+      "active_rms_dbfs": -28.860844918598218,
+      "peak_dbfs": -13.80530651967774,
+      "preset": {
+        "name": "Cello",
+        "program": 42,
+        "bank": 0
+      }
+    },
+    {
+      "channel": 2,
+      "name": "Violin",
+      "note_count": 72,
+      "pitch_range": [
+        66,
+        86
+      ],
+      "active_rms_dbfs": -27.86344446303984,
+      "peak_dbfs": -11.965274642750048,
+      "preset": {
+        "name": "Violin",
+        "program": 40,
+        "bank": 0
+      }
+    },
+    {
+      "channel": 3,
+      "name": "String ensemble",
+      "note_count": 74,
+      "pitch_range": [
+        55,
+        74
+      ],
+      "active_rms_dbfs": -23.605911406854343,
+      "peak_dbfs": -7.253661628326976,
+      "preset": {
+        "name": "Slow Strings",
+        "program": 49,
+        "bank": 0
+      }
+    },
+    {
+      "channel": 4,
+      "name": "Flute",
+      "note_count": 13,
+      "pitch_range": [
+        69,
+        83
+      ],
+      "active_rms_dbfs": -34.049480140713165,
+      "peak_dbfs": -18.246519507412987,
+      "preset": {
+        "name": "Flute",
+        "program": 73,
+        "bank": 0
+      }
+    },
+    {
+      "channel": 5,
+      "name": "French horns",
+      "note_count": 38,
+      "pitch_range": [
+        52,
+        66
+      ],
+      "active_rms_dbfs": -22.976160933555185,
+      "peak_dbfs": -6.621581307927641,
+      "preset": {
+        "name": "French Horns",
+        "program": 60,
+        "bank": 0
+      }
+    },
+    {
+      "channel": 6,
+      "name": "Harp",
+      "note_count": 112,
+      "pitch_range": [
+        57,
+        76
+      ],
+      "active_rms_dbfs": -31.83226590818284,
+      "peak_dbfs": -16.173922335632454,
+      "preset": {
+        "name": "Orchestral Harp",
+        "program": 46,
+        "bank": 0
+      }
+    },
+    {
+      "channel": 7,
+      "name": "Timpani",
+      "note_count": 9,
+      "pitch_range": [
+        38,
+        45
+      ],
+      "active_rms_dbfs": -44.6572196178579,
+      "peak_dbfs": -22.24854898438046,
+      "preset": {
+        "name": "Timpani",
+        "program": 47,
+        "bank": 0
+      }
+    },
+    {
+      "channel": 9,
+      "name": "Orchestral cymbals",
+      "note_count": 2,
+      "pitch_range": [
+        49,
+        49
+      ],
+      "active_rms_dbfs": -52.20531727126341,
+      "peak_dbfs": -24.689105233337614,
+      "preset": {
+        "name": "Orchestral",
+        "program": 48,
+        "bank": 128
+      }
+    }
+  ],
+  "midi": {
+    "format": 1,
+    "ppq": 480,
+    "tracks": 10,
+    "tempo_changes": 1025,
+    "note_count": 643,
+    "duration_seconds": 90.02934923333335,
+    "max_note_timing_error_ms": 0.8658270834018822,
+    "max_controller_timing_error_ms": 1.0425270832712386
+  },
+  "quality_plot": "audio-quality.png",
+  "passed_checks": 84,
+  "failed_checks": 0
+}

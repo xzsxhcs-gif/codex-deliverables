@@ -1,0 +1,30 @@
+[aist#0:0/pcm_s16le @ 0x555aca701140] Guessed Channel Layout: stereo
+Input #0, wav, from 'song.wav':
+  Duration: 00:01:30.03, bitrate: 1536 kb/s
+  Stream #0:0: Audio: pcm_s16le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s16, 1536 kb/s
+Stream mapping:
+  Stream #0:0 (pcm_s16le) -> ebur128:default
+  ebur128:out0 -> Stream #0:0 (pcm_s16le)
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Audio: pcm_s16le, 48000 Hz, stereo, s16, 1536 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s16le
+[Parsed_ebur128_0 @ 0x7fbf2c001f40] Summary:
+
+  Integrated loudness:
+    I:         -17.6 LUFS
+    Threshold: -27.8 LUFS
+
+  Loudness range:
+    LRA:        10.9 LU
+    Threshold: -37.8 LUFS
+    LRA low:   -24.7 LUFS
+    LRA high:  -13.9 LUFS
+
+  True peak:
+    Peak:       -2.7 dBFS
+[out#0/null @ 0x555aca7012c0] video:0KiB audio:16881KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:01:30.02 bitrate=N/A speed= 224x    

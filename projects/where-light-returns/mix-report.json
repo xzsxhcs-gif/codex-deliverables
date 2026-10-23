@@ -1,0 +1,9 @@
+{
+  "sample_rate": 48000,
+  "frames": 4321428,
+  "duration": 90.02975,
+  "peak": 0.7288150236917671,
+  "limiter_min_gain": 1.0,
+  "loudest_30pct_rms_target": 0.155,
+  "reverb_wet_gain": 0.39
+}
