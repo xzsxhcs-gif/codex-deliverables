@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-26T12:59:52.275351+00:00",
+  "artifact_commit": "71d7b579982502a86ffbbddbbbc76adcd9fc6018",
+  "scope": "Public download bytes, APK signature/ZIP and source archive only; not app behavior tests.",
+  "files": [
+    {
+      "file": "BUILD-RECORD.json",
+      "bytes": 4386,
+      "sha256": "bd1a7542e304c6c6716e47b3dc9aa47c012c4b3fc18d5022cc664b6e8921eefa",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/71d7b579982502a86ffbbddbbbc76adcd9fc6018/deliverables/nextclass-android-v1/BUILD-RECORD.json",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "NextClass-1.0.0.apk",
+      "bytes": 1035063,
+      "sha256": "2c3c96a33b386c4844a56a540fc2dd0813ac5a364e5113b51b82858db46a2be4",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/71d7b579982502a86ffbbddbbbc76adcd9fc6018/deliverables/nextclass-android-v1/NextClass-1.0.0.apk",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "NextClass-source.zip",
+      "bytes": 78883,
+      "sha256": "cdaf7f986c0a79a9bf2f3ca409a3b88ac76d841a13f62317dc169de97045fec7",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/71d7b579982502a86ffbbddbbbc76adcd9fc6018/deliverables/nextclass-android-v1/NextClass-source.zip",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "apk-metadata.txt",
+      "bytes": 855,
+      "sha256": "b842a73b24b837de46ee70ff4b3c79783e99420b42346fbc77b198e7da8711fc",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/71d7b579982502a86ffbbddbbbc76adcd9fc6018/deliverables/nextclass-android-v1/apk-metadata.txt",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "apk-permissions.txt",
+      "bytes": 181,
+      "sha256": "b45b80f42e45e5bf5cbaff585f7829e84653abfd98265e3c2a16d219092f1d13",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/71d7b579982502a86ffbbddbbbc76adcd9fc6018/deliverables/nextclass-android-v1/apk-permissions.txt",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "apk-signature.txt",
+      "bytes": 970,
+      "sha256": "d21099e374b6871adb0a4238d7804c7e93c5548dd733e945ec3220c5dae3bbd1",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/71d7b579982502a86ffbbddbbbc76adcd9fc6018/deliverables/nextclass-android-v1/apk-signature.txt",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "build-log.txt",
+      "bytes": 2564,
+      "sha256": "2b1ced113d052264cc734c240baeedd8166bbac756161855337558844d12c786",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/71d7b579982502a86ffbbddbbbc76adcd9fc6018/deliverables/nextclass-android-v1/build-log.txt",
+      "http_status": 200,
+      "sha256_matches": true
+    }
+  ],
+  "source_archive_members": 28,
+  "source_zip_crc": "passed",
+  "downloaded_apk_signature": "verified",
+  "initial_course_data": "empty",
+  "automated_tests_run": false,
+  "device_tests_run": false
+}

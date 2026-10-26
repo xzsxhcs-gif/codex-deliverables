@@ -2,8 +2,8 @@
 
 原生Android离线课表工具，黑白极简主屏。当前／即将开始及下一门课程同屏显示，包含课程名称、完整上下课时间、日期和教室。首页有手机日期、星期与秒时钟。
 
-- **[下载安装包 NextClass-1.0.0.apk（1.04 MB）](https://github.com/xzsxhcs-gif/codex-deliverables/raw/refs/heads/main/deliverables/nextclass-android-v1/NextClass-1.0.0.apk)**
-- [下载完整源工程 NextClass-source.zip](https://github.com/xzsxhcs-gif/codex-deliverables/raw/refs/heads/main/deliverables/nextclass-android-v1/NextClass-source.zip)
+- **[下载安装包 NextClass-1.0.0.apk（1.04 MB）](https://github.com/xzsxhcs-gif/codex-deliverables/raw/71d7b579982502a86ffbbddbbbc76adcd9fc6018/deliverables/nextclass-android-v1/NextClass-1.0.0.apk)**
+- [下载完整源工程 NextClass-source.zip](https://github.com/xzsxhcs-gif/codex-deliverables/raw/71d7b579982502a86ffbbddbbbc76adcd9fc6018/deliverables/nextclass-android-v1/NextClass-source.zip)
 - [在线浏览源码及使用说明](../../projects/nextclass/)
 
 支持Android 8.0及以上，包名`dev.nextclass.app`。这是实际编译并签名的release APK，可以安装；没有通过WebView包装网页。
@@ -20,6 +20,6 @@
 - 最终`assembleRelease`成功，APK签名、ZIP和对齐核验通过。
 - [构建记录](BUILD-RECORD.json) · [构建日志](build-log.txt) · [权限](apk-permissions.txt) · [APK元数据](apk-metadata.txt) · [签名](apk-signature.txt) · [SHA-256](SHA256SUMS.txt)。
 - 遵照用户最后“无需测试，直接产出APK”的要求，**未运行自动化测试，也未做手机／模拟器实测**；安装包核验不等同于设备功能验收。
-- 发布后的真实下载核验单独记录在`remote-verification.json`。
+- [公开下载核验](remote-verification.json)：实际下载文件大小与SHA-256一致，下载后的APK签名及源ZIP完整性通过。
 
 私有签名密钥、密码、SDK和构建缓存没有上传。源码可用Android Studio或Gradle重建，使用自己的签名密钥时需遵循Android的签名更新规则。
