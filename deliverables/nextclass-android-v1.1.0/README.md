@@ -2,8 +2,8 @@
 
 **已内置用户核实的课表：11门课程、15条排课规则。** 手机安装后即可按当前日期、时间显示当前／即将开始和下一门课程。
 
-- **[下载 NextClass-1.1.0.apk（1.04 MB）](https://github.com/xzsxhcs-gif/codex-deliverables/raw/refs/heads/main/deliverables/nextclass-android-v1.1.0/NextClass-1.1.0.apk)**
-- [完整源工程](https://github.com/xzsxhcs-gif/codex-deliverables/raw/refs/heads/main/deliverables/nextclass-android-v1.1.0/NextClass-1.1.0-source.zip)
+- **[下载 NextClass-1.1.0.apk（1.04 MB）](https://github.com/xzsxhcs-gif/codex-deliverables/raw/ce9c45559f1f67c89017a4350f7c23126fc1e7d1/deliverables/nextclass-android-v1.1.0/NextClass-1.1.0.apk)**
+- [完整源工程](https://github.com/xzsxhcs-gif/codex-deliverables/raw/ce9c45559f1f67c89017a4350f7c23126fc1e7d1/deliverables/nextclass-android-v1.1.0/NextClass-1.1.0-source.zip)
 - [课表明细](DEFAULT-SCHEDULE.md) · [可导入的本学期JSON](NextClass-2026-autumn.json) · [源码及说明](../../projects/nextclass/)
 
 支持Android 8.0及以上。沿用1.0.0的包名和签名，版本号提高为2，**直接覆盖安装，不必卸载**。新安装或旧版空课表会自动载入；若已有自己录入的非空课表，保留现有内容，需要替换时在「课表设置」里点「载入本学期课表」并确认。
@@ -23,5 +23,5 @@
 - 最终release编译成功；签名、ZIP完整性、对齐检查通过。新旧APK签名证书一致，安装包中预置JSON与源文件逐字节一致。
 - [构建记录](BUILD-RECORD.json) · [构建日志](build-log.txt) · [数据录入记录](SCHEDULE-ENTRY.json) · [人工数据核对](DATA-REVIEW.md) · [SHA-256](SHA256SUMS.txt)。
 - 按用户之前的明确要求，未运行自动化测试或设备实测；上述记录为编译、签名和数据包完整性核验。
-- 实际公开下载校验由`remote-verification.json`另行记录。
+- [实际公开下载核验](remote-verification.json)：全部文件大小与SHA-256一致，下载后的APK签名有效，APK／源ZIP／备份中的15条排课数据逐字节相同。
 - 私钥、密码、SDK和构建缓存未上传；没有加入用户原始课表截图或教师姓名。

@@ -1,5 +1,5 @@
 {
-  "status": "local artifacts packaged; public verification pending",
+  "status": "published and public downloads verified",
   "files": [
     {
       "file": "BUILD-RECORD.json",
@@ -56,5 +56,7 @@
       "bytes": 2445,
       "sha256": "f836c19ac15346b1e93163f3dd062e183f7e2a594eaf50526f49ddc246abb9a7"
     }
-  ]
+  ],
+  "artifact_commit": "ce9c45559f1f67c89017a4350f7c23126fc1e7d1",
+  "remote_verification": "remote-verification.json"
 }
