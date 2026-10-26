@@ -1,0 +1,18 @@
+package: name='dev.nextclass.app' versionCode='1' versionName='1.0.0' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'
+sdkVersion:'26'
+targetSdkVersion:'35'
+uses-permission: name='dev.nextclass.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+application-label:'NextClass'
+application-icon-160:'res/r2.xml'
+application: label='NextClass' icon='res/r2.xml'
+launchable-activity: name='dev.nextclass.app.MainActivity'  label='' icon=''
+feature-group: label=''
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+main
+other-receivers
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--'
+densities: '160'
+native-code: 'arm64-v8a' 'armeabi-v7a' 'x86' 'x86_64'

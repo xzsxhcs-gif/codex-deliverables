@@ -1,0 +1,3 @@
+package: dev.nextclass.app
+permission: dev.nextclass.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission: name='dev.nextclass.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'

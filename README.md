@@ -11,6 +11,16 @@
 
 ## 已完成项目
 
+### NextClass
+
+原生Kotlin / Jetpack Compose离线课表工具。打开即同屏显示当前／即将开始与下一门课程的名称、完整时间、日期及教室；支持教学周、单双周、课程增改删、本地原子保存和JSON备份。首次安装为空课表，无互联网权限。
+
+- [下载签名APK与源工程](deliverables/nextclass-android-v1/)
+- [源码与构建说明](projects/nextclass/)
+- [实际构建和签名记录](deliverables/nextclass-android-v1/BUILD-RECORD.json)
+
+按本次要求未运行自动化测试或设备实测。
+
 ### 一音成境 / A Note, A World
 
 93.73秒原创音乐可视化短片。一个折翼小助手放下首音，协作者把九个声部织成乐谱；乐谱连续展开为旋律山脉、和声河湖与微光，再折回完整总谱。原创音乐《微光归途》，所有画面由Canvas、Three.js与音符数据确定性生成。
