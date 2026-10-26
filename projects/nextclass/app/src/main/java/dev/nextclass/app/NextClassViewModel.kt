@@ -6,6 +6,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import dev.nextclass.app.data.TimetableJson
 import dev.nextclass.app.data.TimetableRepository
+import dev.nextclass.app.data.SemesterPreset
 import dev.nextclass.app.domain.Course
 import dev.nextclass.app.domain.Semester
 import dev.nextclass.app.domain.Timetable
@@ -76,6 +77,10 @@ class NextClassViewModel(application: Application) : AndroidViewModel(applicatio
     }
 
     suspend fun importTimetable(value: Timetable): Boolean = change(allowRecovery = true) { value }
+
+    suspend fun readSemesterPreset(): Timetable? = fileOperation {
+        withContext(Dispatchers.IO) { SemesterPreset.load(getApplication()) }
+    }
 
     private suspend fun change(
         allowRecovery: Boolean = false,

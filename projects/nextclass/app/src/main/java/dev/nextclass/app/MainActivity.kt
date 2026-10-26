@@ -119,6 +119,7 @@ private fun NextClassApp(model: NextClassViewModel, foreground: Boolean, clockSi
     var showSettings by rememberSaveable { mutableStateOf(false) }
     var now by remember { mutableStateOf(ZonedDateTime.now()) }
     var pendingImport by remember { mutableStateOf<Timetable?>(null) }
+    var importingPreset by remember { mutableStateOf(false) }
     var notice by remember { mutableStateOf<String?>(null) }
     val scope = rememberCoroutineScope()
 
@@ -138,7 +139,10 @@ private fun NextClassApp(model: NextClassViewModel, foreground: Boolean, clockSi
         ScheduleEngine.evaluate(state.timetable, now)
     }
     val importLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
-        if (uri != null) scope.launch { pendingImport = model.readImport(uri) }
+        if (uri != null) scope.launch {
+            importingPreset = false
+            pendingImport = model.readImport(uri)
+        }
     }
     val exportLauncher = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("application/json")) { uri ->
         if (uri != null) scope.launch {
@@ -156,6 +160,12 @@ private fun NextClassApp(model: NextClassViewModel, foreground: Boolean, clockSi
             onSaveSemester = model::saveSemester,
             onSaveCourse = model::saveCourse,
             onDeleteCourse = model::deleteCourse,
+            onLoadPreset = {
+                scope.launch {
+                    importingPreset = true
+                    pendingImport = model.readSemesterPreset()
+                }
+            },
             onImport = { importLauncher.launch(arrayOf("application/json", "text/plain", "application/octet-stream")) },
             onExport = { exportLauncher.launch("NextClass-backup-${LocalDate.now()}.json") },
             onDismissError = model::dismissError,
@@ -176,14 +186,17 @@ private fun NextClassApp(model: NextClassViewModel, foreground: Boolean, clockSi
     pendingImport?.let { incoming ->
         AlertDialog(
             onDismissRequest = { if (!state.busy) pendingImport = null },
-            title = { Text("替换本地课表？") },
-            text = { Text("文件包含${incoming.courses.size}门课程。确认后将替换当前${state.timetable.courses.size}门课程；建议先导出备份。") },
+            title = { Text(if (importingPreset) "载入本学期课表？" else "替换本地课表？") },
+            text = {
+                val source = if (importingPreset) "内置课表" else "文件"
+                Text("${source}包含${incoming.courses.size}条排课。确认后将替换当前${state.timetable.courses.size}条排课；建议先导出备份。")
+            },
             confirmButton = {
                 TextButton(enabled = !state.busy, onClick = {
                     scope.launch {
                         if (model.importTimetable(incoming)) {
                             pendingImport = null
-                            notice = "课表已导入。"
+                            notice = if (importingPreset) "本学期课表已载入。" else "课表已导入。"
                         }
                     }
                 }) { Text("确认替换") }

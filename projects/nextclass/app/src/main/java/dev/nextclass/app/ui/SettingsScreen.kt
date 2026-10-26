@@ -38,6 +38,7 @@ fun SettingsScreen(
     onSaveSemester: suspend (Semester) -> Boolean,
     onSaveCourse: suspend (Course) -> Boolean,
     onDeleteCourse: suspend (String) -> Boolean,
+    onLoadPreset: () -> Unit,
     onImport: () -> Unit,
     onExport: () -> Unit,
     onDismissError: () -> Unit,
@@ -106,13 +107,17 @@ fun SettingsScreen(
                             onClick = { onDismissError(); semesterEditorOpen = true },
                             enabled = !busy,
                         ) { Text(if (timetable.semester.startDate == null) "设置学期" else "修改学期") }
+                        TextButton(onClick = onLoadPreset, enabled = !busy) {
+                            Text("载入本学期课表")
+                        }
+                        Text("内置2026年秋季第8–19周，载入前会确认。", style = MaterialTheme.typography.bodySmall, color = SettingsMuted)
                     }
                 }
             }
 
             item(key = "courses_heading") {
                 Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Text("课程 · ${timetable.courses.size}", style = MaterialTheme.typography.titleMedium)
+                    Text("排课 · ${timetable.courses.size}", style = MaterialTheme.typography.titleMedium)
                     Button(
                         onClick = { onDismissError(); editingId = null; courseEditorOpen = true },
                         enabled = !busy && timetable.semester.startDate != null && timetable.courses.size < 1000,

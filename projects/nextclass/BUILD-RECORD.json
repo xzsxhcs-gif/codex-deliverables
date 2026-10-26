@@ -1,54 +1,68 @@
 {
   "status": "signed release APK built",
-  "created_at_utc": "2026-10-26T12:57:49.121429+00:00",
+  "created_at_utc": "2026-10-26T13:14:34.421871+00:00",
   "apk": {
-    "file": "NextClass-1.0.0.apk",
-    "bytes": 1035063,
-    "sha256": "2c3c96a33b386c4844a56a540fc2dd0813ac5a364e5113b51b82858db46a2be4",
+    "file": "NextClass-1.1.0.apk",
+    "bytes": 1035933,
+    "sha256": "1a76d2d9691a6b135cbea971d93cff94066aa34619674321e5087d57797bde32",
     "package": "dev.nextclass.app",
-    "version": "1.0.0",
+    "version": "1.1.0",
+    "version_code": 2,
     "min_android_api": 26,
     "target_android_api": 35
   },
+  "build_result": "BUILD SUCCESSFUL in 1m 11s",
   "build_command": "./gradlew :app:assembleRelease --offline --console=plain -x test -x lint -x lintVitalRelease -x lintVitalAnalyzeRelease -x lintVitalReportRelease",
-  "build_result": "BUILD SUCCESSFUL in 1m 4s",
-  "initial_data": "empty timetable, no semester start date; no private or sample course data bundled",
+  "initial_data": {
+    "course_rules": 15,
+    "distinct_courses": 11,
+    "semester": {
+      "startDate": "2026-09-07",
+      "totalWeeks": 19
+    },
+    "covered_weeks": [
+      8,
+      19
+    ],
+    "coverage_end": "2027-01-17",
+    "asset_sha256": "35b448cc15455720a9269a46b70d39917a313b6e933808775d933e5b1d87ecf5",
+    "embedded_apk_asset_matches_source": true,
+    "gray_courses_included": true
+  },
   "integrity": {
-    "apk_signature": "verified",
+    "signature": "verified",
+    "same_signer_as_1_0_0": true,
     "apk_zip_crc": "passed",
     "zipalign_16kb": "passed",
     "internet_permission": false
   },
+  "upgrade_implementation": "One-time initialization on new install or empty old timetable. Preserve nonempty edits; explicit confirmed preset reload available.",
+  "signer_public_certificate": "Verifies\nVerified using v1 scheme (JAR signing): false\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): false\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\nSigner #1 certificate DN: CN=NextClass, OU=Offline Apps, O=NextClass, C=CN\nSigner #1 certificate SHA-256 digest: c0bf7475faf1ea3d8b51614efbacbc526f4ac101b1da91f6222d940ddab31c53\nSigner #1 certificate SHA-1 digest: cc2c72b31f89a468b71c3c560295922273d71e10\nSigner #1 certificate MD5 digest: 00d942781e106d5b233c93e80bf5df1b\nSigner #1 key algorithm: RSA\nSigner #1 key size (bits): 3072\nSigner #1 public key SHA-256 digest: 677e7d2a7b04d4272d3e26a49792dd0657dd44e7fe5b218a167d8073c5c3b53b\nSigner #1 public key SHA-1 digest: 2530fb0ed74a40edd33e1e79b69da783f40b0238\nSigner #1 public key MD5 digest: 041ab082fa49f24f001e3ff889653283",
   "automated_tests_run": false,
   "device_tests_run": false,
-  "scope": "Compiler output, signing, packaging and metadata only. No automated, emulator or physical-device tests were run as requested.",
-  "signer_public_certificate": "Verifies\nVerified using v1 scheme (JAR signing): false\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): false\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\nSigner #1 certificate DN: CN=NextClass, OU=Offline Apps, O=NextClass, C=CN\nSigner #1 certificate SHA-256 digest: c0bf7475faf1ea3d8b51614efbacbc526f4ac101b1da91f6222d940ddab31c53\nSigner #1 certificate SHA-1 digest: cc2c72b31f89a468b71c3c560295922273d71e10\nSigner #1 certificate MD5 digest: 00d942781e106d5b233c93e80bf5df1b\nSigner #1 key algorithm: RSA\nSigner #1 key size (bits): 3072\nSigner #1 public key SHA-256 digest: 677e7d2a7b04d4272d3e26a49792dd0657dd44e7fe5b218a167d8073c5c3b53b\nSigner #1 public key SHA-1 digest: 2530fb0ed74a40edd33e1e79b69da783f40b0238\nSigner #1 public key MD5 digest: 041ab082fa49f24f001e3ff889653283",
+  "scope": "Actual compilation, signing and package/data integrity checks. Upgrade/UI behavior has not been device-tested.",
   "compiled_source_sha256": {
-    "app/build.gradle.kts": "a1fbe847e6812d7fff9cb99459ce65166950b1222ab512e8308dfc4e0d949af3",
+    "SCHEDULE-ENTRY.json": "3cb687f05bd6b9fd2b47f56c9cb353acc416e31558dd8da564fcdb45a622cba8",
+    "app/build.gradle.kts": "667962042d8a3cfb3f69b2e6f8608d98ab03b76de844c78081b9cd83da1f5e55",
     "app/src/main/AndroidManifest.xml": "7671fe9227bcc93589c7b5f3e47ebac2826fadab5581358f0a6dfcfa82c2fc59",
-    "app/src/main/java/dev/nextclass/app/MainActivity.kt": "52d9df230c301281e34503d6089a059c399ce9cc60bf3f239198a85f62b28155",
-    "app/src/main/java/dev/nextclass/app/NextClassViewModel.kt": "5a029d15494567c802cd4b5bf6573a96611d73b727e9e19c21770b0242d3d0d3",
+    "app/src/main/assets/semester-2026-autumn.json": "35b448cc15455720a9269a46b70d39917a313b6e933808775d933e5b1d87ecf5",
+    "app/src/main/java/dev/nextclass/app/MainActivity.kt": "c8ba8fb9edbd036471f852a3c6992c721156e2fd5d43b104f4504ba04cd2f225",
+    "app/src/main/java/dev/nextclass/app/NextClassViewModel.kt": "d017aaff7300ad2efc4206a8c85001303dff4b84cc564d8f3bd0e1a53f1f4296",
+    "app/src/main/java/dev/nextclass/app/data/SemesterPreset.kt": "8ceb9788e0ee19a10475e08e18e2b6e770b09486fd76eaa57a6d158eec9bda5e",
     "app/src/main/java/dev/nextclass/app/data/TimetableJson.kt": "eaa8ed2d13216870be717c1b7e3aae65ca9f4eccdfcdc6701698baa7eb40cec2",
-    "app/src/main/java/dev/nextclass/app/data/TimetableRepository.kt": "05f59e9daca33dbd7a09ba74ffb2565c26eb7dd7f87575923dc69de860835dc0",
+    "app/src/main/java/dev/nextclass/app/data/TimetableRepository.kt": "aa8a886dd388cf7e3550d96afd6e46d11d5d4368df0af88dbac07395274bc84a",
     "app/src/main/java/dev/nextclass/app/domain/Models.kt": "991d18262f2cedb42d2b36789325542bf39ab321ccd3eb1a9f7beb7cdc6b1896",
     "app/src/main/java/dev/nextclass/app/domain/ScheduleEngine.kt": "ca0ea64d52f6ddd025a4e72eb59bb6bec3ee0f09ad8e9e07d09bd6cf211a0dd4",
     "app/src/main/java/dev/nextclass/app/ui/CourseEditor.kt": "c7515fdfed546aacd0a4658a272b320bcee8e06cb814e54b11b8a84c2ee5e094",
     "app/src/main/java/dev/nextclass/app/ui/HomeScreen.kt": "f1196d5dd65e677b43d87acc178e506902ad84b86895e9dc0d01ec1e794d265c",
-    "app/src/main/java/dev/nextclass/app/ui/SettingsScreen.kt": "6fc52799ffc3151d21d2590a54a33da489d1da662d07b317f6427f74253498ea",
+    "app/src/main/java/dev/nextclass/app/ui/SettingsScreen.kt": "205ec72ea0f3b1fe3d4244c3571e58c25e28621a7f8d43ec721e0313e1ef9d2f",
     "app/src/main/res/drawable/ic_launcher.xml": "fdd8da61e6743591c4fcef6865f16e3357e6cfd5cb2b9f27594634545f36e480",
     "app/src/main/res/values/strings.xml": "f944d53bba6cbcec05b6f55b9741af51aa0c8a941db497fe1c3298167413735a",
     "app/src/main/res/values/themes.xml": "fc5ccbfa049668973806dcb587cbbeda47149317a930706c9d4883590c729734",
     "build.gradle.kts": "1728cda9c68cd1c54b92fc89d57bdadf7cf90cbbc15b5130d153d3ac34baf9f9",
+    "empty-timetable.json": "6906bd73a5c023b4ea30f974c7c2a2297e7f67601b9ba3c4470b07b60f71c6ef",
     "gradle/wrapper/gradle-wrapper.properties": "f7fafb1ddd0a2a1d2ef01ead773d9a88c1f889ef341e4e93c09c0724ade79b32",
     "gradle.properties": "e41e9939665e55b2cca9a1c520ed7c0282a13948620a2baf0b486a5b4f112a4d",
     "settings.gradle.kts": "368d1dde00d7416ccc8fdc1dadf39cc847b5f6ac77bd8e11933c5acf0e423a3d"
-  },
-  "environment": {
-    "system": "Linux",
-    "jdk": "OpenJDK 21 full JDK",
-    "compile_sdk": 35,
-    "gradle": "8.11.1",
-    "kotlin": "1.9.25",
-    "agp": "8.7.2"
   }
 }

@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "semester": {
+    "startDate": "2026-09-07",
+    "totalWeeks": 19
+  },
+  "courses": [
+    {
+      "id": "2026-autumn-d1-0800-even",
+      "name": "高等数学AⅠ",
+      "room": "教三103",
+      "dayOfWeek": 1,
+      "startTime": "08:00",
+      "endTime": "09:30",
+      "startWeek": 8,
+      "endWeek": 18,
+      "weekPattern": "EVEN"
+    },
+    {
+      "id": "2026-autumn-d1-0945-all",
+      "name": "足球",
+      "room": "操场",
+      "dayOfWeek": 1,
+      "startTime": "09:45",
+      "endTime": "11:15",
+      "startWeek": 8,
+      "endWeek": 16,
+      "weekPattern": "ALL"
+    },
+    {
+      "id": "2026-autumn-d1-1330-all",
+      "name": "心理健康教育",
+      "room": "教二109",
+      "dayOfWeek": 1,
+      "startTime": "13:30",
+      "endTime": "15:00",
+      "startWeek": 8,
+      "endWeek": 19,
+      "weekPattern": "ALL"
+    },
+    {
+      "id": "2026-autumn-d2-0945-even",
+      "name": "大学英语Ⅰ",
+      "room": "西四308",
+      "dayOfWeek": 2,
+      "startTime": "09:45",
+      "endTime": "11:15",
+      "startWeek": 8,
+      "endWeek": 18,
+      "weekPattern": "EVEN"
+    },
+    {
+      "id": "2026-autumn-d2-0945-odd",
+      "name": "大学英语Ⅰ",
+      "room": "教三105",
+      "dayOfWeek": 2,
+      "startTime": "09:45",
+      "endTime": "11:15",
+      "startWeek": 9,
+      "endWeek": 19,
+      "weekPattern": "ODD"
+    },
+    {
+      "id": "2026-autumn-d2-1510-all",
+      "name": "人工智能基础A",
+      "room": "西四101",
+      "dayOfWeek": 2,
+      "startTime": "15:10",
+      "endTime": "16:40",
+      "startWeek": 8,
+      "endWeek": 19,
+      "weekPattern": "ALL"
+    },
+    {
+      "id": "2026-autumn-d2-1830-all",
+      "name": "军事理论与训练",
+      "room": "教二104",
+      "dayOfWeek": 2,
+      "startTime": "18:30",
+      "endTime": "20:00",
+      "startWeek": 8,
+      "endWeek": 19,
+      "weekPattern": "ALL"
+    },
+    {
+      "id": "2026-autumn-d3-0800-all",
+      "name": "中国近现代史纲要",
+      "room": "教二104",
+      "dayOfWeek": 3,
+      "startTime": "08:00",
+      "endTime": "09:30",
+      "startWeek": 8,
+      "endWeek": 19,
+      "weekPattern": "ALL"
+    },
+    {
+      "id": "2026-autumn-d3-0945-all",
+      "name": "高等数学AⅠ",
+      "room": "教三103",
+      "dayOfWeek": 3,
+      "startTime": "09:45",
+      "endTime": "11:15",
+      "startWeek": 8,
+      "endWeek": 19,
+      "weekPattern": "ALL"
+    },
+    {
+      "id": "2026-autumn-d3-1330-all",
+      "name": "电子信息工程专业导论与学业规划",
+      "room": "教三101",
+      "dayOfWeek": 3,
+      "startTime": "13:30",
+      "endTime": "15:00",
+      "startWeek": 8,
+      "endWeek": 19,
+      "weekPattern": "ALL"
+    },
+    {
+      "id": "2026-autumn-d3-1510-all",
+      "name": "C语言程序设计",
+      "room": "西四209",
+      "dayOfWeek": 3,
+      "startTime": "15:10",
+      "endTime": "16:40",
+      "startWeek": 8,
+      "endWeek": 16,
+      "weekPattern": "ALL"
+    },
+    {
+      "id": "2026-autumn-d4-0945-all",
+      "name": "线性代数A",
+      "room": "教二104",
+      "dayOfWeek": 4,
+      "startTime": "09:45",
+      "endTime": "11:15",
+      "startWeek": 8,
+      "endWeek": 19,
+      "weekPattern": "ALL"
+    },
+    {
+      "id": "2026-autumn-d4-1510-all",
+      "name": "C语言程序设计",
+      "room": "西四209",
+      "dayOfWeek": 4,
+      "startTime": "15:10",
+      "endTime": "16:40",
+      "startWeek": 8,
+      "endWeek": 16,
+      "weekPattern": "ALL"
+    },
+    {
+      "id": "2026-autumn-d5-0800-all",
+      "name": "高等数学AⅠ",
+      "room": "教三103",
+      "dayOfWeek": 5,
+      "startTime": "08:00",
+      "endTime": "09:30",
+      "startWeek": 8,
+      "endWeek": 19,
+      "weekPattern": "ALL"
+    },
+    {
+      "id": "2026-autumn-d5-0945-all",
+      "name": "电子CAD",
+      "room": "东3-211，嵌入式系统实验室（2）",
+      "dayOfWeek": 5,
+      "startTime": "09:45",
+      "endTime": "12:05",
+      "startWeek": 8,
+      "endWeek": 15,
+      "weekPattern": "ALL"
+    }
+  ]
+}

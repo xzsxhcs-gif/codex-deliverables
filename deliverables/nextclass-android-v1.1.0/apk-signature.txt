@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=NextClass, OU=Offline Apps, O=NextClass, C=CN
+Signer #1 certificate SHA-256 digest: c0bf7475faf1ea3d8b51614efbacbc526f4ac101b1da91f6222d940ddab31c53
+Signer #1 certificate SHA-1 digest: cc2c72b31f89a468b71c3c560295922273d71e10
+Signer #1 certificate MD5 digest: 00d942781e106d5b233c93e80bf5df1b
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 3072
+Signer #1 public key SHA-256 digest: 677e7d2a7b04d4272d3e26a49792dd0657dd44e7fe5b218a167d8073c5c3b53b
+Signer #1 public key SHA-1 digest: 2530fb0ed74a40edd33e1e79b69da783f40b0238
+Signer #1 public key MD5 digest: 041ab082fa49f24f001e3ff889653283

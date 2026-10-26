@@ -1,5 +1,7 @@
 # NextClass 1.0.0
 
+**已有[1.1.0本学期课表预置版](../nextclass-android-v1.1.0/)，可直接覆盖安装。以下保留原始空课表版本的交付记录。**
+
 原生Android离线课表工具，黑白极简主屏。当前／即将开始及下一门课程同屏显示，包含课程名称、完整上下课时间、日期和教室。首页有手机日期、星期与秒时钟。
 
 - **[下载安装包 NextClass-1.0.0.apk（1.04 MB）](https://github.com/xzsxhcs-gif/codex-deliverables/raw/71d7b579982502a86ffbbddbbbc76adcd9fc6018/deliverables/nextclass-android-v1/NextClass-1.0.0.apk)**

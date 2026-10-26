@@ -13,11 +13,11 @@
 
 ### NextClass
 
-原生Kotlin / Jetpack Compose离线课表工具。打开即同屏显示当前／即将开始与下一门课程的名称、完整时间、日期及教室；支持教学周、单双周、课程增改删、本地原子保存和JSON备份。首次安装为空课表，无互联网权限。
+原生Kotlin / Jetpack Compose离线课表工具。打开即同屏显示当前／即将开始与下一门课程的名称、完整时间、日期及教室；支持教学周、单双周、课程增改删、本地原子保存和JSON备份。1.1.0已按用户要求内置2026年秋季第8–19周课表，11门课程、15条排课规则，无互联网权限。
 
-- [下载签名APK与源工程](deliverables/nextclass-android-v1/)
+- [下载最新带课表APK与源工程](deliverables/nextclass-android-v1.1.0/)
 - [源码与构建说明](projects/nextclass/)
-- [实际构建和签名记录](deliverables/nextclass-android-v1/BUILD-RECORD.json)
+- [实际构建和签名记录](deliverables/nextclass-android-v1.1.0/BUILD-RECORD.json)
 
 按本次要求未运行自动化测试或设备实测。
 
