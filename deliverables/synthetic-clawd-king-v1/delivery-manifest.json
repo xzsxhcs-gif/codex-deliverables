@@ -12,8 +12,8 @@
     },
     {
       "name": "Synthetic-Clawd-King-Source.zip",
-      "bytes": 2604391,
-      "sha256": "71cbb9c085995f13cdab165253a76f9b076105c225d3d83d7b8987e4988232ed"
+      "bytes": 2604571,
+      "sha256": "e5579d305946d3d38a7c80e91f01280c54e5dfd8597c80b7ec78410002bbd3a8"
     }
   ],
   "checks": {
@@ -23,5 +23,6 @@
     "typecheck": "passed",
     "build": "passed"
   },
-  "source_files": 60
+  "source_files": 60,
+  "delivery": "Direct repository files; Release asset upload returned HTTP401"
 }

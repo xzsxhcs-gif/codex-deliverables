@@ -1,3 +1,3 @@
 644ce4b1ab10946399fe66c2496f555ae9a25ef471c0f9a961274afb0a9dc816  Synthetic-Clawd-King.html
 7075f6c5343e5ef64701f575f69e4e3bf9a3630e5fc9204899c0ee607d725295  Synthetic-Clawd-King-Playable.zip
-71cbb9c085995f13cdab165253a76f9b076105c225d3d83d7b8987e4988232ed  Synthetic-Clawd-King-Source.zip
+e5579d305946d3d38a7c80e91f01280c54e5dfd8597c80b7ec78410002bbd3a8  Synthetic-Clawd-King-Source.zip

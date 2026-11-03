@@ -79,6 +79,6 @@ qa/                        浏览器端流程检查与关键帧
 
 3D 需要支持 WebGL 的现代浏览器。实际帧率取决于设备；不能据软件渲染或桌面浏览器模拟推断实体手机性能。第三方说明见 [THIRD-PARTY.md](THIRD-PARTY.md)。
 
-Windows 可运行 `start.bat` 启动开发环境，或运行 `build.bat` 重新生成成品。完整成品和源工程压缩包见本仓库的 Synthetic Clawd King Release。
+Windows 可运行 `start.bat` 启动开发环境，或运行 `build.bat` 重新生成成品。完整成品和源工程压缩包见 [仓库交付目录](https://github.com/xzsxhcs-gif/codex-deliverables/tree/main/deliverables/synthetic-clawd-king-v1)。
 
 详细验收方法与明确限制见 [实际验证记录](docs/VERIFICATION.md)。
