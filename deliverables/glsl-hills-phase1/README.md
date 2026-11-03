@@ -4,9 +4,9 @@
 
 ## 下载与打开
 
-- **[下载成品构建包 GLSL-Hills-Build.zip](https://github.com/xzsxhcs-gif/codex-deliverables/raw/refs/heads/main/deliverables/glsl-hills-phase1/GLSL-Hills-Build.zip)**
-- [下载完整源工程 GLSL-Hills-Source.zip](https://github.com/xzsxhcs-gif/codex-deliverables/raw/refs/heads/main/deliverables/glsl-hills-phase1/GLSL-Hills-Source.zip)
-- [单文件 GLSL-Hills.html](https://github.com/xzsxhcs-gif/codex-deliverables/raw/refs/heads/main/deliverables/glsl-hills-phase1/GLSL-Hills.html)
+- **[下载成品构建包 GLSL-Hills-Build.zip](https://github.com/xzsxhcs-gif/codex-deliverables/raw/c33e30b062b7a5f641f11213595322a8c2073d66/deliverables/glsl-hills-phase1/GLSL-Hills-Build.zip)**
+- [下载完整源工程 GLSL-Hills-Source.zip](https://github.com/xzsxhcs-gif/codex-deliverables/raw/c33e30b062b7a5f641f11213595322a8c2073d66/deliverables/glsl-hills-phase1/GLSL-Hills-Source.zip)
+- [单文件 GLSL-Hills.html](https://github.com/xzsxhcs-gif/codex-deliverables/raw/c33e30b062b7a5f641f11213595322a8c2073d66/deliverables/glsl-hills-phase1/GLSL-Hills.html)
 - [在线浏览源码和README](../../projects/glsl-hills/)
 
 构建包内包含标准`index.html + assets/`静态站点、已内联代码／样式／字体的`GLSL-Hills.html`、许可和`START-HERE.md`。解压后按说明打开。浏览器允许本地脚本时可使用单文件；有本地文件限制时，在解压目录执行`python -m http.server 8080`，访问`http://localhost:8080/GLSL-Hills.html`。标准静态站点已用子目录部署方式实际检查。
@@ -27,4 +27,4 @@
 
 验证范围为Chromium、SwiftShader软件WebGL与移动触控模拟；未做实体Android／iPhone／Safari测试，也未宣称未经硬件测量的60FPS。当前验收浏览器禁止`file://`导航，因此单文件按HTTP运行结果验收。Three.js的单入口包有大于500KB的构建提示，不影响构建成功。
 
-远端下载核验另存于`remote-verification.json`。本次按用户要求通过仓库交付，不以未发布的在线预览地址代替成品文件。
+[实际公开下载核验](remote-verification.json)已通过：所有文件大小与SHA-256一致，两份ZIP及完整源码清单校验通过。本次按用户要求通过仓库交付，不以未发布的在线预览地址代替成品文件。

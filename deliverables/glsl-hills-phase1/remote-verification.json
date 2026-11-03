@@ -1,0 +1,137 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-11-03T13:04:50.285108+00:00",
+  "artifact_commit": "c33e30b062b7a5f641f11213595322a8c2073d66",
+  "scope": "Real public GitHub downloads, byte hashes, both ZIP CRCs and complete source manifest plus core repository source files. Browser functionality separately verified24/24.",
+  "files": [
+    {
+      "file": "GLSL-Hills-Build.zip",
+      "bytes": 645429,
+      "sha256": "da908f9ab050e58f8d29c26f47778a7ef74295a641c14fbb26c5ad1efc763176",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/c33e30b062b7a5f641f11213595322a8c2073d66/deliverables/glsl-hills-phase1/GLSL-Hills-Build.zip",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "GLSL-Hills-Source.zip",
+      "bytes": 3562626,
+      "sha256": "e1df315b52b0e9c3df23fae0f4d937b6868fc8d67ee56a01dcb484fdaafd28e6",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/c33e30b062b7a5f641f11213595322a8c2073d66/deliverables/glsl-hills-phase1/GLSL-Hills-Source.zip",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "GLSL-Hills.html",
+      "bytes": 991680,
+      "sha256": "e18a89360152d3a3210149842de8d0ce4424be0f01c0e342b5cc9da75a4b19f4",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/c33e30b062b7a5f641f11213595322a8c2073d66/deliverables/glsl-hills-phase1/GLSL-Hills.html",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "SOURCE-MANIFEST.json",
+      "bytes": 8940,
+      "sha256": "1953898f7c1867e7915bb01b14904d401d6e9a341d4456255fed623f92dcd9d2",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/c33e30b062b7a5f641f11213595322a8c2073d66/deliverables/glsl-hills-phase1/SOURCE-MANIFEST.json",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "VISUAL-REVIEW.md",
+      "bytes": 979,
+      "sha256": "8d8e562df5a550621fe488ff387807ee92749ffcbe9f9d23196130010e153ba1",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/c33e30b062b7a5f641f11213595322a8c2073d66/deliverables/glsl-hills-phase1/VISUAL-REVIEW.md",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "browser-report.json",
+      "bytes": 12837,
+      "sha256": "6a5047b60ce163fc10ea619d856de71800f322428c28d28f585eddde0b672785",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/c33e30b062b7a5f641f11213595322a8c2073d66/deliverables/glsl-hills-phase1/browser-report.json",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "build-checks.json",
+      "bytes": 774,
+      "sha256": "4df187b04b21b31b39409be96deed5a40e68774662efd7e3e3c5cf5290196983",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/c33e30b062b7a5f641f11213595322a8c2073d66/deliverables/glsl-hills-phase1/build-checks.json",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "contact-sheet.jpg",
+      "bytes": 129201,
+      "sha256": "70a5caf39f1247c72994b75b3856e5fd8c30df1a52aeadeacbcd7151ca5ac8bc",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/c33e30b062b7a5f641f11213595322a8c2073d66/deliverables/glsl-hills-phase1/contact-sheet.jpg",
+      "http_status": 200,
+      "sha256_matches": true
+    },
+    {
+      "file": "production-report.json",
+      "bytes": 1545,
+      "sha256": "2a6773c8a52f981defcd5bf5ce837a94652492531a956c3a96bb7679bc98a63a",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/c33e30b062b7a5f641f11213595322a8c2073d66/deliverables/glsl-hills-phase1/production-report.json",
+      "http_status": 200,
+      "sha256_matches": true
+    }
+  ],
+  "core_remote_source_files": [
+    {
+      "file": "components.json",
+      "sha256": "d0ada54e59710099b766eae59a1a35d31b717a6ec43d73a8814de1815ddc1749",
+      "matches": true
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "3ae3f925aa7709ae81531d553e75655c76a588690f3bc6ec33bb5688cd171f46",
+      "matches": true
+    },
+    {
+      "file": "package.json",
+      "sha256": "359fb7bc56455e65bfdb83f042af0024c1941be512e9683415673402a655c2f3",
+      "matches": true
+    },
+    {
+      "file": "src/App.tsx",
+      "sha256": "16a8ccb038b09184ea796ac797dae51714a20505e92f10f140fc170ec1f59ff2",
+      "matches": true
+    },
+    {
+      "file": "src/components/ui/glsl-hills.tsx",
+      "sha256": "8e6ea40ff6ed064b40ab822b46f0dfeadeaec76d58bd92f6462af57b3b1eced2",
+      "matches": true
+    },
+    {
+      "file": "src/lib/landscape-engine.ts",
+      "sha256": "c4e182837efacec1cf058c0b4b171c8357c4ffabf45ce9347620043cb730ac03",
+      "matches": true
+    },
+    {
+      "file": "src/lib/shaders/terrain-fragment.glsl",
+      "sha256": "95689bd1033e215303070c47eba1e0c8ad27eb61bc390c7bb0a8f402755dedd0",
+      "matches": true
+    },
+    {
+      "file": "src/lib/shaders/terrain-vertex.glsl",
+      "sha256": "0d8ff2a7de4530825691b5082955c84dbb0bc7a698266a63813207100ef7ceee",
+      "matches": true
+    },
+    {
+      "file": "tsconfig.app.json",
+      "sha256": "ffdf85a83b1007585630b692f5546ed0dc4f0339f65e3af226de4e97da7ae337",
+      "matches": true
+    },
+    {
+      "file": "vite.config.ts",
+      "sha256": "37b2e07db58f27e41f848ecb0dd0311c8959db8d1581b360d8e9d4bb79fc14c3",
+      "matches": true
+    }
+  ],
+  "source_archive_members": 56,
+  "source_manifest_members_verified": 55,
+  "source_zip_crc": "passed",
+  "build_zip_crc": "passed",
+  "standalone_matches_build_zip": true
+}

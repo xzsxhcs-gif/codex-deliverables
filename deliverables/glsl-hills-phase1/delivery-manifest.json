@@ -1,5 +1,5 @@
 {
-  "status": "complete product packaged; public download verification pending",
+  "status": "completed and all public downloads verified",
   "created_at_utc": "2026-11-03T13:01:21.700925+00:00",
   "typecheck": "passed",
   "lint": "passed without warnings",
@@ -55,5 +55,7 @@
       "bytes": 1545,
       "sha256": "2a6773c8a52f981defcd5bf5ce837a94652492531a956c3a96bb7679bc98a63a"
     }
-  ]
+  ],
+  "artifact_commit": "c33e30b062b7a5f641f11213595322a8c2073d66",
+  "remote_verification": "remote-verification.json"
 }
