@@ -1,0 +1,455 @@
+{
+  "started_at_utc": "2026-11-03T12:51:37.196141+00:00",
+  "base_url": "http://127.0.0.1:5173",
+  "environment": "Headless Chromium on Linux using ANGLE SwiftShader software WebGL. Mobile tests use Chromium touch/device emulation, not physical phones or Safari.",
+  "checks": [
+    {
+      "name": "Initial terrain renders with one live Strict Mode engine",
+      "passed": true,
+      "detail": {
+        "diagnostics": {
+          "time": 0.14164999999999997,
+          "frames": 6,
+          "width": 1280,
+          "height": 800,
+          "pixelRatio": 1,
+          "segments": 192,
+          "tier": "high",
+          "drawCalls": 1,
+          "camera": {
+            "yaw": 0,
+            "pitch": 0.42662749312687603,
+            "distance": 157.07959765672945
+          },
+          "paused": false,
+          "speed": 0.5,
+          "rendererId": 2
+        },
+        "terrain_region_rgb_stddev": [
+          29.446810248929904,
+          28.78652866748116,
+          27.962628888503886
+        ],
+        "live_resources": {
+          "activeEngines": 1,
+          "activeLoops": 1,
+          "activeObservers": 2
+        }
+      }
+    },
+    {
+      "name": "Exact title, subtitle and initially collapsed settings",
+      "passed": true,
+      "detail": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "Time-driven animation advances",
+      "passed": true,
+      "detail": {
+        "before": 0.37505000000000005,
+        "after": 0.42505000000000004,
+        "frame_delta": 1
+      }
+    },
+    {
+      "name": "Settings expose labeled keyboard sliders and three themes",
+      "passed": true,
+      "detail": {
+        "slider_labels": [
+          "Motion speed",
+          "Terrain height",
+          "Detail"
+        ]
+      }
+    },
+    {
+      "name": "Pause freezes terrain time without resetting phase",
+      "passed": true,
+      "detail": {
+        "time_before": 0.8001000000000004,
+        "time_after": 0.8001000000000004,
+        "resources": {
+          "activeEngines": 1,
+          "activeLoops": 0,
+          "activeObservers": 2
+        }
+      }
+    },
+    {
+      "name": "All palettes transition through uniforms with renderer reuse",
+      "passed": true,
+      "detail": [
+        {
+          "theme": "glacier",
+          "start": [
+            0.16826939582824707,
+            0.2015562504529953,
+            0.24228112399578094
+          ],
+          "first_sample": [
+            0.15093347430229187,
+            0.1903126835823059,
+            0.23654288053512573
+          ],
+          "settled": [
+            0.0703292265534401,
+            0.13803517818450928,
+            0.20986266434192657
+          ]
+        },
+        {
+          "theme": "dusk",
+          "start": [
+            0.06667879223823547,
+            0.1356676071882248,
+            0.20865435898303986
+          ],
+          "first_sample": [
+            0.0666259378194809,
+            0.13563333451747894,
+            0.20863686501979828
+          ],
+          "settled": [
+            0.15456652641296387,
+            0.13344790041446686,
+            0.21147744357585907
+          ]
+        },
+        {
+          "theme": "monochrome",
+          "start": [
+            0.175972118973732,
+            0.1329159438610077,
+            0.2121688574552536
+          ],
+          "first_sample": [
+            0.17330746352672577,
+            0.16481131315231323,
+            0.2262008786201477
+          ],
+          "settled": [
+            0.16887125372886658,
+            0.19716660678386688,
+            0.24036012589931488
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Height and detail reach real shader bounds without renderer recreation",
+      "passed": true,
+      "detail": {
+        "renderer_id": 2,
+        "height_shader": 1.7000000476837158,
+        "detail_shader": 1.4985721111297607
+      }
+    },
+    {
+      "name": "Zero speed freezes and keyboard speed adjustment resumes",
+      "passed": true,
+      "detail": {
+        "zero_time": 0.8001000000000004,
+        "unchanged_time": 0.8001000000000004,
+        "resumed_time": 0.9251999999999971
+      }
+    },
+    {
+      "name": "Reset settings restores the original appearance and motion",
+      "passed": true,
+      "detail": {
+        "theme": "monochrome",
+        "speed": 0.5,
+        "terrainHeight": 1,
+        "detail": 0.55,
+        "paused": false
+      }
+    },
+    {
+      "name": "Drag, zoom and smooth Reset View operate within bounds",
+      "passed": true,
+      "detail": {
+        "base": {
+          "yaw": 0,
+          "pitch": 0.42662749312687603,
+          "distance": 157.07959765672945
+        },
+        "dragged": {
+          "yaw": -0.13609307869155787,
+          "pitch": 0.47359328142315804,
+          "distance": 157.07959765672942
+        },
+        "zoomed": {
+          "yaw": -0.1393987741618312,
+          "pitch": 0.474752493126876,
+          "distance": 119.31882043114649
+        },
+        "restored": {
+          "yaw": -0.001367834077255216,
+          "pitch": 0.42709952998490924,
+          "distance": 156.6829619705367
+        }
+      }
+    },
+    {
+      "name": "Immersive mode hides interface and Escape restores it",
+      "passed": true,
+      "detail": {
+        "native_fullscreen_entered": true,
+        "escape_restores": true
+      }
+    },
+    {
+      "name": "Fullscreen-unavailable fallback and double-click escape work",
+      "passed": true,
+      "detail": {
+        "fullscreen_api_disabled": true,
+        "double_click_restored": true
+      }
+    },
+    {
+      "name": "Desktop layout has no horizontal overflow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mobile framing, capped DPR and compact panel fit portrait",
+      "passed": true,
+      "detail": {
+        "diagnostics": {
+          "time": 0.26670000000000005,
+          "frames": 8,
+          "width": 390,
+          "height": 844,
+          "pixelRatio": 1.5,
+          "segments": 128,
+          "tier": "medium",
+          "drawCalls": 1,
+          "camera": {
+            "yaw": 0,
+            "pitch": 0.42662749312687603,
+            "distance": 157.07959765672945
+          },
+          "paused": false,
+          "speed": 0.5,
+          "rendererId": 2
+        },
+        "panel_bounds": {
+          "x": 64,
+          "y": 327,
+          "width": 310,
+          "height": 506
+        }
+      }
+    },
+    {
+      "name": "Real touch events drag and pinch without page scrolling",
+      "passed": true,
+      "detail": {
+        "before": {
+          "yaw": 0,
+          "pitch": 0.42662749312687603,
+          "distance": 157.07959765672945
+        },
+        "dragged": {
+          "yaw": -0.1841545599461983,
+          "pitch": 0.4525388088968686,
+          "distance": 157.07959765672945
+        },
+        "pinched": {
+          "yaw": -0.18525641025641026,
+          "pitch": 0.4526938438377766,
+          "distance": 113.20649515782952
+        }
+      }
+    },
+    {
+      "name": "Mobile rotation updates renderer dimensions",
+      "passed": true,
+      "detail": {
+        "time": 2.4083,
+        "frames": 71,
+        "width": 844,
+        "height": 390,
+        "pixelRatio": 1.25,
+        "segments": 96,
+        "tier": "low",
+        "drawCalls": 1,
+        "camera": {
+          "yaw": -0.18525641025641026,
+          "pitch": 0.4526938438377766,
+          "distance": 113.09731031284518
+        },
+        "paused": false,
+        "speed": 0.5,
+        "rendererId": 2
+      }
+    },
+    {
+      "name": "Mobile immersive mode restores with double-tap",
+      "passed": true,
+      "detail": {
+        "double_tap_restored": true
+      }
+    },
+    {
+      "name": "Reduced-motion starts still and explicit resume remains possible",
+      "passed": true,
+      "detail": {
+        "initial_time": 0,
+        "stable_time": 0,
+        "resumed_time": 0.058299999999999956
+      }
+    },
+    {
+      "name": "Reusable component sizes from its container, not window",
+      "passed": true,
+      "detail": {
+        "initial": {
+          "time": 0.25830000000000003,
+          "frames": 12,
+          "width": 480,
+          "height": 270,
+          "pixelRatio": 1,
+          "segments": 96,
+          "tier": "low",
+          "drawCalls": 1,
+          "camera": {
+            "yaw": 0,
+            "pitch": 0.42662749312687603,
+            "distance": 157.07959765672945
+          },
+          "paused": false,
+          "speed": 0.5,
+          "rendererId": 2
+        },
+        "resized": {
+          "time": 0.5166000000000002,
+          "frames": 25,
+          "width": 317,
+          "height": 219,
+          "pixelRatio": 1,
+          "segments": 96,
+          "tier": "low",
+          "drawCalls": 1,
+          "camera": {
+            "yaw": 0,
+            "pitch": 0.42662749312687603,
+            "distance": 157.07959765672945
+          },
+          "paused": false,
+          "speed": 0.5,
+          "rendererId": 2
+        }
+      }
+    },
+    {
+      "name": "Offscreen and visibility-event rendering suspend and resume",
+      "passed": true,
+      "detail": {
+        "offscreen_stable": true,
+        "synthetic_visibility_event_stable": true
+      }
+    },
+    {
+      "name": "Strict Mode repeat mounts clean renderers, loops, observers and canvases",
+      "passed": true,
+      "detail": {
+        "unmounted_samples": [
+          {
+            "activeEngines": 0,
+            "activeLoops": 0,
+            "activeObservers": 0
+          },
+          {
+            "activeEngines": 0,
+            "activeLoops": 0,
+            "activeObservers": 0
+          },
+          {
+            "activeEngines": 0,
+            "activeLoops": 0,
+            "activeObservers": 0
+          }
+        ],
+        "final": {
+          "activeEngines": 0,
+          "activeLoops": 0,
+          "activeObservers": 0
+        }
+      }
+    },
+    {
+      "name": "Unsupported WebGL presents a consistent useful fallback",
+      "passed": true,
+      "detail": {
+        "graceful_fallback_visible": true
+      }
+    },
+    {
+      "name": "No unexpected browser or shader errors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Application source unchanged during verification",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "screenshots": [
+    "desktop-monochrome.png",
+    "desktop-controls.png",
+    "theme-glacier.png",
+    "theme-dusk.png",
+    "theme-monochrome.png",
+    "desktop-immersive.png",
+    "mobile-portrait.png",
+    "mobile-controls.png",
+    "mobile-landscape.png",
+    "webgl-unavailable.png"
+  ],
+  "console": [
+    {
+      "page": "http://127.0.0.1:5173/",
+      "kind": "console.error",
+      "message": "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+      "expected": true
+    },
+    {
+      "page": "http://127.0.0.1:5173/",
+      "kind": "console.error",
+      "message": "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context.",
+      "expected": true
+    }
+  ],
+  "limitations": [
+    "No physical mobile device or Safari run was performed.",
+    "Visibility-event suppression is simulated explicitly; it does not measure OS background throttling.",
+    "Lifecycle counters and DOM removal are observed, not a GPU-driver heap audit."
+  ],
+  "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+  "finished_at_utc": "2026-11-03T12:52:45.442589+00:00",
+  "source_sha256": {
+    "src/App.tsx": "16a8ccb038b09184ea796ac797dae51714a20505e92f10f140fc170ec1f59ff2",
+    "src/artwork.css": "249f3fb70281a8f52276b07895abcb953e0ab59bec6180bbb356a0fddc0fff46",
+    "src/components/landscape/landscape-controls.tsx": "e1ca68a85709b6a7a69321bde3a890bea6aba6611199c71dbadf99cb80adbebe",
+    "src/components/ui/button.tsx": "48c3ea96a56197bfa82a312fafdfc34342d7467eb929d79028d52295fbf0fbf8",
+    "src/components/ui/glsl-hills.tsx": "8e6ea40ff6ed064b40ab822b46f0dfeadeaec76d58bd92f6462af57b3b1eced2",
+    "src/components/ui/slider.tsx": "d77b6b74bd76ac20567fc339772b2deb40052822d47f7277227ee63d99a20e2d",
+    "src/index.css": "9bde270cb8d0493a24091df8ae292e3a2b3484f91d738fa70a037866fe206d48",
+    "src/lib/landscape-engine.ts": "c4e182837efacec1cf058c0b4b171c8357c4ffabf45ce9347620043cb730ac03",
+    "src/lib/landscape-presets.ts": "6dcd7f5962b405e27f9f28d64d3f02d44a52ff58777ecd4fb89f63f7ef494920",
+    "src/lib/shaders/terrain-fragment.glsl": "95689bd1033e215303070c47eba1e0c8ad27eb61bc390c7bb0a8f402755dedd0",
+    "src/lib/shaders/terrain-vertex.glsl": "0d8ff2a7de4530825691b5082955c84dbb0bc7a698266a63813207100ef7ceee",
+    "src/lib/utils.ts": "14300d758170c270c75b057f38fedb3793a5920ea872f0477e29fb131185e8a7",
+    "src/main.tsx": "dc4e0196326f50041b82e50fb7f6288d1710cadc9b037d3de6a6865014c415c4"
+  },
+  "passed": 24,
+  "total": 24,
+  "status": "passed"
+}

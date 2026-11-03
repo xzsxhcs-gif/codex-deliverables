@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "production-subdirectory",
+      "url": "http://127.0.0.1:5175/app/",
+      "status": "passed",
+      "console_errors": [],
+      "external_requests": [],
+      "additional_http_requests": [
+        "http://127.0.0.1:5175/app/assets/index-BMviGToD.js",
+        "http://127.0.0.1:5175/app/assets/index-Bea6IQkZ.css",
+        "http://127.0.0.1:5175/app/assets/geist-latin-wght-normal-BgDaEnEv.woff2",
+        "http://127.0.0.1:5175/app/favicon.svg"
+      ],
+      "gl_error": 0,
+      "canvas_count": 1,
+      "theme": "Glacier",
+      "screenshot": "production-subdirectory-final.png"
+    },
+    {
+      "name": "standalone",
+      "url": "http://127.0.0.1:5174/GLSL-Hills.html",
+      "status": "passed",
+      "console_errors": [],
+      "external_requests": [],
+      "additional_http_requests": [],
+      "gl_error": 0,
+      "canvas_count": 1,
+      "theme": "Glacier",
+      "screenshot": "standalone-final.png"
+    }
+  ],
+  "file_url_navigation": "Blocked by administrator policy in the selected Chromium; not bypassed or claimed as tested. Both actual build outputs were verified through local HTTP.",
+  "standalone_sha256": "e18a89360152d3a3210149842de8d0ce4424be0f01c0e342b5cc9da75a4b19f4",
+  "standalone_license_notices": 8,
+  "standalone_final_recheck": {
+    "status": "passed",
+    "console_errors": [],
+    "additional_asset_requests": [],
+    "scope": "Final single file including non-executable license notices; actual WebGL render and theme controls through HTTP"
+  }
+}

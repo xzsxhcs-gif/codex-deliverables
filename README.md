@@ -11,6 +11,14 @@
 
 ## 已完成项目
 
+### GLSL Hills · Phase 1
+
+React / TypeScript / Vite / Three.js 程序化地形艺术应用。自定义GLSL连续生成柔和山丘，含Monochrome、Glacier、Dusk三套氛围、相机探索、触控缩放、参数调节、暂停和沉浸模式。源码、标准生产构建与内联资源的单文件HTML均已完成。
+
+- [成品构建、完整源码与验证资料](deliverables/glsl-hills-phase1/)
+- [浏览源码与运行说明](projects/glsl-hills/)
+- [24项实际浏览器检查](projects/glsl-hills/verification/browser-report.json)
+
 ### NextClass
 
 原生Kotlin / Jetpack Compose离线课表工具。打开即同屏显示当前／即将开始与下一门课程的名称、完整时间、日期及教室；支持教学周、单双周、课程增改删、本地原子保存和JSON备份。1.1.0已按用户要求内置2026年秋季第8–19周课表，11门课程、15条排课规则，无互联网权限。

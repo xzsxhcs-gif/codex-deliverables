@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "version": "1.0.0",
+  "typecheck": "passed",
+  "lint": "passed with no warnings",
+  "production_build": "passed",
+  "browser_checks": {
+    "passed": 24,
+    "total": 24,
+    "application_source_hashes_match": true
+  },
+  "production_http_checks": "passed",
+  "standalone_has_no_external_asset_requests": true,
+  "standalone_sha256": "e18a89360152d3a3210149842de8d0ce4424be0f01c0e342b5cc9da75a4b19f4",
+  "limitations": [
+    "Chromium SwiftShader and mobile emulation were tested; physical Android/iPhone/Safari were not.",
+    "The selected browser blocks file:// navigation by administrator policy; standalone output was verified through HTTP.",
+    "Three.js produces a >500kB minified chunk advisory. No unmeasured FPS claim is made."
+  ]
+}

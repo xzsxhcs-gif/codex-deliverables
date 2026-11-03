@@ -1,0 +1,281 @@
+{
+  "project": "GLSL Hills",
+  "version": "1.0.0",
+  "files": [
+    {
+      "file": ".gitignore",
+      "bytes": 378,
+      "sha256": "6ef279f75863372cf3854d3981bc6e699a3e0e9177bcf496a97ef396770e1c33"
+    },
+    {
+      "file": ".oxlintrc.json",
+      "bytes": 245,
+      "sha256": "b4d344818a1e1bf43997e4744a9153c8eef770c98b58229cd86363dabb85ded4"
+    },
+    {
+      "file": "PROGRESS.md",
+      "bytes": 1541,
+      "sha256": "04d38086a722406ac1ba8b8f8f02bcfd916ce3b46164b847eabe57d395b3ed20"
+    },
+    {
+      "file": "README.md",
+      "bytes": 5587,
+      "sha256": "a23e4fe5df75e6685edb07baee2ac2559a52856e19f51b478112275886524f1b"
+    },
+    {
+      "file": "THIRD-PARTY.md",
+      "bytes": 2769,
+      "sha256": "f93fe58c7ae41547de5c08fb41b580acb774304efb2b1763cec49d6594394043"
+    },
+    {
+      "file": "components.json",
+      "bytes": 516,
+      "sha256": "d0ada54e59710099b766eae59a1a35d31b717a6ec43d73a8814de1815ddc1749"
+    },
+    {
+      "file": "index.html",
+      "bytes": 606,
+      "sha256": "ff642372e64e7db8bfe14d95c71084829799758cc159b49fe45bd43a432a0c0e"
+    },
+    {
+      "file": "licenses/fontsource-variable-geist-LICENSE",
+      "bytes": 4486,
+      "sha256": "71609cbb5c78b5870d712eab73a31d76622635c6ed034ab5cee3b9ecbda8685f"
+    },
+    {
+      "file": "licenses/lucide-react-LICENSE",
+      "bytes": 3208,
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    },
+    {
+      "file": "licenses/radix-ui-LICENSE",
+      "bytes": 1063,
+      "sha256": "0e80a2d229d2fd4fc7e8636142ec5d0ff0bc031f14c15b682e2ac01dfd5b5138"
+    },
+    {
+      "file": "licenses/react-LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+    },
+    {
+      "file": "licenses/shadcn-LICENSE.md",
+      "bytes": 1063,
+      "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f"
+    },
+    {
+      "file": "licenses/tailwindcss-LICENSE",
+      "bytes": 1071,
+      "sha256": "60e0b68c0f35c078eef3a5d29419d0b03ff84ec1df9c3f9d6e39a519a5ae7985"
+    },
+    {
+      "file": "licenses/three-LICENSE",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "file": "licenses/webgl-noise-MIT.txt",
+      "bytes": 1266,
+      "sha256": "2d7f95023537a7848cbab1b6ec69f2ee93087a8c60f299c4b6ec885c829ac324"
+    },
+    {
+      "file": "package-lock.json",
+      "bytes": 237854,
+      "sha256": "3ae3f925aa7709ae81531d553e75655c76a588690f3bc6ec33bb5688cd171f46"
+    },
+    {
+      "file": "package.json",
+      "bytes": 1110,
+      "sha256": "359fb7bc56455e65bfdb83f042af0024c1941be512e9683415673402a655c2f3"
+    },
+    {
+      "file": "public/favicon.svg",
+      "bytes": 262,
+      "sha256": "9579b27293dcaa92d0b3482fb8fc03a5d03d0f0202a93dc4b5ed79f8d75067a5"
+    },
+    {
+      "file": "qa/browser_check.py",
+      "bytes": 24332,
+      "sha256": "a32ac56f189a12671768459f2943ab85b5c26c349bf9acb7e6eb3227fd86c40c"
+    },
+    {
+      "file": "qa/harness.html",
+      "bytes": 306,
+      "sha256": "8c28bfe57bad24a9329af1718fb51ecc8c717ed3b258e7905ed1a75f819070fb"
+    },
+    {
+      "file": "qa/harness.tsx",
+      "bytes": 1683,
+      "sha256": "5d6b5c756b4c79d768fdf4484aee5478ebc21a241b5638447f5e86cd01c04941"
+    },
+    {
+      "file": "requirements-qa.txt",
+      "bytes": 35,
+      "sha256": "14a9db199c14caa56b1a4d5e16c164d367273414870f9ed1f845def8138c1d3f"
+    },
+    {
+      "file": "scripts/make-standalone.mjs",
+      "bytes": 2811,
+      "sha256": "b8fdf8d143d7bb897b1dd266574d6f7b645eb8842161faa55c6790c600e47c0b"
+    },
+    {
+      "file": "src/App.tsx",
+      "bytes": 9282,
+      "sha256": "16a8ccb038b09184ea796ac797dae51714a20505e92f10f140fc170ec1f59ff2"
+    },
+    {
+      "file": "src/artwork.css",
+      "bytes": 9019,
+      "sha256": "249f3fb70281a8f52276b07895abcb953e0ab59bec6180bbb356a0fddc0fff46"
+    },
+    {
+      "file": "src/components/landscape/landscape-controls.tsx",
+      "bytes": 5379,
+      "sha256": "e1ca68a85709b6a7a69321bde3a890bea6aba6611199c71dbadf99cb80adbebe"
+    },
+    {
+      "file": "src/components/ui/button.tsx",
+      "bytes": 3359,
+      "sha256": "48c3ea96a56197bfa82a312fafdfc34342d7467eb929d79028d52295fbf0fbf8"
+    },
+    {
+      "file": "src/components/ui/glsl-hills.tsx",
+      "bytes": 4956,
+      "sha256": "8e6ea40ff6ed064b40ab822b46f0dfeadeaec76d58bd92f6462af57b3b1eced2"
+    },
+    {
+      "file": "src/components/ui/slider.tsx",
+      "bytes": 1976,
+      "sha256": "d77b6b74bd76ac20567fc339772b2deb40052822d47f7277227ee63d99a20e2d"
+    },
+    {
+      "file": "src/index.css",
+      "bytes": 4527,
+      "sha256": "9bde270cb8d0493a24091df8ae292e3a2b3484f91d738fa70a037866fe206d48"
+    },
+    {
+      "file": "src/lib/landscape-engine.ts",
+      "bytes": 19209,
+      "sha256": "c4e182837efacec1cf058c0b4b171c8357c4ffabf45ce9347620043cb730ac03"
+    },
+    {
+      "file": "src/lib/landscape-presets.ts",
+      "bytes": 1114,
+      "sha256": "6dcd7f5962b405e27f9f28d64d3f02d44a52ff58777ecd4fb89f63f7ef494920"
+    },
+    {
+      "file": "src/lib/shaders/terrain-fragment.glsl",
+      "bytes": 2209,
+      "sha256": "95689bd1033e215303070c47eba1e0c8ad27eb61bc390c7bb0a8f402755dedd0"
+    },
+    {
+      "file": "src/lib/shaders/terrain-vertex.glsl",
+      "bytes": 5198,
+      "sha256": "0d8ff2a7de4530825691b5082955c84dbb0bc7a698266a63813207100ef7ceee"
+    },
+    {
+      "file": "src/lib/utils.ts",
+      "bytes": 24,
+      "sha256": "14300d758170c270c75b057f38fedb3793a5920ea872f0477e29fb131185e8a7"
+    },
+    {
+      "file": "src/main.tsx",
+      "bytes": 236,
+      "sha256": "dc4e0196326f50041b82e50fb7f6288d1710cadc9b037d3de6a6865014c415c4"
+    },
+    {
+      "file": "tsconfig.app.json",
+      "bytes": 725,
+      "sha256": "ffdf85a83b1007585630b692f5546ed0dc4f0339f65e3af226de4e97da7ae337"
+    },
+    {
+      "file": "tsconfig.json",
+      "bytes": 229,
+      "sha256": "a0f73022d6d351068ffd730da8033d710c9748c6b48d07756e1f3ffd36b2bf68"
+    },
+    {
+      "file": "tsconfig.node.json",
+      "bytes": 578,
+      "sha256": "7323beeab310c1fc18e8481cbcfa27457f2c1a81533f80fb8e71ffbc56898927"
+    },
+    {
+      "file": "verification/VISUAL-REVIEW.md",
+      "bytes": 979,
+      "sha256": "8d8e562df5a550621fe488ff387807ee92749ffcbe9f9d23196130010e153ba1"
+    },
+    {
+      "file": "verification/browser-report.json",
+      "bytes": 12837,
+      "sha256": "6a5047b60ce163fc10ea619d856de71800f322428c28d28f585eddde0b672785"
+    },
+    {
+      "file": "verification/build-checks.json",
+      "bytes": 774,
+      "sha256": "4df187b04b21b31b39409be96deed5a40e68774662efd7e3e3c5cf5290196983"
+    },
+    {
+      "file": "verification/contact-sheet.jpg",
+      "bytes": 129201,
+      "sha256": "70a5caf39f1247c72994b75b3856e5fd8c30df1a52aeadeacbcd7151ca5ac8bc"
+    },
+    {
+      "file": "verification/production-report.json",
+      "bytes": 1545,
+      "sha256": "2a6773c8a52f981defcd5bf5ce837a94652492531a956c3a96bb7679bc98a63a"
+    },
+    {
+      "file": "verification/screenshots/desktop-controls.png",
+      "bytes": 330121,
+      "sha256": "6834edb64481a4af38b3e2736f3d14c8909587218c15a883024825dd07f7fab3"
+    },
+    {
+      "file": "verification/screenshots/desktop-immersive.png",
+      "bytes": 322219,
+      "sha256": "74ba8c4e803f14196f69287ad7f6d9666c11ae6f2e62fc0f64c08e3943401c90"
+    },
+    {
+      "file": "verification/screenshots/desktop-monochrome.png",
+      "bytes": 328559,
+      "sha256": "28a0d099724d20124db474207fe42f56ca7c13e39d71432b02c15db3ea520672"
+    },
+    {
+      "file": "verification/screenshots/mobile-controls.png",
+      "bytes": 257833,
+      "sha256": "a7c44a7d3a245bf981d18dc31afce9c575059f27fee96c98d84ba3264ab3820b"
+    },
+    {
+      "file": "verification/screenshots/mobile-landscape.png",
+      "bytes": 720290,
+      "sha256": "46cc53cd61af885e89857799324e9f8d69e03b018cb3edb3eae901c048c8107e"
+    },
+    {
+      "file": "verification/screenshots/mobile-portrait.png",
+      "bytes": 301671,
+      "sha256": "be555c7f7c9f8b232edb511eda27ec904fe48a38019042b524aea1100a25bd25"
+    },
+    {
+      "file": "verification/screenshots/standalone-final.png",
+      "bytes": 306847,
+      "sha256": "e4f20708dfe5d9bcefb5b8dc7238a36a15a2bbb4366e1d4b8fbccdf5540c1db2"
+    },
+    {
+      "file": "verification/screenshots/theme-dusk.png",
+      "bytes": 309938,
+      "sha256": "a08e803f9f82394563d166293a4a60de3440da5d143fee3692a0759a83d842cd"
+    },
+    {
+      "file": "verification/screenshots/theme-glacier.png",
+      "bytes": 327609,
+      "sha256": "6083e390e07d33a0e3587fc617f6f8d1758381d02d90fa6834ea427dcd402a5b"
+    },
+    {
+      "file": "verification/screenshots/webgl-unavailable.png",
+      "bytes": 154603,
+      "sha256": "2ebc647312a3592a66f9d911e087695bedbb5d1cd78765d2bd965762297c5d0e"
+    },
+    {
+      "file": "vite.config.ts",
+      "bytes": 392,
+      "sha256": "37b2e07db58f27e41f848ecb0dd0311c8959db8d1581b360d8e9d4bb79fc14c3"
+    }
+  ]
+}
