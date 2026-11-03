@@ -6,7 +6,7 @@
 
 - [单文件游戏 HTML（约 0.63 MB）](https://github.com/xzsxhcs-gif/codex-deliverables/raw/main/deliverables/synthetic-clawd-king-v1/Synthetic-Clawd-King.html)
 - [成品构建 ZIP（约 0.34 MB）](https://github.com/xzsxhcs-gif/codex-deliverables/raw/main/deliverables/synthetic-clawd-king-v1/Synthetic-Clawd-King-Playable.zip)
-- [完整源工程 ZIP（约 2.61 MB）](https://github.com/xzsxhcs-gif/codex-deliverables/raw/main/deliverables/synthetic-clawd-king-v1/Synthetic-Clawd-King-Source.zip)
+- [完整源工程 ZIP（约 2.6 MB）](https://github.com/xzsxhcs-gif/codex-deliverables/raw/main/deliverables/synthetic-clawd-king-v1/Synthetic-Clawd-King-Source.zip)
 - [浏览源代码与运行说明](../../projects/synthetic-clawd-king/)
 - [仓库内单文件备用下载](https://github.com/xzsxhcs-gif/codex-deliverables/raw/main/deliverables/synthetic-clawd-king-v1/Synthetic-Clawd-King.html)
 
@@ -29,3 +29,5 @@ WASD 移动，鼠标瞄准，Space 跳跃，Shift 冲刺，Ctrl 滑铲/蹲伏，
 验证环境为 Chromium 软件 WebGL 和手机模拟；未测试实体手机/Safari或宣称硬件帧率。受管理测试浏览器禁止 file:// 导航，HTTP 单文件运行已验证。当前对局与原版一样仅在页面内存中保存；最高分、图鉴、成就、语言和新增解锁保存于同源 localStorage。
 
 此次 Release 附件接口拒绝上传（HTTP401），因此三个体积较小的成品直接保存在本目录。下载链接均指向实际仓库文件。
+
+上传后的公开下载已逐一核对 HTTP 状态、大小和 SHA256，两个 ZIP 的 CRC 与源工程清单也通过。详见 [远端文件验证](remote-verification.json)。

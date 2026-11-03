@@ -1,0 +1,49 @@
+{
+  "commit": "e25ba4bc42ff41ced893f98ff4d228574c109b7e",
+  "public_assets": [
+    {
+      "name": "Synthetic-Clawd-King.html",
+      "bytes": 633217,
+      "sha256": "644ce4b1ab10946399fe66c2496f555ae9a25ef471c0f9a961274afb0a9dc816",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/e25ba4bc42ff41ced893f98ff4d228574c109b7e/deliverables/synthetic-clawd-king-v1/Synthetic-Clawd-King.html",
+      "http_status": 200,
+      "verified": true
+    },
+    {
+      "name": "Synthetic-Clawd-King-Playable.zip",
+      "bytes": 340941,
+      "sha256": "7075f6c5343e5ef64701f575f69e4e3bf9a3630e5fc9204899c0ee607d725295",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/e25ba4bc42ff41ced893f98ff4d228574c109b7e/deliverables/synthetic-clawd-king-v1/Synthetic-Clawd-King-Playable.zip",
+      "http_status": 200,
+      "verified": true
+    },
+    {
+      "name": "Synthetic-Clawd-King-Source.zip",
+      "bytes": 2604571,
+      "sha256": "e5579d305946d3d38a7c80e91f01280c54e5dfd8597c80b7ec78410002bbd3a8",
+      "url": "https://raw.githubusercontent.com/xzsxhcs-gif/codex-deliverables/e25ba4bc42ff41ced893f98ff4d228574c109b7e/deliverables/synthetic-clawd-king-v1/Synthetic-Clawd-King-Source.zip",
+      "http_status": 200,
+      "verified": true
+    }
+  ],
+  "repository_files": [
+    {
+      "path": "projects/synthetic-clawd-king/src/main.ts",
+      "verified": true
+    },
+    {
+      "path": "projects/synthetic-clawd-king/src/battle/player.ts",
+      "verified": true
+    },
+    {
+      "path": "projects/synthetic-clawd-king/qa/results/browser-report.json",
+      "verified": true
+    },
+    {
+      "path": "deliverables/synthetic-clawd-king-v1/README.md",
+      "verified": true
+    }
+  ],
+  "all_passed": true,
+  "archive_crc_and_source_manifest_verified": true
+}
