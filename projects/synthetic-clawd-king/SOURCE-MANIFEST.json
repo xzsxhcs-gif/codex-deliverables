@@ -1,0 +1,242 @@
+{
+  ".gitignore": {
+    "bytes": 51,
+    "sha256": "8d6c6afcc9c6423d90dbbceeeb6b3b9aa3008f09b926672c96bb3d6f8d5251f7"
+  },
+  "PROGRESS.md": {
+    "bytes": 1664,
+    "sha256": "33a6c6ce84c604e1fa2fca4106ce726edf001e9f8f96525ce953494ce2b851d5"
+  },
+  "README.md": {
+    "bytes": 5939,
+    "sha256": "b58f17f28ce419bd0ec0410cc24abb0f63ed982ad44fbb7953fb749417a4cb8d"
+  },
+  "THIRD-PARTY.md": {
+    "bytes": 2597,
+    "sha256": "44906f42de31d7d1c8a17863cc7e1d554e23a750e52b28ce0e3aaddbb6d5fece"
+  },
+  "build.bat": {
+    "bytes": 206,
+    "sha256": "52efe6d0ed13ea9651cb23e77dd13d91f21fa74bd767d2acb7059a45d775ed24"
+  },
+  "docs/MOVEMENT-PORT.md": {
+    "bytes": 3549,
+    "sha256": "3b5fd815f6ee733b4c89900b2a53cb5afd0d893a3a5da8f7c9b9b673b217fbe2"
+  },
+  "docs/PRESERVATION.md": {
+    "bytes": 3404,
+    "sha256": "0467c002886d1f044247c55b8f96e86818462164539bad707495d3891da18a20"
+  },
+  "docs/VERIFICATION.md": {
+    "bytes": 2705,
+    "sha256": "0873530ed44cd56f8fd9bea8c81f8e20c4d59f697b8fb65943682d2d52a7b878"
+  },
+  "index.html": {
+    "bytes": 5359,
+    "sha256": "5fb924c2c5658220924ca2ebf29ddbad94c746a52eea51b1fc5f3cc6550487a3"
+  },
+  "package-lock.json": {
+    "bytes": 40302,
+    "sha256": "ac45460ddc27b4fb01465dbbf20660bf6d00403e56c9aade404cd565c283f384"
+  },
+  "package.json": {
+    "bytes": 586,
+    "sha256": "c5f922709fa879f90063e432d9000cebc6480b41b175ede94e6a3409d672233a"
+  },
+  "qa/browser_check.py": {
+    "bytes": 23073,
+    "sha256": "2fdcc6eb80d0344b12bb60404210ae06d03404d4626cca2e713d2e7f2a591c3e"
+  },
+  "qa/production_check.py": {
+    "bytes": 4729,
+    "sha256": "9065efe830d93a184e5f2caefb68b7a403691b48e1845bfab470f8a667c2cee0"
+  },
+  "qa/results/01-original-merging.png": {
+    "bytes": 30038,
+    "sha256": "bd13572828b51105139ebda88fc8e450e2d7a4f59bd1d97eeeb6d6d655bef24f"
+  },
+  "qa/results/02-ready.png": {
+    "bytes": 194205,
+    "sha256": "52736f9c0953082b720722ca6c5a428776ed0a0dd03f86c061fc905f9515eee3"
+  },
+  "qa/results/03-first-person.png": {
+    "bytes": 138027,
+    "sha256": "e33b1a14198e212513db3fa04e44d971ef258700876ff838342592770eb59b4e"
+  },
+  "qa/results/04-pause.png": {
+    "bytes": 219830,
+    "sha256": "4898e9f4a57b097f9cbd1b07bb81d6b9d9a6e412ee154d808023b3b0c5948aa5"
+  },
+  "qa/results/05-defeat.png": {
+    "bytes": 365288,
+    "sha256": "ae95842c33741275c36d24025f88e55ab3356ad40d8654aaad83ec56b0a47f01"
+  },
+  "qa/results/06-king-defeated.png": {
+    "bytes": 167017,
+    "sha256": "6438122252013f5a4ee551fce38c4b551384563fcdd0c163b26e5a5b974fa99c"
+  },
+  "qa/results/07-returned-with-reward.png": {
+    "bytes": 37319,
+    "sha256": "d53ae463328197b212c5126e6b8c49cd3a6ff6a4bf2680621b6b2d839b1f33b5"
+  },
+  "qa/results/08-webgl-error.png": {
+    "bytes": 188857,
+    "sha256": "cea61141b432f6aba7da3ef175511726cce2c1660c53faf4470d45af7adab674"
+  },
+  "qa/results/09-mobile-battle.png": {
+    "bytes": 65574,
+    "sha256": "c59637853cb4b333b2e69da2aaa7bb8ada1d31806d848aa48580300be854e7f9"
+  },
+  "qa/results/10-mobile-landscape.png": {
+    "bytes": 113206,
+    "sha256": "6160670f9c6b8eff0e1795bc817c6239558fe815eeb51cf74d4b325cdd1f3986"
+  },
+  "qa/results/attack-barrage-projectiles.png": {
+    "bytes": 204607,
+    "sha256": "f63557959d84e25b4393170def967fa0edcfdb284db04b77887ee06d869b5c43"
+  },
+  "qa/results/attack-barrage.png": {
+    "bytes": 189860,
+    "sha256": "4e6d7f42c29bd6a1f34050d7ba041337e21a3bbf926e4f002e1b730efe92c730"
+  },
+  "qa/results/attack-charge.png": {
+    "bytes": 200962,
+    "sha256": "e9f549ff14b864e10dd7e0773913ed1536747ec8b2af83fd1d3a875a3a8f4967"
+  },
+  "qa/results/attack-slam.png": {
+    "bytes": 154819,
+    "sha256": "c3b1b9d217f79bb885141e8f8921ed64f484ab9510f7aa0cf525f587e22c7ebe"
+  },
+  "qa/results/browser-report.json": {
+    "bytes": 17222,
+    "sha256": "2a8604f6d82226b21bf838b7c842a615340f6cb864afa08d528b663209f8ecb7"
+  },
+  "qa/results/production-report.json": {
+    "bytes": 2996,
+    "sha256": "6f6c95f0ff7de8d451d9b4a7afd861ef74f894c5f94cb5c4094df2997c1bcb36"
+  },
+  "qa/results/production-single-file.png": {
+    "bytes": 122001,
+    "sha256": "692fc5cab22b5e14cac7e206bf13251a9fcc6c8a401e2cf46ed28c91ed758afa"
+  },
+  "qa/results/production-standard-subdirectory.png": {
+    "bytes": 121929,
+    "sha256": "4afa8e8236cca80c4aa4598068c56d11dd488fdc801fbb39dc72c0723089bcb2"
+  },
+  "reference/ActionWeaponKit/Assets/ActionWeaponKit/Scripts/Movement/FirstPersonLook.cs": {
+    "bytes": 2712,
+    "sha256": "1d16305089aba3fe982ffbcd959c8f582b222ffc58e49fbb5e3c6fc0a72c5e93"
+  },
+  "reference/ActionWeaponKit/Assets/ActionWeaponKit/Scripts/Movement/ParkourMotor.cs": {
+    "bytes": 16160,
+    "sha256": "22d3febc55eb3cecbad5c6cbd09f170342606640f56160f8e8dc07d437586d68"
+  },
+  "reference/ActionWeaponKit/Assets/ActionWeaponKit/Scripts/Weapons/GunController.cs": {
+    "bytes": 7630,
+    "sha256": "32459e1376399cc8ab6487798c8b23e93ccce44ab0a786d1f380021133366302"
+  },
+  "reference/ActionWeaponKit/Assets/ActionWeaponKit/Scripts/Weapons/GunDefinition.cs": {
+    "bytes": 998,
+    "sha256": "03f99ee8d87bf3c9b39a0bc99d3a6ed6eb17d4533959aebe4959ec197e5fffb4"
+  },
+  "reference/ActionWeaponKit/Assets/ActionWeaponKit/Scripts/Weapons/GunMotion.cs": {
+    "bytes": 2715,
+    "sha256": "d9ff31a724324ee66f40511b708de79ff630fa1ba82ba0befdd5baf8056fc73d"
+  },
+  "reference/ActionWeaponKit/ORIGINAL_MODULE_INDEX.md": {
+    "bytes": 2138,
+    "sha256": "ff955252349b3e31222b9779c6f162edce3beb3bb60caa6805fdaad75e345f99"
+  },
+  "reference/ActionWeaponKit/README.md": {
+    "bytes": 3970,
+    "sha256": "76b2efbc024d1ebe6de339d3a2a84a6137ee308f23caa2052af5e1045369894f"
+  },
+  "reference/synthetic-clawd-original.html": {
+    "bytes": 23542,
+    "sha256": "24d605ed0c793866e482926099fd54d02dd692422016783a917245e7ae034e2f"
+  },
+  "requirements-qa.txt": {
+    "bytes": 91,
+    "sha256": "9320289891e1294a182a6fd2c2571e5aec87eb834e8cbfd7c639cae3b3007365"
+  },
+  "scripts/standalone.mjs": {
+    "bytes": 2397,
+    "sha256": "d73892c510226bb92f1dbd7748751419108909d457a84ac09e2bc789b3ebb970"
+  },
+  "src/battle/arena.ts": {
+    "bytes": 7233,
+    "sha256": "a727b7c232e6a48b7d1c1a04641993860bbed9bb4672f790824d2cb30e900a4e"
+  },
+  "src/battle/audio.ts": {
+    "bytes": 3414,
+    "sha256": "9761fcf394e3ead1833c0e8d1be672005d45fbe995664a944e3bcdedfd915a64"
+  },
+  "src/battle/boss.ts": {
+    "bytes": 10575,
+    "sha256": "1d4c779c66da4a51ce35bd0fa942d0a99d50c8c6374ab1f011100edd3fa638ae"
+  },
+  "src/battle/input.ts": {
+    "bytes": 4120,
+    "sha256": "7d39167962c26746d5af77ed96e60b86d01358d0ea9360c2ddc55732718e8768"
+  },
+  "src/battle/king-model.ts": {
+    "bytes": 8176,
+    "sha256": "f3b3a89b3731661c6a0d0880416aa8d97b7167c462ab516c75669fbf1c5cb1ac"
+  },
+  "src/battle/player.ts": {
+    "bytes": 10224,
+    "sha256": "d229bdbbe74e3c39f807aed2f43b99955a85c13e76723e9bae05026b594642a5"
+  },
+  "src/battle/runtime.ts": {
+    "bytes": 17580,
+    "sha256": "8b7508bdb34495441e40fc3237885b44cea65a5a7312a715ae209304107b3797"
+  },
+  "src/battle/types.ts": {
+    "bytes": 1504,
+    "sha256": "281ee258ff4045c8add322ec9325474f650f3d5a29a43a00828b99479a0c85b3"
+  },
+  "src/battle/ui.css": {
+    "bytes": 15068,
+    "sha256": "6809e0c3d8dfe06a972dd13b1614fa3632fa4771e2710a00c6e9c382c4ec019f"
+  },
+  "src/battle/ui.ts": {
+    "bytes": 19281,
+    "sha256": "e7ea26890f34fd2e9c6ef1538c5e91e8b477b12d5c915197c247efb144782825"
+  },
+  "src/global.d.ts": {
+    "bytes": 874,
+    "sha256": "149f608ebd71c6d5b88d2c2129c741ca34cf0abf3ed78e1f32bc90a1c3b06af3"
+  },
+  "src/legacy/merging.js": {
+    "bytes": 20614,
+    "sha256": "77b536a71a4371ed08c9aad38c03fa76b1997c5949676b6578baa08eca3c7af8"
+  },
+  "src/main.ts": {
+    "bytes": 7336,
+    "sha256": "ab8b5b717af5caded35cd4ec274fbea90cde84166d26be606ae63579bcb1a991"
+  },
+  "src/shell.css": {
+    "bytes": 2296,
+    "sha256": "167d402abfb6ab0eab35d71465aa0a337824d0260baad51a60462fc08f6d963a"
+  },
+  "start.bat": {
+    "bytes": 226,
+    "sha256": "e6c6ad9dab7b930b2a159e6f712932b3b3964504a3f674b56b00e795d72b6c59"
+  },
+  "tests/boss.test.ts": {
+    "bytes": 5743,
+    "sha256": "02cede27c8818740ec39e7a4ad4d0960f6765142409208ed6a5cf43efa6ab67a"
+  },
+  "tests/player.test.ts": {
+    "bytes": 5387,
+    "sha256": "5b3dbc745d6ad934b2d114580105db5acab15a259a9be3886ce23151ba0cdf93"
+  },
+  "tsconfig.json": {
+    "bytes": 367,
+    "sha256": "4bf190c2ede301a4d7b8944420d4eb146b8f07607226eea6d47dd8f16ca17a65"
+  },
+  "vite.config.ts": {
+    "bytes": 139,
+    "sha256": "593cf7ca5580da2522addb0cdb2afa96e96a742ec4df3bcecdd98e021cdd5639"
+  }
+}

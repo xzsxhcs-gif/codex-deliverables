@@ -1,0 +1,2 @@
+# Optional, only for browser verification; not needed to run the game.
+playwright>=1.50,<2

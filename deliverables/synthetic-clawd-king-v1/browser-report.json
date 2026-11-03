@@ -1,0 +1,626 @@
+{
+  "started": "2026-11-03T13:32:59.765627+00:00",
+  "base": "http://127.0.0.1:5180",
+  "browser": "Chromium / ANGLE SwiftShader",
+  "checks": [
+    {
+      "name": "2D starts in original merging mode",
+      "passed": true
+    },
+    {
+      "name": "Old high score, collection, achievements and Chinese language survive",
+      "passed": true
+    },
+    {
+      "name": "Language switch preserves bilingual UI",
+      "passed": true
+    },
+    {
+      "name": "Original mute control remains functional",
+      "passed": true
+    },
+    {
+      "name": "Original pointer drop adds a real physical body",
+      "passed": true
+    },
+    {
+      "name": "Ordinary merge still scores without starting boss",
+      "passed": true
+    },
+    {
+      "name": "Two penultimate bodies trigger one real King merge",
+      "passed": true,
+      "detail": {
+        "score": 70,
+        "best": 765,
+        "discovered": 199,
+        "achievements": 2,
+        "language": "zh",
+        "paused": true,
+        "over": false,
+        "bodies": [
+          {
+            "lv": 7,
+            "x": 179.99999999999997,
+            "y": 494.27881563677045,
+            "a": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "King freezes original board and unlocks replay",
+      "passed": true
+    },
+    {
+      "name": "Exactly one battle renderer created",
+      "passed": true
+    },
+    {
+      "name": "Start is a real user-gesture entry into FPS",
+      "passed": true
+    },
+    {
+      "name": "WASD and sprint move the actual player",
+      "passed": true,
+      "detail": {
+        "before": {
+          "x": 0,
+          "y": 0,
+          "z": 15,
+          "yaw": 0,
+          "pitch": 0.075,
+          "vx": 0,
+          "vy": 0,
+          "vz": -0.0,
+          "grounded": true,
+          "sliding": false,
+          "crouching": false,
+          "speed": 0
+        },
+        "after": {
+          "x": 0,
+          "y": 0,
+          "z": 13.437916666666663,
+          "yaw": 0,
+          "pitch": 0.075,
+          "vx": 0,
+          "vy": 0,
+          "vz": -9.5,
+          "grounded": true,
+          "sliding": false,
+          "crouching": false,
+          "speed": 9.5
+        }
+      }
+    },
+    {
+      "name": "Ctrl initiates momentum-preserving slide",
+      "passed": true
+    },
+    {
+      "name": "Slide jump genuinely leaves ground",
+      "passed": true
+    },
+    {
+      "name": "Escape pause freezes encounter time and releases capture",
+      "passed": true
+    },
+    {
+      "name": "Resume restores playable encounter",
+      "passed": true
+    },
+    {
+      "name": "Mouse attack launches colliding bubbles and deals boss damage",
+      "passed": true,
+      "detail": {
+        "shots": 3,
+        "hits": 2,
+        "health": 1782
+      }
+    },
+    {
+      "name": "Readable real telegraph 1",
+      "passed": true,
+      "detail": {
+        "attack": "charge",
+        "state": {
+          "boss": {
+            "x": 0,
+            "z": -6,
+            "yaw": 0,
+            "health": 1782,
+            "maxHealth": 1800,
+            "phase": 1,
+            "stage": "windup",
+            "attack": "charge",
+            "elapsed": 0.8499999999999994,
+            "duration": 1.25,
+            "target": {
+              "x": 0,
+              "z": 8
+            },
+            "origin": {
+              "x": 0,
+              "z": -6
+            },
+            "warningRadius": 3.2,
+            "flash": 0.10500000000000001,
+            "time": 4.166666666666663
+          },
+          "player": {
+            "x": 0.0006903789850350953,
+            "y": 0.3734753829797956,
+            "z": 6.563833379963484,
+            "yaw": -0.0,
+            "pitch": 0.07569537531720427,
+            "vx": 0.055230318802807626,
+            "vy": -6.802439387232331,
+            "vz": -9.462662936251164,
+            "grounded": false,
+            "sliding": false,
+            "crouching": false,
+            "speed": 9.462824115094634
+          },
+          "playerHealth": 100,
+          "paused": false,
+          "elapsed": 4.166666666666663,
+          "locked": true,
+          "shots": 3,
+          "hits": 2,
+          "enemyBubbles": 0
+        }
+      }
+    },
+    {
+      "name": "Readable real telegraph 2",
+      "passed": true,
+      "detail": {
+        "attack": "slam",
+        "state": {
+          "boss": {
+            "x": 0,
+            "z": 8,
+            "yaw": 3.062307999523981,
+            "health": 1773,
+            "maxHealth": 1800,
+            "phase": 1,
+            "stage": "windup",
+            "attack": "slam",
+            "elapsed": 0.3583333333333336,
+            "duration": 1.45,
+            "target": {
+              "x": 1.9762528001199393,
+              "z": -16.873793566588805
+            },
+            "origin": {
+              "x": 0,
+              "z": 8
+            },
+            "warningRadius": 4.1,
+            "flash": 0,
+            "time": 8.450000000000161
+          },
+          "player": {
+            "x": -0.3128342225671685,
+            "y": 0,
+            "z": -16.98680625517467,
+            "yaw": -3.1325170534780216,
+            "pitch": 0.057958722812637815,
+            "vx": -5.303987298796173,
+            "vy": 0,
+            "vz": 0.12178458009021363,
+            "grounded": true,
+            "sliding": false,
+            "crouching": false,
+            "speed": 5.305385259313303
+          },
+          "playerHealth": 100,
+          "paused": false,
+          "elapsed": 8.450000000000161,
+          "locked": false,
+          "shots": 3,
+          "hits": 3,
+          "enemyBubbles": 0
+        }
+      }
+    },
+    {
+      "name": "Readable real telegraph 3",
+      "passed": true,
+      "detail": {
+        "attack": "barrage",
+        "state": {
+          "boss": {
+            "x": 0,
+            "z": 8,
+            "yaw": 4.330787355815754,
+            "health": 1773,
+            "maxHealth": 1800,
+            "phase": 1,
+            "stage": "windup",
+            "attack": "barrage",
+            "elapsed": 0.3583333333333336,
+            "duration": 1.25,
+            "target": {
+              "x": -16.946499804013555,
+              "z": 1.1998603247001716
+            },
+            "origin": {
+              "x": 0,
+              "z": 8
+            },
+            "warningRadius": 0,
+            "flash": 0,
+            "time": 13.066666666666565
+          },
+          "player": {
+            "x": -16.642422994561414,
+            "y": 0,
+            "z": 3.415775365142566,
+            "yaw": -1.8459662041364067,
+            "pitch": 0.08353142632861928,
+            "vx": 1.5045128941598493,
+            "vy": 0,
+            "vz": 7.416542171001598,
+            "grounded": true,
+            "sliding": false,
+            "crouching": false,
+            "speed": 7.567605752345872
+          },
+          "playerHealth": 100,
+          "paused": false,
+          "elapsed": 13.066666666666565,
+          "locked": false,
+          "shots": 3,
+          "hits": 3,
+          "enemyBubbles": 0
+        }
+      }
+    },
+    {
+      "name": "Barrage produces visible live projectiles",
+      "passed": true,
+      "detail": 7
+    },
+    {
+      "name": "All three telegraphs inspected",
+      "passed": true
+    },
+    {
+      "name": "Real boss hazards can defeat player with no HP assignment",
+      "passed": true,
+      "detail": {
+        "snapshot": {
+          "boss": {
+            "x": -4.644760211462932,
+            "z": 6.932033257633782,
+            "yaw": 4.486387684401435,
+            "health": 1773,
+            "maxHealth": 1800,
+            "phase": 1,
+            "stage": "execute",
+            "attack": "slam",
+            "elapsed": 0.16666666666666666,
+            "duration": 0.65,
+            "target": {
+              "x": -7.880333351626664,
+              "z": 6.1880799965676
+            },
+            "origin": {
+              "x": -4.644760211462932,
+              "z": 6.932033257633782
+            },
+            "warningRadius": 4.1,
+            "flash": 0,
+            "time": 39.449999999998404
+          },
+          "player": {
+            "x": -7.880333351626664,
+            "y": 0,
+            "z": 6.1880799965676,
+            "yaw": -1.8459662041364067,
+            "pitch": 0.08353142632861928,
+            "vx": 0,
+            "vy": 0,
+            "vz": 0,
+            "grounded": true,
+            "sliding": false,
+            "crouching": false,
+            "speed": 0
+          },
+          "playerHealth": 0,
+          "paused": true,
+          "elapsed": 39.449999999998404,
+          "locked": false,
+          "shots": 3,
+          "hits": 3,
+          "enemyBubbles": 0
+        },
+        "attacks": [
+          "barrage",
+          "slam",
+          "charge"
+        ]
+      }
+    },
+    {
+      "name": "Defeat retry resets battle without repeating merging",
+      "passed": true
+    },
+    {
+      "name": "Aiming/moving bot wins via real bubble collisions",
+      "passed": true,
+      "detail": {
+        "snapshot": {
+          "boss": {
+            "x": 1.2371031156909815,
+            "z": 8.831917701098526,
+            "yaw": 4.127576987906985,
+            "health": 0,
+            "maxHealth": 1800,
+            "phase": 2,
+            "stage": "defeated",
+            "attack": "slam",
+            "elapsed": 0,
+            "duration": 3.2,
+            "target": {
+              "x": -16.7130246508162,
+              "z": -3.0522834110101527
+            },
+            "origin": {
+              "x": 1.2371031156909815,
+              "z": 8.831917701098526
+            },
+            "warningRadius": 4.5,
+            "flash": 0.13,
+            "time": 47.79999999999793
+          },
+          "player": {
+            "x": -11.418216776401305,
+            "y": 0,
+            "z": 12.580150803349428,
+            "yaw": -1.2902397388229847,
+            "pitch": 0.10893431238999753,
+            "vx": 5.173451042362416,
+            "vy": 0,
+            "vz": 4.7209340032057,
+            "grounded": true,
+            "sliding": false,
+            "crouching": false,
+            "speed": 7.003699990029881
+          },
+          "playerHealth": 86,
+          "paused": false,
+          "elapsed": 47.79999999999793,
+          "locked": true,
+          "shots": 237,
+          "hits": 200,
+          "enemyBubbles": 0
+        },
+        "patterns": [
+          "charge:1",
+          "slam:1",
+          "barrage:1",
+          "charge:2",
+          "barrage:2",
+          "slam:2"
+        ],
+        "minHp": 86
+      }
+    },
+    {
+      "name": "All three attacks and second phase occurred during genuine fight",
+      "passed": true,
+      "detail": [
+        "charge:1",
+        "slam:1",
+        "barrage:1",
+        "charge:2",
+        "barrage:2",
+        "slam:2"
+      ]
+    },
+    {
+      "name": "Victory returns to original 2D game with score and records preserved",
+      "passed": true,
+      "detail": {
+        "before": {
+          "score": 70,
+          "best": 765,
+          "discovered": 199,
+          "achievements": 2,
+          "language": "zh",
+          "paused": true,
+          "over": false,
+          "bodies": [
+            {
+              "lv": 7,
+              "x": 179.99999999999997,
+              "y": 494.27881563677045,
+              "a": 0
+            }
+          ]
+        },
+        "after": {
+          "score": 70,
+          "best": 765,
+          "discovered": 199,
+          "achievements": 2,
+          "language": "zh",
+          "paused": false,
+          "over": false,
+          "bodies": [
+            {
+              "lv": 7,
+              "x": 179.99999999999997,
+              "y": 485,
+              "a": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Victory achievement is persisted separately from old records",
+      "passed": true
+    },
+    {
+      "name": "Returning disposes 3D canvas and unfreezes 2D input",
+      "passed": true
+    },
+    {
+      "name": "Disposed runtime releases its renderer and detached canvas",
+      "passed": true
+    },
+    {
+      "name": "A fresh 2D drop works after winning the boss",
+      "passed": true
+    },
+    {
+      "name": "Reload retains old best, Kingslayer and replay unlock",
+      "passed": true
+    },
+    {
+      "name": "Unlocked replay enters encounter without additional King merge",
+      "passed": true
+    },
+    {
+      "name": "Context loss surfaces a recoverable screen",
+      "passed": true
+    },
+    {
+      "name": "Error return preserves usable merging game",
+      "passed": true
+    },
+    {
+      "name": "No unexpected browser or shader errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Denied pointer lock provides actual click-drag aiming fallback",
+      "passed": true
+    },
+    {
+      "name": "Esc pauses fallback controls",
+      "passed": true
+    },
+    {
+      "name": "Mobile viewport has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Mobile movement, aim and combat controls are visible",
+      "passed": true
+    },
+    {
+      "name": "Touch joystick drives first-person movement",
+      "passed": true
+    },
+    {
+      "name": "Touch aim zone rotates actual camera",
+      "passed": true
+    },
+    {
+      "name": "Mobile jump button has real gameplay effect",
+      "passed": true
+    },
+    {
+      "name": "Rotation resizes canvas without overflow",
+      "passed": true
+    },
+    {
+      "name": "Mobile can leave battle and resume normal game",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "fixtures": [
+    "Preload known old save records to verify backwards-compatible localStorage keys.",
+    "seedKingMerge supplies two level-six bodies to the real collision/merge code; no synthetic boss event.",
+    "Defeat test uses a combat bot that deliberately stands in real telegraphed strikes; health is not assigned.",
+    "Victory uses actual Bubble Scepter projectiles, controller aiming, and movement inputs; no direct damageBoss or HP writes.",
+    "Fast-forward runs ordinary fixed-step game updates with GPU submissions temporarily suppressed; screenshots restore the renderer.",
+    "Mobile touch checks use Chromium mobile emulation, not a physical Android/iPhone."
+  ],
+  "combat_bot": {
+    "snapshot": {
+      "boss": {
+        "x": 1.2371031156909815,
+        "z": 8.831917701098526,
+        "yaw": 4.127576987906985,
+        "health": 0,
+        "maxHealth": 1800,
+        "phase": 2,
+        "stage": "defeated",
+        "attack": "slam",
+        "elapsed": 0,
+        "duration": 3.2,
+        "target": {
+          "x": -16.7130246508162,
+          "z": -3.0522834110101527
+        },
+        "origin": {
+          "x": 1.2371031156909815,
+          "z": 8.831917701098526
+        },
+        "warningRadius": 4.5,
+        "flash": 0.13,
+        "time": 47.79999999999793
+      },
+      "player": {
+        "x": -11.418216776401305,
+        "y": 0,
+        "z": 12.580150803349428,
+        "yaw": -1.2902397388229847,
+        "pitch": 0.10893431238999753,
+        "vx": 5.173451042362416,
+        "vy": 0,
+        "vz": 4.7209340032057,
+        "grounded": true,
+        "sliding": false,
+        "crouching": false,
+        "speed": 7.003699990029881
+      },
+      "playerHealth": 86,
+      "paused": false,
+      "elapsed": 47.79999999999793,
+      "locked": true,
+      "shots": 237,
+      "hits": 200,
+      "enemyBubbles": 0
+    },
+    "patterns": [
+      "charge:1",
+      "slam:1",
+      "barrage:1",
+      "charge:2",
+      "barrage:2",
+      "slam:2"
+    ],
+    "minHp": 86
+  },
+  "source_sha256": {
+    "index.html": "5fb924c2c5658220924ca2ebf29ddbad94c746a52eea51b1fc5f3cc6550487a3",
+    "package-lock.json": "ac45460ddc27b4fb01465dbbf20660bf6d00403e56c9aade404cd565c283f384",
+    "src/battle/arena.ts": "a727b7c232e6a48b7d1c1a04641993860bbed9bb4672f790824d2cb30e900a4e",
+    "src/battle/audio.ts": "9761fcf394e3ead1833c0e8d1be672005d45fbe995664a944e3bcdedfd915a64",
+    "src/battle/boss.ts": "1d4c779c66da4a51ce35bd0fa942d0a99d50c8c6374ab1f011100edd3fa638ae",
+    "src/battle/input.ts": "7d39167962c26746d5af77ed96e60b86d01358d0ea9360c2ddc55732718e8768",
+    "src/battle/king-model.ts": "f3b3a89b3731661c6a0d0880416aa8d97b7167c462ab516c75669fbf1c5cb1ac",
+    "src/battle/player.ts": "d229bdbbe74e3c39f807aed2f43b99955a85c13e76723e9bae05026b594642a5",
+    "src/battle/runtime.ts": "8b7508bdb34495441e40fc3237885b44cea65a5a7312a715ae209304107b3797",
+    "src/battle/types.ts": "281ee258ff4045c8add322ec9325474f650f3d5a29a43a00828b99479a0c85b3",
+    "src/battle/ui.css": "6809e0c3d8dfe06a972dd13b1614fa3632fa4771e2710a00c6e9c382c4ec019f",
+    "src/battle/ui.ts": "e7ea26890f34fd2e9c6ef1538c5e91e8b477b12d5c915197c247efb144782825",
+    "src/global.d.ts": "149f608ebd71c6d5b88d2c2129c741ca34cf0abf3ed78e1f32bc90a1c3b06af3",
+    "src/legacy/merging.js": "77b536a71a4371ed08c9aad38c03fa76b1997c5949676b6578baa08eca3c7af8",
+    "src/main.ts": "ab8b5b717af5caded35cd4ec274fbea90cde84166d26be606ae63579bcb1a991",
+    "src/shell.css": "167d402abfb6ab0eab35d71465aa0a337824d0260baad51a60462fc08f6d963a",
+    "vite.config.ts": "593cf7ca5580da2522addb0cdb2afa96e96a742ec4df3bcecdd98e021cdd5639"
+  },
+  "finished": "2026-11-03T13:34:43.240172+00:00",
+  "passed": 44,
+  "total": 44
+}

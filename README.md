@@ -11,6 +11,14 @@
 
 ## 已完成项目
 
+### Synthetic Clawd — The King Awakens
+
+保留可爱 2D 合成游戏，在合成蟹王时进入真正的第一人称 3D 隐藏战斗。程序化粉色蟹王、皇家庭院、三种预警攻击、二阶段、惯性滑铲跳、泡泡战斗、失败重试、胜利返回与持久奖励；含桌面键鼠与手机触控、中英界面。
+
+- [单文件游戏、成品构建及完整源码下载](deliverables/synthetic-clawd-king-v1/)
+- [浏览源码与启动说明](projects/synthetic-clawd-king/)
+- [44 项浏览器流程检查](projects/synthetic-clawd-king/qa/results/browser-report.json) · [17 项正式构建检查](projects/synthetic-clawd-king/qa/results/production-report.json)
+
 ### GLSL Hills · Phase 1
 
 React / TypeScript / Vite / Three.js 程序化地形艺术应用。自定义GLSL连续生成柔和山丘，含Monochrome、Glacier、Dusk三套氛围、相机探索、触控缩放、参数调节、暂停和沉浸模式。源码、标准生产构建与内联资源的单文件HTML均已完成。

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Synthetic Clawd</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23ff7eb6' d='M5 12h22v13H5zM1 17h4v5H1zm26 0h4v5h-4zM8 25h3v5H8zm6 0h3v5h-3zm7 0h3v5h-3z'/%3E%3Cpath fill='%23ffd166' d='M7 9V3l5 3 4-5 4 5 5-3v6z'/%3E%3Cpath fill='%2321182a' d='M10 16h3v5h-3zm9 0h3v5h-3z'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#e8eaf8;--fg:#1d2040;--muted:#5b5f8c;--panel:#f7f8ff;--chip:#d6daf3;--clawd:#d97757;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#14162b;--fg:#eceaff;--muted:#9a9dcc;--panel:#1c1f45;--chip:#262a5a}
+}
+:root[data-theme="dark"]{--bg:#14162b;--fg:#eceaff;--muted:#9a9dcc;--panel:#1c1f45;--chip:#262a5a}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.45rem;padding:.5rem;box-sizing:border-box}
+header,.bar{display:flex;align-items:center;justify-content:space-between;gap:.5rem;width:min(100%,380px)}
+.bar{gap:.32rem}
+.bar button{font-size:.82rem;padding:.4rem .57rem;white-space:nowrap;min-width:0}
+#lang{min-width:43px;background:transparent;border:1px solid var(--muted);padding:.35rem .45rem}
+@media(max-width:340px){.bar{gap:.2rem}.bar button{font-size:.73rem;padding:.36rem .3rem}#lang{min-width:36px}}
+h1{margin:0;font-size:1.2rem}
+.sc{display:flex;gap:.9rem;color:var(--muted);font-size:.95rem}
+.sc b{color:var(--fg)}
+button{font:inherit;font-weight:600;font-size:.88rem;color:var(--fg);background:var(--chip);border:0;border-radius:999px;
+  padding:.4rem .9rem;min-height:40px;cursor:pointer;transition:opacity .2s,transform .1s}
+button:active{transform:scale(.95)}
+button:disabled{opacity:.4;cursor:default}
+button:focus-visible{outline:3px solid var(--clawd);outline-offset:2px}
+.wrap{position:relative;width:min(100%,380px,calc((100dvh - 170px) * .643))}
+#c{width:100%;aspect-ratio:360/560;display:block;background:var(--panel);border-radius:18px;touch-action:none}
+.ov{position:absolute;inset:0;border-radius:18px}
+#over{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;background:rgba(10,12,30,.72);color:#fff;text-align:center}
+#over h2{margin:0;font-size:1.7rem}#over p{margin:0}
+#over button{background:var(--clawd);color:#1b1410}
+#col{background:var(--panel);overflow:auto;padding:.7rem;box-sizing:border-box}
+.ov[hidden],#over[hidden]{display:none}
+.ch{display:flex;justify-content:space-between;align-items:center;gap:.4rem;margin-bottom:.6rem}
+.ch-actions{display:flex;align-items:center;gap:.35rem}
+.ch button{min-height:35px;padding:.35rem .6rem;font-size:.78rem}
+#reset-col{background:transparent;border:1px solid var(--muted);color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+.card{background:var(--chip);border-radius:12px;padding:.4rem;text-align:center;font-size:.78rem;color:var(--muted)}
+.card b{display:block;color:var(--fg);font-size:.88rem}
+.card canvas{width:64px;height:48px}
+.card.new{animation:pop .6s ease 2}
+@keyframes pop{50%{transform:scale(1.07)}}
+h3{margin:.8rem 0 .3rem;font-size:.9rem;color:var(--muted)}
+.ach{font-size:.82rem;padding:.3rem 0;color:var(--muted)}.ach b{color:var(--fg)}
+#toast{position:absolute;left:50%;bottom:14px;transform:translate(-50%,10px);background:rgba(10,12,30,.85);color:#fff;
+  font-size:.85rem;padding:.4rem .8rem;border-radius:999px;opacity:0;pointer-events:none;transition:all .3s;white-space:nowrap;max-width:94%;overflow:hidden;text-overflow:ellipsis}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+.hint{margin:0;color:var(--muted);font-size:.82rem;text-align:center}
+</style>
+</head>
+<body>
+<header><h1 id="title">Synthetic Clawd</h1><div class="sc"><span><span id="score-label">Score</span> <b id="score">0</b></span><span><span id="best-label">Best</span> <b id="best">0</b></span></div></header>
+<div class="bar">
+  <button id="swap" type="button" disabled>Swap ×0</button>
+  <button id="cb" type="button">Collection</button>
+  <button id="mute" type="button" aria-pressed="false">Sound on</button>
+  <button id="lang" type="button" aria-label="Switch to Chinese" title="Switch to Chinese">中文</button>
+</div>
+<div class="wrap">
+  <canvas id="c" width="360" height="560" aria-label="Synthetic Clawd game board"></canvas>
+  <div id="over" class="ov" hidden><h2 id="over-title">Clawd overflow!</h2><p id="fs"></p><button id="again" type="button">Play again</button></div>
+  <div id="col" class="ov" hidden>
+    <div class="ch"><b id="cp"></b><div class="ch-actions"><button id="reset-col" type="button">Reset</button><button id="cx" type="button">Close</button></div></div>
+    <div id="cg" class="grid"></div><h3 id="ach-title">Secret achievements</h3><div id="ca"></div>
+  </div>
+  <div id="toast"></div>
+</div>
+<p class="hint" id="hint">Drag to aim, release to drop. Matching Clawds merge. Chains score more.</p>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>

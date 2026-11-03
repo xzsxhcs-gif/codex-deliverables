@@ -1,0 +1,23 @@
+{
+  "typecheck": {
+    "command": "npm run typecheck",
+    "passed": true
+  },
+  "unit_tests": {
+    "command": "npm test",
+    "passed": 24,
+    "total": 24,
+    "runner": "tsx --test tests/*.test.ts"
+  },
+  "production_build": {
+    "command": "npm run build:standalone",
+    "passed": true,
+    "artifact": "dist/Synthetic-Clawd-King.html"
+  },
+  "reference_integrity": {
+    "passed": true,
+    "files": 8,
+    "original_html_sha256": "24d605ed0c793866e482926099fd54d02dd692422016783a917245e7ae034e2f"
+  },
+  "browser_validation": "See qa/results/browser-report.json and production-report.json in the delivered source."
+}

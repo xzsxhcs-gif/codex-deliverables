@@ -1,0 +1,23 @@
+body{overflow-x:hidden}
+.royal-trophy{margin:.1rem 0;color:var(--muted);font-size:.65rem;letter-spacing:.11em;text-align:center}
+.royal-trophy[hidden],.boss-root[hidden],.royal-transition[hidden],#royal-replay[hidden]{display:none}
+.royal-collection{margin-top:1rem;padding:.75rem 0;border-top:1px solid var(--chip);text-align:center}
+.royal-collection p{font-size:.78rem;color:var(--muted)}
+.royal-collection:has(#royal-replay[hidden]){display:none}
+#royal-replay{font-size:.8rem;background:#e4bb74;color:#292237}
+body:not([data-mode="MERGING"])>.bar,body:not([data-mode="MERGING"])>header{pointer-events:none}
+#c.royal-zoom{transform:scale(1.95);transition:transform 2.4s cubic-bezier(.22,.61,.36,1);filter:saturate(.7)}
+body[data-mode="TRANSITION_TO_BOSS"] .wrap{animation:royal-tremble .2s ease-in-out 5;animation-delay:.25s;z-index:2}
+.royal-transition{position:fixed;inset:0;z-index:150;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1rem;color:#fff1df;background:linear-gradient(180deg,rgba(18,17,31,.7),rgba(18,17,31,.92));animation:royal-darken 1.9s ease both;pointer-events:none;text-align:center;padding:24px;box-sizing:border-box}
+.royal-transition__crown{color:#f6d18b;font-size:3.4rem;line-height:1}
+.royal-transition__eyebrow{font-size:.63rem;letter-spacing:.28em;color:#d1aabf;margin:.6rem 0 0}
+.royal-transition h2{font-size:clamp(1.45rem,4vw,2.6rem);letter-spacing:.06em;max-width:650px;line-height:1.2;margin:0;font-weight:750}
+.royal-transition__line{width:48px;height:1px;background:#f6d18b;opacity:.55;margin:.7rem}
+.royal-transition--out{opacity:0;transition:opacity .6s ease;animation:none}
+.boss-root{position:fixed;inset:0;z-index:50;background:#181a30;opacity:1;transition:opacity .55s ease;touch-action:none;overflow:hidden}
+.boss-root--leaving{opacity:0;pointer-events:none}
+.boss-scene{position:absolute;inset:0}
+.boss-scene canvas{display:block;width:100%;height:100%;touch-action:none;outline:0}
+@keyframes royal-tremble{25%{translate:-1px 0}75%{translate:1px 1px}}
+@keyframes royal-darken{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){#c.royal-zoom{transform:none;transition:none}body[data-mode="TRANSITION_TO_BOSS"] .wrap{animation:none}.royal-transition{animation:none}.boss-root{transition:opacity .2s}}

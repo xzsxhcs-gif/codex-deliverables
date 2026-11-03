@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Synthetic Clawd</title>
+<style>
+:root{
+  --bg:#e8eaf8;--fg:#1d2040;--muted:#5b5f8c;--panel:#f7f8ff;--chip:#d6daf3;--clawd:#d97757;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#14162b;--fg:#eceaff;--muted:#9a9dcc;--panel:#1c1f45;--chip:#262a5a}
+}
+:root[data-theme="dark"]{--bg:#14162b;--fg:#eceaff;--muted:#9a9dcc;--panel:#1c1f45;--chip:#262a5a}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.45rem;padding:.5rem;box-sizing:border-box}
+header,.bar{display:flex;align-items:center;justify-content:space-between;gap:.5rem;width:min(100%,380px)}
+.bar{gap:.32rem}
+.bar button{font-size:.82rem;padding:.4rem .57rem;white-space:nowrap;min-width:0}
+#lang{min-width:43px;background:transparent;border:1px solid var(--muted);padding:.35rem .45rem}
+@media(max-width:340px){.bar{gap:.2rem}.bar button{font-size:.73rem;padding:.36rem .3rem}#lang{min-width:36px}}
+h1{margin:0;font-size:1.2rem}
+.sc{display:flex;gap:.9rem;color:var(--muted);font-size:.95rem}
+.sc b{color:var(--fg)}
+button{font:inherit;font-weight:600;font-size:.88rem;color:var(--fg);background:var(--chip);border:0;border-radius:999px;
+  padding:.4rem .9rem;min-height:40px;cursor:pointer;transition:opacity .2s,transform .1s}
+button:active{transform:scale(.95)}
+button:disabled{opacity:.4;cursor:default}
+button:focus-visible{outline:3px solid var(--clawd);outline-offset:2px}
+.wrap{position:relative;width:min(100%,380px,calc((100dvh - 170px) * .643))}
+#c{width:100%;aspect-ratio:360/560;display:block;background:var(--panel);border-radius:18px;touch-action:none}
+.ov{position:absolute;inset:0;border-radius:18px}
+#over{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;background:rgba(10,12,30,.72);color:#fff;text-align:center}
+#over h2{margin:0;font-size:1.7rem}#over p{margin:0}
+#over button{background:var(--clawd);color:#1b1410}
+#col{background:var(--panel);overflow:auto;padding:.7rem;box-sizing:border-box}
+.ov[hidden],#over[hidden]{display:none}
+.ch{display:flex;justify-content:space-between;align-items:center;gap:.4rem;margin-bottom:.6rem}
+.ch-actions{display:flex;align-items:center;gap:.35rem}
+.ch button{min-height:35px;padding:.35rem .6rem;font-size:.78rem}
+#reset-col{background:transparent;border:1px solid var(--muted);color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+.card{background:var(--chip);border-radius:12px;padding:.4rem;text-align:center;font-size:.78rem;color:var(--muted)}
+.card b{display:block;color:var(--fg);font-size:.88rem}
+.card canvas{width:64px;height:48px}
+.card.new{animation:pop .6s ease 2}
+@keyframes pop{50%{transform:scale(1.07)}}
+h3{margin:.8rem 0 .3rem;font-size:.9rem;color:var(--muted)}
+.ach{font-size:.82rem;padding:.3rem 0;color:var(--muted)}.ach b{color:var(--fg)}
+#toast{position:absolute;left:50%;bottom:14px;transform:translate(-50%,10px);background:rgba(10,12,30,.85);color:#fff;
+  font-size:.85rem;padding:.4rem .8rem;border-radius:999px;opacity:0;pointer-events:none;transition:all .3s;white-space:nowrap;max-width:94%;overflow:hidden;text-overflow:ellipsis}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+.hint{margin:0;color:var(--muted);font-size:.82rem;text-align:center}
+</style>
+</head>
+<body>
+<header><h1 id="title">Synthetic Clawd</h1><div class="sc"><span><span id="score-label">Score</span> <b id="score">0</b></span><span><span id="best-label">Best</span> <b id="best">0</b></span></div></header>
+<div class="bar">
+  <button id="swap" type="button" disabled>Swap ×0</button>
+  <button id="cb" type="button">Collection</button>
+  <button id="mute" type="button" aria-pressed="false">Sound on</button>
+  <button id="lang" type="button" aria-label="Switch to Chinese" title="Switch to Chinese">中文</button>
+</div>
+<div class="wrap">
+  <canvas id="c" width="360" height="560" aria-label="Synthetic Clawd game board"></canvas>
+  <div id="over" class="ov" hidden><h2 id="over-title">Clawd overflow!</h2><p id="fs"></p><button id="again" type="button">Play again</button></div>
+  <div id="col" class="ov" hidden>
+    <div class="ch"><b id="cp"></b><div class="ch-actions"><button id="reset-col" type="button">Reset</button><button id="cx" type="button">Close</button></div></div>
+    <div id="cg" class="grid"></div><h3 id="ach-title">Secret achievements</h3><div id="ca"></div>
+  </div>
+  <div id="toast"></div>
+</div>
+<p class="hint" id="hint">Drag to aim, release to drop. Matching Clawds merge. Chains score more.</p>
+<script>
+(function(){
+var W=360,H=560,LINE=96,G=1500;
+var R=[13,18,24,31,39,49,61,75];
+var COL=["#f6b59b","#ef9a79","#d97757","#e3a73f","#6fbf95","#5aa7e6","#9a85ec","#ff7eb6"];
+var NOTES=[523.25,587.33,659.25,783.99,880,1046.5,1174.66,1318.5];
+var PARTS=[[3,2,16,10],[1,6,3,3],[18,6,3,3],[5,11,2,3],[8,11,2,3],[12,11,2,3],[15,11,2,3]];
+var N={
+  en:[["Crumb","A snack-sized Clawd. Dreams big."],["Nibbles","Always hungry, always curious."],["Pixie","Does not blink much. Will not say why."],
+   ["Clawdette","Elegant, with strong opinions on snacks."],["Big Claw","Sleepy, but very strong."],["Sir Pinch","Pinches only when necessary."],
+   ["Captain Snip","Smug. Thinks it runs the tank."],["King Clawd","Rules all crabs. Wears the crown well."]],
+  zh:[["碎碎蟹","零食般大小，却有大大的梦想。"],["咬咬蟹","永远吃不饱，也永远充满好奇。"],["精灵蟹","很少眨眼，也绝不解释原因。"],
+   ["克劳蒂","举止优雅，对零食很有主见。"],["大钳蟹","困困的，但力气很大。"],["钳爵士","只有必要时才会夹人。"],
+   ["剪剪船长","一脸得意，觉得自己统治着蟹池。"],["克劳德蟹王","统领所有螃蟹，王冠戴得稳稳的。"]]
+};
+var A={
+  en:[["Chain Master","Trigger a 3× combo.","Rosy cheeks"],["Royal Claw","Create a King Clawd.","Sparkly eyes"],
+   ["Merge Machine","Merge 40 Clawds in one game.","Party hats"],["Completionist","Discover every Clawd.","Shiny finish"]],
+  zh:[["连锁大师","触发一次 3 连击。","红扑扑的脸颊"],["皇家之钳","合成一只克劳德蟹王。","闪亮亮的眼睛"],
+   ["合成机器","在一局内完成 40 次合成。","派对帽"],["全图鉴收藏家","发现所有 Clawd。","闪亮外观"]]
+};
+var L={
+  en:{title:"Synthetic Clawd",score:"Score",best:"Best",swap:"Swap ×",collection:"Collection",soundOn:"Sound on",soundOff:"Sound off",
+    over:"Clawd overflow!",playAgain:"Play again",close:"Close",achievements:"Secret achievements",hint:"Drag to aim, release to drop. Matching Clawds merge. Chains score more.",
+    discovered:"Discovered",undiscovered:"Not discovered yet",secret:"Secret",reward:"Reward: ",next:"NEXT",royal:"ROYAL!",combos:["NICE!","GREAT!","WOW!"],
+    newClawd:"New Clawd: ",secretUnlocked:"Secret unlocked: ",resetCollection:"Reset unlocks",resetConfirm:"Reset the collection and all four secret achievements? This removes unlocked cosmetic rewards and returns Clawds to their original appearance. Your best score, current game, and language preference will stay.",collectionReset:"Collection and achievements reset",langLabel:"Switch to Chinese",langButton:"中文",boardLabel:"Synthetic Clawd game board"},
+  zh:{title:"合成大 Clawd",score:"得分",best:"最高",swap:"交换 ×",collection:"图鉴",soundOn:"音效：开",soundOff:"音效：关",
+    over:"Clawd 堆满啦！",playAgain:"再玩一次",close:"关闭",achievements:"隐藏成就",hint:"拖动瞄准，松手投放。同等级 Clawd 会合成，连续合成得分更高。",
+    discovered:"已发现",undiscovered:"尚未解锁",secret:"神秘成就",reward:"奖励：",next:"下一个",royal:"蟹王降临！",combos:["不错！","太棒了！","惊艳！"],
+    newClawd:"发现新 Clawd：",secretUnlocked:"解锁隐藏成就：",resetCollection:"重置图鉴/成就",resetConfirm:"确定重置图鉴和全部 4 项隐藏成就吗？已发现的 Clawd 会重新变成剪影，成就奖励外观也会取消，小螃蟹恢复原始模样。最高分、当前对局和语言设置将保留。",collectionReset:"图鉴和隐藏成就已重置",langLabel:"Switch to English / 切换到英文",langButton:"EN",boardLabel:"合成大 Clawd 游戏区域"}
+};
+function getLanguage(){
+  try{var v=localStorage.getItem("sc_lang");if(v==="en"||v==="zh")return v}catch(e){}
+  return /^zh(?:-|$)/i.test(navigator.language||"")?"zh":"en";
+}
+var lang=getLanguage();
+function tr(key){return L[lang][key]}
+function showLang(){
+  document.documentElement.lang=lang==="zh"?"zh-CN":"en";
+  document.title=tr("title");
+  $("title").textContent=tr("title");$("score-label").textContent=tr("score");$("best-label").textContent=tr("best");
+  $("over-title").textContent=tr("over");$("again").textContent=tr("playAgain");$("cx").textContent=tr("close");$("reset-col").textContent=tr("resetCollection");
+  $("ach-title").textContent=tr("achievements");$("hint").textContent=tr("hint");
+  $("c").setAttribute("aria-label",tr("boardLabel"));
+  $("lang").textContent=tr("langButton");$("lang").setAttribute("aria-label",tr("langLabel"));$("lang").title=tr("langLabel");
+  $("mute").textContent=tr(muted?"soundOff":"soundOn");
+  updCol();updSw();if(over)$("fs").textContent=tr("score")+" "+score;
+  if(!$("col").hidden)buildCol();
+  if(currentToast)$("toast").textContent=translateToast(currentToast);
+}
+var $=function(i){return document.getElementById(i)};
+var cv=$("c"),ctx=cv.getContext("2d");
+function ld(k){try{return +localStorage.getItem(k)||0}catch(e){return 0}}
+function sv(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+var disc=ld("sc_disc"),ach=ld("sc_ach"),best=ld("sc_best");
+function has(m,i){return (m>>i)&1}
+
+function drawClawd(c,x,y,r,ang,lv,o){
+  o=o||{};var p=o.pop||0;
+  c.save();c.globalAlpha=o.al==null?1:o.al;c.translate(x,y);c.rotate(ang||0);
+  var s=r/10*(1+.2*p*Math.cos((1-p)*14));c.scale(s,s);c.translate(-11,-8);
+  c.fillStyle=o.col||COL[lv];
+  PARTS.forEach(function(q){c.fillRect(q[0],q[1],q[2],q[3])});
+  if(o.sil){c.restore();return}
+  if(has(ach,3)){c.fillStyle="rgba(255,255,255,.22)";c.fillRect(3,2,16,1.5)}
+  if(has(ach,0)){c.fillStyle="rgba(255,120,150,.65)";c.fillRect(4.5,8.5,2.5,1.4);c.fillRect(15,8.5,2.5,1.4)}
+  var ey=5,eh=3,ex=0;
+  if(lv<=2)ex=(o.look||0)*.9;
+  if(lv==4||lv==5){ey=6.4;eh=1.6}
+  if(lv==6){ey=6.8;eh=1.2}
+  if(o.blink){ey+=eh*.8;eh*=.2}
+  if(o.hurt){ey=4.3;eh=4}
+  c.fillStyle="#1b1410";c.fillRect(7+ex,ey,2,eh);c.fillRect(13+ex,ey,2,eh);
+  if(o.hurt)c.fillRect(10,9,2,1.6);
+  if(has(ach,1)&&eh>2){c.fillStyle="#fff";c.fillRect(7.2+ex,ey+.3,.8,.8);c.fillRect(13.2+ex,ey+.3,.8,.8)}
+  if(lv===7){c.fillStyle="#ffd166";c.fillRect(6,.5,10,1.5);c.fillRect(6,-1,2,2);c.fillRect(10,-2,2,3);c.fillRect(14,-1,2,2)}
+  else if(has(ach,2)){
+    c.fillStyle="#ffd166";c.fillRect(10,-2,2,1);c.fillStyle="#7c83ff";c.fillRect(10,-1,2,1);c.fillRect(8,1,6,1);
+    c.fillStyle="#ff7eb6";c.fillRect(9,0,4,1);
+  }
+  c.restore();
+}
+
+/* sound: synthesized with Web Audio */
+var AC=null,muted=false,lastThud=0;
+function ac(){
+  if(!AC){var C=window.AudioContext||window.webkitAudioContext;if(C){try{AC=new C()}catch(e){}}}
+  if(AC&&AC.state==="suspended")AC.resume();return AC;
+}
+function tone(f,t0,dur,type,vol,f2){
+  var a=muted?null:ac();if(!a)return;
+  var n=a.currentTime+t0,o=a.createOscillator(),g=a.createGain();
+  o.type=type;o.frequency.setValueAtTime(f,n);if(f2)o.frequency.exponentialRampToValueAtTime(f2,n+dur);
+  g.gain.setValueAtTime(.0001,n);g.gain.exponentialRampToValueAtTime(vol,n+.01);g.gain.exponentialRampToValueAtTime(.0001,n+dur);
+  o.connect(g);g.connect(a.destination);o.start(n);o.stop(n+dur+.03);
+}
+function sMerge(lv,cb){
+  var f=NOTES[lv];tone(f*.6,0,.12,"square",.05,f);tone(f,0,.3,"sine",.25);tone(f*2,0,.18,"triangle",.1);
+  for(var k=1;k<cb;k++)tone(NOTES[Math.min(7,lv+k)],k*.07,.22,"sine",.14);
+}
+function sDrop(){tone(320,0,.09,"sine",.12,150)}
+function sThud(v){var n=performance.now();if(n-lastThud<70)return;lastThud=n;tone(150+Math.random()*40,0,.07,"sine",Math.min(.12,v/3000),70)}
+function sSwap(){tone(500,0,.07,"triangle",.12);tone(720,.07,.09,"triangle",.12)}
+function sAch(){[0,2,4].forEach(function(k,i){tone(NOTES[k+2],i*.09,.2,"triangle",.14)})}
+function sWin(){NOTES.forEach(function(f,i){tone(f,i*.07,.25,"triangle",.15)});tone(110,0,.5,"sine",.3,50)}
+function sOver(){tone(392,0,.25,"triangle",.2,330);tone(330,.22,.25,"triangle",.2,262);tone(262,.44,.55,"triangle",.2,196)}
+
+var B=[],parts=[],texts=[],celeb=null;
+var score=0,cur,next,canDrop=true,aimX=W/2,over=false,paused=false,overT=0,last=performance.now();
+var combo=0,lastM=-9999,merges=0,sw=0,newFlag=0,tt,dropTimer=null;
+function rnd(){return Math.floor(Math.random()*3)}
+var currentToast=null;
+function translateToast(msg){
+  if(msg.kind==="new")return tr("newClawd")+N[lang][msg.i][0]+"!";
+  if(msg.kind==="achievement")return tr("secretUnlocked")+A[lang][msg.i][0]+" · "+A[lang][msg.i][2];
+  if(msg.kind==="collectionReset")return tr("collectionReset");
+  return "";
+}
+function toast(msg){var e=$("toast");currentToast=msg;e.textContent=translateToast(msg);e.classList.add("on");clearTimeout(tt);tt=setTimeout(function(){e.classList.remove("on");currentToast=null},2400)}
+function cnt(){var n=0;for(var i=0;i<8;i++)n+=has(disc,i);return n}
+function updCol(){$("cb").textContent=tr("collection")+" "+cnt()+"/8"+(newFlag?" •":"")}
+function updSw(){var b=$("swap");b.textContent=tr("swap")+sw;b.disabled=!sw}
+function hud(){$("score").textContent=score;$("best").textContent=best}
+function add(p){score+=p;if(score>best){best=score;sv("sc_best",best)}hud()}
+function unlock(i){if(has(ach,i))return;ach|=1<<i;sv("sc_ach",ach);toast({kind:"achievement",i:i});sAch()}
+function found(lv){
+  if(!has(disc,lv)){disc|=1<<lv;sv("sc_disc",disc);newFlag|=1<<lv;toast({kind:"new",i:lv});updCol();if(disc==255)unlock(3)}
+  if(lv==7)unlock(1);
+}
+function mk(lv,x,y,vx,vy){
+  var b={lv:lv,x:x,y:y,vx:vx||0,vy:vy||0,a:0,w:0,r:R[lv],m:R[lv]*R[lv],born:performance.now(),bt:2+Math.random()*3,hurt:0,pop:0};
+  B.push(b);found(lv);return b;
+}
+function burst(x,y,c,n){for(var i=0;i<n;i++){var a=Math.random()*6.283,s=60+Math.random()*180;parts.push({x:x,y:y,vx:Math.cos(a)*s,vy:Math.sin(a)*s-80,l:1,c:c})}}
+
+var mq=[];
+function step(h){
+  var i,j,a,b;
+  for(i=0;i<B.length;i++){
+    a=B[i];
+    a.vy+=G*h;a.x+=a.vx*h;a.y+=a.vy*h;
+    // Free tumbles: an upside-down Clawd stays upside down when it stops.
+    // Exponential drag lets impacts spin it without perpetual rotation.
+    a.w*=Math.exp(-2.65*h);
+    if(Math.abs(a.w)<.045)a.w=0;
+    a.a+=a.w*h;
+    if(a.a>Math.PI)a.a-=2*Math.PI;
+    else if(a.a< -Math.PI)a.a+=2*Math.PI;
+    a.vx*=.9996;a.vy*=.9996;
+  }
+  for(var it=0;it<3;it++){
+    for(i=0;i<B.length;i++)for(j=i+1;j<B.length;j++){
+      a=B[i];b=B[j];
+      var dx=b.x-a.x,dy=b.y-a.y,rr=a.r+b.r,d2=dx*dx+dy*dy;
+      if(d2>=rr*rr)continue;
+      var d=Math.sqrt(d2)||.001,nx=dx/d,ny=dy/d,ov=rr-d,ia=1/a.m,ib=1/b.m,s=ia+ib;
+      a.x-=nx*ov*.6*ia/s;a.y-=ny*ov*.6*ia/s;b.x+=nx*ov*.6*ib/s;b.y+=ny*ov*.6*ib/s;
+      var rvx=b.vx-a.vx,rvy=b.vy-a.vy,vn=rvx*nx+rvy*ny;
+      if(vn<0){
+        var e=-vn>130?.22:0,jn=-(1+e)*vn/s;
+        a.vx-=jn*nx*ia;a.vy-=jn*ny*ia;b.vx+=jn*nx*ib;b.vy+=jn*ny*ib;
+        var tx=-ny,ty=nx,vt=rvx*tx+rvy*ty,jt=-vt*.2/s,lim=.35*jn;
+        jt=Math.max(-lim,Math.min(lim,jt));
+        a.vx-=jt*tx*ia;a.vy-=jt*ty*ia;b.vx+=jt*tx*ib;b.vy+=jt*ty*ib;
+        // Only collisions with a clear impact create angular momentum.
+        // Resting contacts and solver jitter never add fresh spin.
+        if(it===0&&-vn>65){
+          var spin=-jt*1.9;
+          a.w+=spin*ia/a.r;
+          b.w+=spin*ib/b.r;
+          // Off-centre impacts make the playful crab silhouettes tumble.
+          // The bias is disabled for tiny nudges that would cause jitter.
+          if(-vn>135&&Math.abs(nx)>.1){
+            var kick=Math.sign(nx)*Math.min(9,(-vn-135)*.036)*Math.min(1,Math.abs(nx)*2);
+            a.w-=kick*(b.m/(a.m+b.m));
+            b.w+=kick*(a.m/(a.m+b.m));
+          }
+          a.w=Math.max(-12,Math.min(12,a.w));
+          b.w=Math.max(-12,Math.min(12,b.w));
+        }
+        if(-vn>220){a.hurt=b.hurt=.5;sThud(-vn)}
+      }
+      if(it==0&&a.lv===b.lv&&!a.dead&&!b.dead)mq.push([a,b]);
+    }
+    for(i=0;i<B.length;i++){
+      a=B[i];
+      if(a.x<a.r){a.x=a.r;if(a.vx<0)a.vx*=-.2}
+      if(a.x>W-a.r){a.x=W-a.r;if(a.vx>0)a.vx*=-.2}
+      if(a.y>H-a.r){
+        a.y=H-a.r;if(a.vy>0)a.vy*=-.12;
+        // The ground slowly absorbs spin without forcing an upright pose.
+        a.vx*=.985;
+        if(it===0)a.w*=Math.exp(-1.25*h);
+      }
+    }
+  }
+}
+function doMerge(a,b,t){
+  a.dead=b.dead=true;
+  var x=(a.x+b.x)/2,y=(a.y+b.y)/2,lv=a.lv;
+  combo=(t-lastM<900)?combo+1:1;lastM=t;merges++;
+  if(lv>=7){
+    celeb={x:x,y:y,t:0};add(500*combo);sWin();burst(x,y,"#ffd166",44);
+    B.forEach(function(o){
+      if(o.dead)return;var dx=o.x-x,dy=o.y-y,d=Math.hypot(dx,dy)||1;
+      if(d<230){var f=(1-d/230)*650;o.vx+=dx/d*f;o.vy+=dy/d*f-140}
+    });
+    texts.push({x:x,y:y-60,t:0,kind:"royal",c:"#ffd166",z:30});
+  }else{
+    var nb=mk(lv+1,x,y,(a.vx+b.vx)/2,(a.vy+b.vy)/2);nb.pop=1;
+    add((lv+1)*10*combo);sMerge(lv+1,combo);burst(x,y,COL[lv+1],8+combo*3);
+  }
+  if(combo>=2)texts.push({x:x,y:y-R[lv]-8,t:0,kind:"combo",combo:combo,c:COL[Math.min(7,lv+1)],z:18+combo*2});
+  if(combo>=3)unlock(0);
+  if(merges%6==0&&sw<2){sw++;updSw()}
+  if(merges>=40)unlock(2);
+}
+
+function aim(e){var r=cv.getBoundingClientRect();aimX=Math.max(R[cur],Math.min(W-R[cur],(e.clientX-r.left)/r.width*W))}
+// Hold a single active touch so releasing just outside the board still drops.
+var activePointer=null;
+cv.addEventListener("pointerdown",function(e){
+  if(activePointer!==null||over||paused)return;
+  activePointer=e.pointerId;
+  try{cv.setPointerCapture(e.pointerId)}catch(err){}
+  ac();aim(e);
+});
+cv.addEventListener("pointermove",function(e){
+  if(e.pointerType==="mouse"||activePointer===e.pointerId)aim(e);
+});
+cv.addEventListener("pointercancel",function(e){if(activePointer===e.pointerId)activePointer=null});
+cv.addEventListener("pointerup",function(e){
+  if(activePointer!==e.pointerId)return;
+  activePointer=null;
+  aim(e);if(!canDrop||over||paused)return;
+  mk(cur,aimX,44,0,0);sDrop();canDrop=false;
+  dropTimer=setTimeout(function(){dropTimer=null;if(over)return;cur=next;next=rnd();canDrop=true},550);
+});
+$("swap").addEventListener("click",function(){
+  if(sw>0&&canDrop&&!over){sw--;var t=cur;cur=next;next=t;sSwap();updSw();aim({clientX:cv.getBoundingClientRect().left+aimX/W*cv.getBoundingClientRect().width})}
+});
+function end(){over=true;sOver();$("fs").textContent=tr("score")+" "+score;$("over").hidden=false}
+function reset(){
+  if(dropTimer!==null){clearTimeout(dropTimer);dropTimer=null}
+  B=[];parts=[];texts=[];celeb=null;score=0;combo=0;lastM=-9999;merges=0;sw=0;overT=0;over=false;canDrop=true;activePointer=null;
+  cur=rnd();next=rnd();hud();updSw();$("over").hidden=true;
+}
+$("again").addEventListener("click",reset);
+$("mute").addEventListener("click",function(){
+  muted=!muted;this.textContent=tr(muted?"soundOff":"soundOn");this.setAttribute("aria-pressed",muted?"true":"false");if(!muted)ac();
+});
+
+$("lang").addEventListener("click",function(){
+  lang=lang==="en"?"zh":"en";
+  try{localStorage.setItem("sc_lang",lang)}catch(e){}
+  showLang();
+});
+function buildCol(){
+  $("cp").textContent=cnt()+" / 8 "+tr("discovered");
+  var g=$("cg");g.innerHTML="";
+  for(var i=0;i<8;i++){
+    var u=has(disc,i),d=document.createElement("div");
+    d.className="card"+(has(newFlag,i)?" new":"");
+    d.innerHTML='<canvas width="128" height="96"></canvas><b>'+(u?N[lang][i][0]:"???")+"</b>"+(u?N[lang][i][1]:tr("undiscovered"));
+    g.appendChild(d);
+    var c=d.querySelector("canvas").getContext("2d");
+    drawClawd(c,64,50,34,0,i,u?{}:{sil:true,col:"rgba(120,125,170,.55)"});
+  }
+  var s="";
+  for(var k=0;k<4;k++)s+='<div class="ach">'+(has(ach,k)?"<b>"+A[lang][k][0]+"</b> · "+A[lang][k][1]+" "+tr("reward")+A[lang][k][2]:"<b>???</b> · "+tr("secret"))+"</div>";
+  $("ca").innerHTML=s;
+}
+$("cb").addEventListener("click",function(){paused=true;buildCol();$("col").hidden=false;newFlag=0;updCol()});
+$("reset-col").addEventListener("click",function(){
+  if(!window.confirm(tr("resetConfirm")))return;
+  // Reset collection and achievement rewards together. Existing Clawds redraw without cosmetics.
+  // Keep best score, current game state, and language settings intact.
+  disc=0;ach=0;newFlag=0;
+  try{localStorage.removeItem("sc_disc");localStorage.removeItem("sc_ach")}catch(e){}
+  updCol();buildCol();toast({kind:"collectionReset"});
+});
+$("cx").addEventListener("click",function(){$("col").hidden=true;paused=false;last=performance.now()});
+
+function frame(t){
+  var dt=Math.min(.05,(t-last)/1000);last=t;var i;
+  if(!over&&!paused){
+    for(var k=0;k<3;k++)step(dt/3);
+    for(i=0;i<mq.length;i++)if(!mq[i][0].dead&&!mq[i][1].dead)doMerge(mq[i][0],mq[i][1],t);
+    mq.length=0;B=B.filter(function(b){return !b.dead});
+    var bad=false;
+    B.forEach(function(b){
+      b.bt-=dt;if(b.bt<0)b.bt=2+Math.random()*3;
+      b.hurt=Math.max(0,b.hurt-dt);b.pop=Math.max(0,b.pop-dt*3);
+      if(t-b.born>1500&&b.y-b.r<LINE&&Math.hypot(b.vx,b.vy)<40)bad=true;
+    });
+    overT=bad?overT+dt:0;if(overT>1.5)end();
+  }
+  ctx.clearRect(0,0,W,H);
+  ctx.setLineDash([8,8]);ctx.lineWidth=2;ctx.strokeStyle="rgba(217,119,87,.55)";
+  ctx.beginPath();ctx.moveTo(0,LINE);ctx.lineTo(W,LINE);ctx.stroke();
+  if(canDrop&&!over){
+    ctx.strokeStyle="rgba(150,155,210,.35)";ctx.beginPath();ctx.moveTo(aimX,44+R[cur]);ctx.lineTo(aimX,H);ctx.stroke();
+    drawClawd(ctx,aimX,44,R[cur],0,cur,{al:.9,look:0});
+  }
+  ctx.setLineDash([]);
+  B.forEach(function(b){
+    drawClawd(ctx,b.x,b.y,b.r,b.a,b.lv,{blink:b.bt<.12,hurt:b.hurt>0,pop:b.pop,look:Math.max(-1,Math.min(1,(aimX-b.x)/120))});
+  });
+  parts=parts.filter(function(p){return p.l>0});
+  parts.forEach(function(p){
+    if(!paused){p.vy+=900*dt;p.x+=p.vx*dt;p.y+=p.vy*dt;p.l-=dt*1.6}
+    ctx.globalAlpha=Math.max(0,p.l);ctx.fillStyle=p.c;ctx.fillRect(p.x-2,p.y-2,4,4);
+  });
+  ctx.globalAlpha=1;
+  texts=texts.filter(function(x){return x.t<1});
+  ctx.textAlign="center";
+  texts.forEach(function(x){
+    if(!paused)x.t+=dt;ctx.globalAlpha=1-x.t;ctx.fillStyle=x.c;ctx.font="800 "+x.z+"px system-ui,sans-serif";
+    ctx.fillText(x.kind==="royal"?tr("royal"):(tr("combos")[Math.min(2,x.combo-2)]+" ×"+x.combo),x.x,x.y-x.t*34);
+  });
+  ctx.globalAlpha=1;
+  if(celeb){
+    if(!paused)celeb.t+=dt;var q=celeb.t/1.4;
+    if(q>=1)celeb=null;else{
+      var r=R[7]*(.7+1.1*Math.sin(Math.min(1,q*1.6)*1.5708));
+      drawClawd(ctx,celeb.x,celeb.y,r,0,7,{col:"#ffd166",al:1-q*q});
+      ctx.strokeStyle="rgba(255,209,102,"+(1-q)+")";ctx.lineWidth=4;ctx.beginPath();ctx.arc(celeb.x,celeb.y,r*(1+q),0,6.283);ctx.stroke();
+    }
+  }
+  ctx.fillStyle="rgba(150,155,210,.8)";ctx.font="600 12px system-ui,sans-serif";ctx.textAlign="right";
+  ctx.fillText(tr("next"),W-52,22);drawClawd(ctx,W-26,24,R[next]*.6,0,next,{al:.9});
+  requestAnimationFrame(frame);
+}
+cur=rnd();next=rnd();hud();showLang();requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

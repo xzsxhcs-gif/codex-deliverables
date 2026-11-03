@@ -1,0 +1,27 @@
+{
+  "assets": [
+    {
+      "name": "Synthetic-Clawd-King.html",
+      "bytes": 633217,
+      "sha256": "644ce4b1ab10946399fe66c2496f555ae9a25ef471c0f9a961274afb0a9dc816"
+    },
+    {
+      "name": "Synthetic-Clawd-King-Playable.zip",
+      "bytes": 340941,
+      "sha256": "7075f6c5343e5ef64701f575f69e4e3bf9a3630e5fc9204899c0ee607d725295"
+    },
+    {
+      "name": "Synthetic-Clawd-King-Source.zip",
+      "bytes": 2604391,
+      "sha256": "71cbb9c085995f13cdab165253a76f9b076105c225d3d83d7b8987e4988232ed"
+    }
+  ],
+  "checks": {
+    "unit_tests": "24/24",
+    "browser_checks": "44/44",
+    "production_checks": "17/17",
+    "typecheck": "passed",
+    "build": "passed"
+  },
+  "source_files": 60
+}

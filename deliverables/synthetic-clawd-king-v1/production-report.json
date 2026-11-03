@@ -1,0 +1,109 @@
+{
+  "checks": [
+    {
+      "name": "standard-subdirectory: production helpers stripped",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "standard-subdirectory: original score/language intact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "standard-subdirectory: real WebGL battle renders",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "standard-subdirectory: one animation loop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "standard-subdirectory: clean return to playable 2D",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "standard-subdirectory: one loop after return",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "standard-subdirectory: no browser/shader errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "standard-subdirectory: no external network resources",
+      "passed": true,
+      "detail": [
+        "http://127.0.0.1:5181/site/",
+        "http://127.0.0.1:5181/site/assets/index-D5LVJN59.js",
+        "http://127.0.0.1:5181/site/assets/index-y0kenBQg.css"
+      ]
+    },
+    {
+      "name": "single-file: production helpers stripped",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single-file: original score/language intact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single-file: real WebGL battle renders",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single-file: one animation loop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single-file: clean return to playable 2D",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single-file: one loop after return",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single-file: no browser/shader errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "single-file: no separate asset requests",
+      "passed": true,
+      "detail": [
+        "http://127.0.0.1:5181/site/Synthetic-Clawd-King.html"
+      ]
+    },
+    {
+      "name": "single-file: no external network resources",
+      "passed": true,
+      "detail": [
+        "http://127.0.0.1:5181/site/Synthetic-Clawd-King.html"
+      ]
+    }
+  ],
+  "errors": [],
+  "limits": [
+    "Headless Chromium with software WebGL; not a physical phone or Safari.",
+    "Direct file:// navigation did not complete in the selected browser; HTTP single-file version is separately verified."
+  ],
+  "local_file_open": {
+    "passed": false,
+    "reason": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///workspace/projects/synthetic-clawd-king/dist/Synthetic-Clawd-King.html\nCall log:\n  - navigating to \"file:///workspace/projects/synthetic-clawd-king/dist/Synthetic-Clawd-King.html\", waiting until \"load\"\n"
+  },
+  "passed": 17,
+  "total": 17,
+  "artifact_sha256": "644ce4b1ab10946399fe66c2496f555ae9a25ef471c0f9a961274afb0a9dc816"
+}
