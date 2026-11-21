@@ -11,6 +11,13 @@
 
 ## 已完成项目
 
+### MS–17 · 暴风雨山顶气象站
+
+Unity 2022.3 山顶夜班场景。主楼、观测栈道和独立机房构成连续的步行空间，附原创气象仪表、动态风雨、五种环境声及后续 VR 操作所需的交互锚点。
+
+- [下载完整工程及查看校验值](deliverables/storm-watch-ms17-v1/)
+- [场景预览](projects/storm-watch-ms17/Verification/Overview.jpg) · [平面图](projects/storm-watch-ms17/Verification/FloorPlan.png) · [运行与接入说明](projects/storm-watch-ms17/)
+
 ### Synthetic Clawd — The King Awakens
 
 保留可爱 2D 合成游戏，在合成蟹王时进入真正的第一人称 3D 隐藏战斗。程序化粉色蟹王、皇家庭院、三种预警攻击、二阶段、惯性滑铲跳、泡泡战斗、失败重试、胜利返回与持久奖励；含桌面键鼠与手机触控、中英界面。
