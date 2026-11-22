@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="575" viewBox="0 0 720 575">
+<defs>
+  <pattern id="weave" width="7" height="7" patternUnits="userSpaceOnUse"><path d="M-2 2L2-2M0 7L7 0M5 9L9 5" fill="none" stroke="#263143" stroke-opacity=".38" stroke-width="1"/></pattern>
+  <pattern id="mesh" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="2.5" cy="2.5" r="1.2" fill="#131e2c"/></pattern>
+</defs>
+<g transform="@CAM@" stroke="#1b2634" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round">
+<!-- A field jacket and the long antenna cable anchor the silhouette. -->
+<path d="M498 169Q585 142 591 212Q596 263 638 253Q695 235 735 279" fill="none" stroke-width="6"/>
+<path d="M592 209Q599 258 633 250" fill="none" stroke="#f5e7c9" stroke-width="1.8"/>
+<g transform="@BODY@">
+<path d="M308 291Q280 301 261 334L244 396 270 455 246 523Q364 573 487 528L488 470Q517 426 507 363L483 311 413 283Z" fill="#879da9"/>
+<path d="M303 309Q310 343 283 382L280 442 305 426 290 480 270 510 262 533 247 528 264 457 245 398 262 333Z" fill="#41556a" stroke="none"/>
+<path d="M415 312L477 321 504 378 482 455 459 480 472 531 415 541 427 459 407 427Z" fill="#556b80" stroke="none"/>
+<path d="M319 303L355 314 390 300 413 303 390 389 360 448 326 485 302 506 313 409Z" fill="#f1e6c9"/>
+<path d="M315 331L324 310 353 324 375 320 390 304 399 320 377 343 340 354Z" fill="#d8c9ac" stroke="none"/>
+<path d="M334 390l38-10-17 20-24 5Zm-5 22 18-6-22 20Z" fill="#273446" stroke="none"/>
+<path d="M316 293l-30 14-15 29 25-2-9 13 25 30 12-57Zm94-3 41 13-7 30-20-1 4 14-41 42 13-61Z" fill="#b3c4c5"/>
+<path d="M290 332l26-23m89 23 23-28M314 354l-17 86m124-84-31 51" fill="none" stroke-width="1.6"/>
+<path d="M289 395l-18 23m21-17-7 13m181 19 19-16m-23 29 16-12m-144-44 22-5" fill="none" stroke-width="1.7"/>
+<path d="M433 367l35-7-2 22-32 8Z" fill="#efddbd"/><path d="M439 374l17-4m-18 9 7-2" fill="none" stroke-width="2"/>
+<path d="M444 313Q390 383 301 488l14 14q84-94 149-178Z" fill="#263546"/>
+<path d="M446 318Q373 411 307 487" fill="none" stroke="#b3bab2" stroke-width="1.5" stroke-dasharray="4 5"/>
+<path d="M381 392l13-15 15 12-13 17Z" fill="#d8bc73"/><path d="M385 392l9-9 8 5-9 10Z" fill="#334253" stroke="none"/>
+<path d="M304 482l36 12-1 28-28 18-62-16 3-29Z" fill="#cf6346"/>
+<path d="M252 496l54 14 33-14-3 15-30 14-54-14Z" fill="#f39066"/>
+<path d="M290 510l9 2-2 16-9-2Z" fill="#e9d39a"/>
+<!-- Neck scarf with separate swinging ends. -->
+<path d="M335 248l32 1 32-26 8 53 22 18q-28 42-66 52l-43-28 15-31Z" fill="#e6af8f"/>
+<path d="M345 252l52-26 5 34-43 38-17-4Z" fill="#b67669" stroke="none"/>
+<path d="M314 286q13 13 35 14 34-9 55-32l18 22-15 26-58 31-39-29-5-18Z" fill="#f16b49"/>
+<path d="M307 301q26 27 57 25l45-34-33 43-28 12-39-29Z" fill="#bd5044" stroke="none"/>
+<path d="M318 302l24 12 17 2m12-5 17-10" fill="none" stroke="#ffe2b4" stroke-width="2"/>
+<g transform="@SCARF@"><path d="M412 291q36 9 74-8 32-14 80 2l-23 6 10 11q-36-13-60-1-53 22-88 14Z" fill="#ed704c"/><path d="M416 303q33 15 74-4 30-16 61-7" fill="none" stroke="#a94b43" stroke-width="2"/></g>
+<!-- Bent right arm, hand on headphones. -->
+<path d="M449 316q22-22 50 4l33 34-2-53 6-34 36-4 13 83q5 39-21 56-15 11-32 2l-58-33-29-25Z" fill="#93a8b2"/>
+<path d="M468 351l30 12 31 14 26 7 15-11 13-38q7 52-23 70l-25 1-65-37Z" fill="#556b80" stroke="none"/>
+<path d="M535 359l19 12-9-21m1-16 12 12m-50 40 21 5-13-14" fill="none" stroke-width="2"/>
+<path d="M532 264l37-9 7 29-41 10Z" fill="#344756"/><path d="M540 268l5 18m4-20 6 18m5-20 5 17" fill="none" stroke="#91a7aa" stroke-width="2"/>
+<path d="M479 335l16-8 17 20-15 12-16-12Z" fill="#e7d5ab"/><path d="M485 338l8-5 10 13-7 5Z" fill="#d7654a" stroke="none"/>
+<g transform="@HEAD@">
+<!-- Shaggy back silhouette, headphone arc, side-shaved section. -->
+<path d="M293 125q9-64 73-74 68-19 119 37 43 44 26 106l16 36-23-9 8 24-22-13 6 29-18-7-1 22-18-11-6 24-20-15-8 19-18-25-14 7-26-26-53-12-28-34-4-47Z" fill="#344657"/>
+<path d="M431 195l59-49-12 49 17-8-19 39 10-3-15 22-3-10-12 26-11-4-4 17-18-41Z" fill="#708497" stroke="none"/>
+<path d="M322 121q-18 24-20 56l-6 23-12 13 13 7q-2 22 13 34 14 17 30 22 10 1 31-12l35-27 15-39-18-59Z" fill="#f6d5ae"/>
+<path d="M307 157q36-26 85-22l8 55-17 17-5 19q-12 26-36 48 24-5 59-37l22-43-9-62-77-20Z" fill="#dda58a" stroke="none"/>
+<path d="M301 222q6 6 18 3l12-2-12 7-14 3Z" fill="#b77768" stroke="none"/>
+<path d="M304 231q11 3 24-2m-16 8 8-1" fill="none" stroke-width="1.6"/>
+<path d="M299 216l6 2 4-3" fill="none" stroke="#a46b61" stroke-width="1.7"/>
+<path d="M316 188q15-8 29-3l-4 10-13 4-11-4Z" fill="#fff2d7" stroke-width="1.8"/>
+<g transform="@EYE@"><path d="M323 186q9-3 13 0l-2 10-6 3-5-4Z" fill="#608e8f" stroke-width="1.8"/><path d="M326 186l5-1-1 10-4-1Z" fill="#283946" stroke="none"/><path d="M324 188l3-1" stroke="#fff5dc" stroke-width="2.2"/></g>
+<path d="M313 188q16-11 33-5l5-2-4 6q-13-5-30 3Z" fill="#23313e" stroke="none"/>
+<path d="M316 177q11-9 25-7" fill="none" stroke-width="3"/>
+<path d="M299 181l4-4-3 8-3 4" fill="#283744" stroke-width="1"/>
+<path d="M342 207l5-5m-1 8 5-5m-1 8 5-4m-42-11 3 2" fill="none" stroke="#b87e6c" stroke-width="1.2"/>
+@LID@
+<path d="M391 193q20-17 25-3l-4 29-16 9-9-9Z" fill="#e0ae8d"/><path d="M394 209q5-15 13-12l-6 13m-8 4 5 3" fill="none" stroke-width="1.7"/>
+<!-- Clipped fringe, silver forelock and headset. -->
+<path d="M282 152q-3-37 12-63l-17 6 20-23-9 1 29-21-8-3 33-10q30-17 75-4l27 12-5-14 20 23 25 13 15 21 9 24-16-13 11 32-10-5 2 38-15-16-4 23-16-10-11 20-8-11-17 32-1-27-23 28 5-28-29 27 6-24-18 19 2-28-21 25 4-27-24 21 4-19-15 14 2-17-13 13Z" fill="#263747"/>
+<path d="M278 149q6-53 49-79l-21 23 40-23-30 32 52-35-32 39-22 17 45-20-32 29-22 12 5-10-22 20 3-18Z" fill="#c2c6b6" stroke="none"/>
+<path d="M326 108l23-25 37-20-37 35 26-12-40 31Zm74-53q35 4 53 27l-26-12 13 16-38-25-23 4Z" fill="#6a8091" stroke="none"/>
+<path d="M295 128l16-19m50 22 27-38m1 47 24-31m16 21 9-15m25 34-2 15" fill="none" stroke="#8799a0" stroke-width="1.7"/>
+<path d="M325 70q38-43 92-28 55 14 72 83l-15 12q-9-60-55-77-47-19-82 17Z" fill="#e39e69"/>
+<path d="M330 71q38-36 78-25 39 7 61 44" fill="none" stroke="#f9d5a1" stroke-width="3"/>
+<path d="M465 106l12-6 16 29-14 13Z" fill="#9cabb0"/>
+<path d="M453 129q21-14 34 8l10 29q4 27-15 38l-19 9q-20 4-28-19l-5-27q-2-24 23-38Z" fill="#384755"/>
+<path d="M457 134q17-9 24 7l10 31q2 16-13 24l-14 7q-13 3-20-15l-5-24q-2-19 18-30Z" fill="#ef8857"/>
+<path d="M459 143q14-9 19 6l7 24q0 12-13 18l-8 4q-12 2-16-11l-4-20q0-13 15-21Z" fill="#c66d4b"/>
+<path d="M458 146q13-8 18 4l6 22q2 14-17 19l-8-6-5-22Z" fill="url(#mesh)" stroke-width="1"/>
+<path d="M457 192q-1 31-24 47l-41 5" fill="none" stroke-width="5"/><path d="M384 241l14-2 2 7-16 3Z" fill="#536776"/>
+</g>
+<!-- Fingertips and glove frame the receiver. -->
+<path d="M537 268l-8-26-16-10-12-13-19-10q-4-4-1-8 3-4 13-1l12 5-8-13-24-21q-5-7 0-11 4-2 10 3l22 17 18 11-4-9-29-29q-4-6 1-10 4-2 11 5l24 21 17 17 10 20 6 34 7 25Z" fill="#e9be9f"/>
+<path d="M531 240l15 15 15-4 5 12-29 8Zm-14-23 13 7-9-13" fill="#c88e7c" stroke="none"/>
+<path d="M507 205l11 10m-1-25 12 9m-1-26 14 17m-29-1-13-10" fill="none" stroke="#ab796a" stroke-width="1.6"/>
+<path d="M543 243l17-8 7 23-23 8Z" fill="#304454"/><path d="M547 245l10-5 3 9-10 5Z" fill="#b6d5c8" stroke-width="1.4"/>
+<!-- Near sleeve reaches diagonally into the foreground. -->
+<path d="M278 320q-25-4-42 24l-34 61-36 26 11 44 55-22q33-20 52-64l17-43Z" fill="#a5b8bf"/>
+<path d="M272 355q-10 44-41 74l-50 32 4 12 52-24 29-34 19-43Z" fill="#5b7181" stroke="none"/>
+<path d="M224 397l-7 20 17-10m-1 17 21-17m-46 10-20 23m63-87 17-17-7 18" fill="none" stroke-width="2"/>
+<path d="M162 428l24-10 16 40-27 16Z" fill="#354452"/><path d="M168 430l11 33m-4-37 13 33m-6-35 12 29" fill="none" stroke="#9cafb2" stroke-width="1.8"/>
+<g transform="@HAND@">
+<path d="M171 450l-24-1-32 12-31 20q-5 4-2 8l6 0 31-15 13-2-20 13-12 13q-3 6 3 8l22-16 19-9-18 16q-5 6 1 8l24-15 14-11 16-9Z" fill="#f4cda8"/>
+<path d="M115 463l19-5 22 0m-24 14 14-6m-5 15 10-9" fill="none" stroke="#af7e6f" stroke-width="1.5"/>
+</g>
+</g></g>
+</svg>
