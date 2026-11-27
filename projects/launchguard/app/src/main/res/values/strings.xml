@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">LaunchGuard</string>
-    <string name="service_name">LaunchGuard 启动守卫</string>
-    <string name="service_summary">检测所选应用进入前台并显示 Wi-Fi 确认</string>
-    <string name="service_description">LaunchGuard 使用无障碍服务识别前台应用的包名、显示启动确认层，并在你点击取消时请求返回桌面。配置仅存于本机。应用不会保存使用记录、读取窗口内的文字或上传数据。</string>
-</resources>

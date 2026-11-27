@@ -1,4 +1,0 @@
-numpy>=1.26,<3
-scipy>=1.11,<2
-# Optional: only needed to regenerate the already bundled font subsets.
-fonttools[woff]>=4.50
